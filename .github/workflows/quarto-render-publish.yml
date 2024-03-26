@@ -23,7 +23,7 @@ jobs:
       - name: Publish html
         run: |
           mkdir build
-          cp presentation-quarto.html build
+          cp formation-git.html build
           cp -r img css fonts *.qmd build
 
       - name: Push to gh-pages branch
