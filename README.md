@@ -1,31 +1,29 @@
-# Présentation Quarto
+<!-- badges: start -->
+[![render](https://github.com/ddotta/formation-git/actions/workflows/quarto-render-publish.yml/badge.svg)](https://github.com/ddotta/formation-git/actions/workflows/quarto-render-publish.yml)
+<!-- badges: end -->
 
-Support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant la charte graphique du [MASA](https://agriculture.gouv.fr/).
 
-Ce support présente les principales fonctionnalités de quarto. Il est consultable via l'url suivante :
+# Formation Git
 
-<https://demesis.pages.lab.sspcloud.fr/-/charte-graphique/masa-quarto-presentation/-/jobs/22785/artifacts/public/presentation-quarto.html>
+Support pour la formation Git dispensée au [MASA](https://agriculture.gouv.fr/) et [MTECT](https://www.ecologie.gouv.fr/) en quarto markdown (.qmd) et reveal.js.
 
-> Pour un affichage optimisé de la présentation il est conseillé d'utiliser le **navigateur Edge**.
+> Pour un affichage optimisé de la présentation il est conseillé d'utiliser le **navigateur Edge ou Chrome**.
 
 ## L'export au format Pdf
 
-Pour obtenir le diaporama en pdf, suivre les étapes décrites [ici](https://demesis.pages.lab.sspcloud.fr/-/charte-graphique/masa-quarto-presentation/-/jobs/22785/artifacts/public/presentation-quarto.html#/pdf-mode-op%C3%A9ratoire).
-
-Le pdf est téléchargeable [sur cette page GEDSI](https://ged.national.agri/gedsi/nxfile/default/e7810422-3dde-4f57-bb1e-ab751bfbd914/blobholder:0/Masa-quarto-presentation.pdf) pour les agents du Masa.
 
 ## Contribution
 
-Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, n'hésitez pas à nous transmettre ces informations. Pour cela, vous pouvez faire [une issue](https://forge.agriculture.rie.gouv.fr/gitlab/ssp/bmis/charte-graphique/masa-quarto-presentation/-/issues) dans ce dépôt gitlab.
+Si vous souhaitez contribuer, n'hésitez pas à nous transmettre des informations. Pour cela, vous pouvez faire [une issue](https://github.com/ddotta/formation-git/issues) dans ce dépôt.
 
 ## Récupération du projet
 
 Pour récupérer le projet, vous pouvez :
 
-- télécharger le .zip en cliquant [ici](https://forge.agriculture.rie.gouv.fr/gitlab/ssp/bmis/charte-graphique/masa-quarto-presentation/-/archive/master/masa-quarto-presentation-master.zip) : 
+- télécharger le .zip en cliquant [ici](https://github.com/ddotta/formation-git/archive/refs/heads/main.zip) : 
 
-et à partir de ce zip, initier (ou pas) un nouveau dépôt sur gitlab. Ce projet sera indépendant de celui-ci.
+et à partir de ce zip, initier (ou pas) un nouveau dépôt sur github. Ce projet sera indépendant de celui-ci.
 
 OU
 
-- [Forker le projet](https://forge.agriculture.rie.gouv.fr/gitlab/ssp/bmis/charte-graphique/masa-quarto-presentation/-/forks/new) si vous souhaitez ultérieurement y contribuer via des merges request. 
+- [Forker le projet](https://github.com/ddotta/formation-git/fork) si vous souhaitez ultérieurement y contribuer via des pull requests.
