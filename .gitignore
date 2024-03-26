@@ -5,8 +5,10 @@
 .Ruserdata
 
 # Les repertoires suivants
-presentation-quarto_files/
+formation-git_files/
 _output/
+/.quarto/
+/_site/
 
 # Les fichiers suivants
 *.html

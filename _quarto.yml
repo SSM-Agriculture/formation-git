@@ -1,6 +1,5 @@
 project:
   title: "Formation-git"
-  output-dir: docs
     
 format:
   masa-default-revealjs: default
