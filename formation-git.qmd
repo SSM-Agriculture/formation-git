@@ -26,9 +26,6 @@ editor:
   render-on-save: true
 ---
 
-
-<!-- Ajout des autres parties de la présentation -->
-
 {{< include 02_pourquoigit.qmd >}}
 
 {{< include 03_basegit.qmd >}}
