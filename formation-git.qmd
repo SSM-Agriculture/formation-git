@@ -1,0 +1,39 @@
+---
+title: "Formation Git"
+subtitle: "Apprendre à utiliser Git en tant qu'utilisateur de R"
+date: today
+date-format: "DD/MM/YYYY"
+author: "SSP/DEMESIS"
+description: |
+  Support de formation de Git pour les utilisateurs de R
+
+slide-tone: false # for blind readers
+chalkboard: false # press the B key to toggle chalkboard
+transition: slide
+fig-cap-location: bottom
+
+toc: true
+toc-title: Sommaire
+toc-depth: 1
+toc-float: true
+
+# multiplex: true
+execute:
+  echo: false
+  warning: false
+  cache: false
+editor:
+  render-on-save: true
+---
+
+
+<!-- Ajout des autres parties de la présentation -->
+
+{{< include 02_pourquoigit.qmd >}}
+
+{{< include 03_basegit.qmd >}}
+
+{{< include 04_travaillerforge.qmd >}}
+
+
+

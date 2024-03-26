@@ -1,0 +1,20 @@
+/.quarto/
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Les repertoires suivants
+presentation-quarto_files/
+_output/
+
+# Les fichiers suivants
+*.html
+*.tex
+*.pdf
+*.log
+*.sty
+*.docx
+*.odt
+PageStandard_Masa.svg
+!img/com_interne/PageStandard_Masa.svg

@@ -1,0 +1,9 @@
+forge:
+  interne: gitlab
+  externe: github
+  
+version: 0.1
+
+organisation: MASA
+
+supportTechnique: bmis.ssp.sg@agriculture.gouv.fr
