@@ -26,11 +26,16 @@ editor:
   render-on-save: true
 ---
 
-{{< include 02_pourquoigit.qmd >}}
+# Pourquoi Git ? {.backgroundTitre}
 
-{{< include 03_basegit.qmd >}}
+## Git c'est quoi
 
-{{< include 04_travaillerforge.qmd >}}
+
+<!-- {{< include 02_pourquoigit.qmd >}} -->
+
+<!-- {{< include 03_basegit.qmd >}} -->
+
+<!-- {{< include 04_travaillerforge.qmd >}} -->
 
 
 
