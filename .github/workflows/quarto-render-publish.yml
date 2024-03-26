@@ -23,7 +23,7 @@ jobs:
 
       - name: Install packages
         run: | 
-          Rscript -e 'install.packages(c("quarto")'
+          Rscript -e 'install.packages(c("quarto"))'
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
