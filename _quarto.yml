@@ -1,11 +1,6 @@
 project:
-  title: "Présentation quarto-Masa"
-  render:
-    - "formation-git.qmd"
-    - "02_pourquoigit.qmd"
-    - "03_basegit.qmd"
-    - "04_travaillerforge.qmd"
-
+  title: "Formation-git"
+  output-dir: docs
     
 format:
   masa-default-revealjs: default

@@ -10,6 +10,7 @@ _output/
 
 # Les fichiers suivants
 *.html
+!docs/*.html
 *.tex
 *.pdf
 *.log
@@ -17,4 +18,4 @@ _output/
 *.docx
 *.odt
 PageStandard_Masa.svg
-!book/img/com_interne/PageStandard_Masa.svg
+!img/com_interne/PageStandard_Masa.svg

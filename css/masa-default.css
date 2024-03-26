@@ -22,7 +22,7 @@ div.backgroundTitre{
 
 /*Page standard*/
 div.backgroundStandard {
-  background-image: url(../book/img/com_interne/PageStandard_Masa.svg);
+  background-image: url(../img/com_interne/PageStandard_Masa.svg);
 }
 
 /*CSS de l'impression pdf du navigateur (ctrl+p) Il s'appuie en partie sur le mode export (ex : background)*/
