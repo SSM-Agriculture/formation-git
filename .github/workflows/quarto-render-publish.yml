@@ -17,6 +17,8 @@ jobs:
 
       - name: Render Quarto
         uses: quarto-dev/quarto-actions/render@v2
+        with:
+          path: formation-git.qmd
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
