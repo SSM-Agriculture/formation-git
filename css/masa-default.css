@@ -1,0 +1,61 @@
+
+
+/*Sommaire*/
+#TOC {
+  background-image: url(../img/com_interne/PageSommaire_Masa.svg);
+}
+
+/*page sommaire*/
+.toc-section-number{
+  color: #000;
+}
+
+#TOC ul li a{
+  color: #000;
+}
+
+
+/*page Titre*/
+div.backgroundTitre{
+  background-image: url(../img/com_interne/PagePartie_Masa.svg);
+}
+
+/*Page standard*/
+div.backgroundStandard {
+  background-image: url(../img/com_interne/PageStandard_Masa.svg);
+}
+
+/*CSS de l'impression pdf du navigateur (ctrl+p) Il s'appuie en partie sur le mode export (ex : background)*/
+
+@media print {
+  
+  #TOC{
+    top: -15em !important;
+    position: absolute !important;
+  }
+  
+  #chapters_0,
+  #chapters_1,
+  #chapters_2,
+  #chapters_3,
+  #chapters_4,
+  #chapters_5,
+  #chapters_6,
+  #chapters_7,
+  #chapters_8,
+  #chapters_9,
+  #chapters_10{
+    top: -15em !important;
+    position: relative !important;
+  }
+  
+  .print_code details{
+    display: contents !important;
+  }
+  
+  .no-print-pdf {
+    display: none !important;
+  }
+
+}
+

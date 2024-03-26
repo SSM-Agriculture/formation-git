@@ -1,0 +1,595 @@
+/****************Taille de la police*********************/
+
+/* bodoni-moda-regular - latin */
+/*@font-face {
+  font-family: 'Marianne';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url("../fonts/Marianne-Medium.otf") format('otf'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+/*}/*
+
+.Large { 
+  font-size: 144%;
+}
+
+.large {
+  font-size: 120%;
+}
+
+.small {
+  font-size: 90%;
+}
+
+.footnotesize {
+  font-size: 90%;
+}
+
+.scriptsize {
+  font-size: 70%;
+}
+
+.tiny {
+  font-size: 60%;
+}
+
+/********************Style du texte*********************/
+
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
+  font-weight: 800;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+/*couleurs par défaut*/
+
+.black {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.orange {
+  color: orange;
+}
+
+.purple {
+  color: purple;
+}
+
+.gray {
+  color: gray;
+}
+
+.grey {
+  color: gray;
+}
+
+
+/******************couleurs palettes Masa**********************/
+
+.rectangle {
+    width: 60px; 
+    height: 100px; 
+    margin: -6px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+
+.nomPaletteCouleur {
+  Justify-content: flex-start;
+  text-align: center;
+  top: 50%;
+  font-size: 60%;
+}
+
+.Macaron1 {
+  color: #000;
+  background-color: #FFB7AE;
+}
+
+.Macaron2 {
+  color: white;
+  background-color: #E18B76;
+}
+
+.Macaron3 {
+  color: white;
+  background-color: #8D533E;
+}
+
+.Tuile1 {
+  color: #000;
+  background-color: #FF9575;
+}
+
+.Tuile2 {
+  color: white;
+  background-color: #CE614A;
+}
+
+.Tuile3 {
+  color: white;
+  background-color: #AD4847;
+}
+
+.Glycine1 {
+  color: white;
+  background-color: #CE70CC;
+}
+
+.Glycine2 {
+  color: white;
+  background-color: #A558A0;
+}
+
+.Glycine3 {
+  color: white;
+  background-color: #6E445A;
+}
+
+.Cumulus1 {
+  color: white;
+  background-color: #7AB1E8;
+}
+
+.Cumulus2 {
+  color: white;
+  background-color: #417DC4;
+}
+
+.Cumulus3 {
+  color: white;
+  background-color: #3558A2;
+}
+
+.Ecume1 {
+  color: white;
+  background-color: #869ECE;
+}
+
+.Ecume2 {
+  color: white;
+  background-color: #465F9D;
+}
+
+.Ecume3 {
+  color: white;
+  background-color: #2F4077;
+}
+
+.Archipel1 {
+  color: white;
+  background-color: #34BAB5;
+}
+
+.Archipel2 {
+  color: white;
+  background-color: #009099;
+}
+
+.Archipel3 {
+  color: white;
+  background-color: #006A6F;
+}
+
+.Menthe1 {
+  color: white;
+  background-color: #21AB8E;
+}
+
+.Menthe2 {
+  color: white;
+  background-color: #009081;
+}
+
+.Menthe3 {
+  color: white;
+  background-color: #37635F;
+}
+
+.Emeraude1 {
+  color: white;
+  background-color: #34CB6A;
+}
+
+.Emeraude2 {
+  color: white;
+  background-color: #00A95F;
+}
+
+.Emeraude3 {
+  color: white;
+  background-color: #2B7758;
+}
+
+.Bourgeon1 {
+  color: white;
+  background-color: #99C221;
+}
+
+.Bourgeon2 {
+  color: white;
+  background-color: #68A532;
+}
+
+.Bourgeon3 {
+  color: white;
+  background-color: #46724B;
+}
+
+.Tilleul_verveine1 {
+  color: white;
+  background-color: #D8C634;
+}
+
+.Tilleul_verveine2 {
+  color: white;
+  background-color: #B7A73F;
+}
+
+.Tilleul_verveine3 {
+  color: white;
+  background-color: #66673D;
+}
+
+.Tournesol1 {
+  color: #000;
+  background-color: #FFE552;
+}
+
+.Tournesol2 {
+  color: white;
+  background-color: #C8AA39;
+}
+
+.Tournesol3 {
+  color: white;
+  background-color: #716043;
+}
+
+.Jaune_moutarde1 {
+  color: #000;
+  background-color: #FFCA00;
+}
+
+.Jaune_moutarde2 {
+  color: white;
+  background-color: #C3992A;
+}
+
+.Jaune_moutarde3 {
+  color: white;
+  background-color: #695240;
+}
+
+.Terre_battue1 {
+  color: white;
+  background-color: #FF732C;
+}
+
+.Terre_battue2 {
+  color: white;
+  background-color: #E4794A;
+}
+
+.Terre_battue3 {
+  color: white;
+  background-color: #755348;
+}
+
+.Cafe_creme1 {
+  color: #000;
+  background-color: #ECD7A2;
+}
+
+.Cafe_creme2 {
+  color: white;
+  background-color: #D1B781;
+}
+
+.Cafe_creme3 {
+  color: white;
+  background-color: #685C48;
+}
+
+.Caramel1 {
+  color: #000;
+  background-color: #FBD8AB;
+}
+
+.Caramel2 {
+  color: white;
+  background-color: #C08C65;
+}
+
+.Caramel3 {
+  color: white;
+  background-color: #8A614B;
+}
+
+.Opera1 {
+  color: #000;
+  background-color: #E6BE92;
+}
+
+.Opera2 {
+  color: white;
+  background-color: #BD9871;
+}
+
+.Opera3 {
+  color: white;
+  background-color: #745B47;
+}
+
+.Gris_galet1 {
+  color: #000;
+  background-color: #D0C3B7;
+}
+
+.Gris_galet2 {
+  color: white;
+  background-color: #AEA397;
+}
+
+.Gris_galet3 {
+  color: white;
+  background-color: #6A6156;
+}
+
+.rose_masa {
+  color: #FF7477;
+}
+
+.jaune_masa {
+  color: #FFE916;
+}
+
+.marron_masa {
+  color: #958B62;
+}
+
+.souligneRouge{
+  text-decoration-line: underline;
+  text-decoration-color: red;
+}
+
+
+/****************Content-box***********************/
+
+.content-box { 
+  box-sizing: content-box;
+  background-color: #e2e2e2;
+}
+
+
+.content-box-blue,
+.content-box-gray,
+.content-box-grey,
+.content-box-army,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+    border-radius: 10px;
+    margin: 0 0 15px;
+    overflow: hidden;
+    padding: 5px;
+    width: 100%;
+}
+
+.content-box-blue {
+  background-color: #F0F8FF;
+}
+
+.content-box-gray {
+    background-color: #e2e2e2;
+}
+
+.content-box-grey {
+	background-color: #F5F5F5;
+}
+
+.content-box-army {
+	background-color: #737a36;
+}
+
+.content-box-green {
+  background-color: #e2faec;
+  border: solid 2px #1ca459;
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+.content-box-purple {
+	background-color: #e2e2f9;
+}
+
+.content-box-red {
+  background-color: #ffe1e9;
+  border: solid 2px #e4003a;
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+.content-box-yellow {
+  background-color: #fdf0c9;
+  border: solid 2px #fdc218;
+  box-shadow: 5px 5px 5px #aaa;	
+}
+
+
+.full-width {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.pull-left-70 { float: left; width: 66.5%;}
+.pull-right-30 { float: right; width: 28.5%; }
+.pull-right-30 ~ * { clear: both; }
+
+.pull-left-60 { float: left; width: 57%; }
+.pull-right-40 { float: right; width: 38%; }
+.pull-right-40 ~ * { clear: both; }
+
+.pull-left-50 { float: left; width: 47.5%; }
+.pull-right-50 { float: right; width: 47.5%;}
+.pull-right-50 ~ * { clear: both; }
+
+.pull-left-40 { float: left; width: 38%; }
+.pull-right-60 { float: right; width: 57%; }
+.pull-right-60 ~ * { clear: both; }
+
+.pull-left-30 { float: left; width: 28.5%; }
+.pull-right-70 { float: right; width: 66.5%; }
+.pull-right-70 ~ * { clear: both; }
+
+
+.listeSansPuceNiveau1 ul>li{
+  list-style-type: none;
+}
+
+.listeSansPuceNiveau2 ul>li>ul>li{
+  list-style-type: none;
+}
+
+.listeSansPuceNiveau3 ul>li>ul>li>ul>li {
+  list-style-type: disclosure-closed;
+}
+
+.puceListFleche::before {
+  content: "\2192";
+  color: #610316;
+  padding-right: 5px;
+}
+
+.puceDiscNiveau1 ul li {
+  list-style-type: disc;
+}
+
+.puceTiretNiveau2 ul li ul li{
+  list-style-type: "- ";
+}
+
+.interligne1 ul li:not(:last-child) {
+   margin-bottom: 1% !important;
+}
+
+.interligne2 ul li:not(:last-child) {
+   margin-bottom: 2% !important;
+}
+
+.interligne3 ul li:not(:last-child) {
+   margin-bottom: 3% !important;
+}
+
+.interligne4 ul li:not(:last-child) {
+   margin-bottom: 3% !important;
+}
+
+.interligne5 ul li:not(:last-child) {
+   margin-bottom: 5% !important;
+}
+
+
+/***************IMAGES*******************/
+
+.centerImage img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgWidth100 img{
+  width: 100%;
+}
+
+.imgWidth90 img{
+  width: 90%;
+}
+
+.imgWidth85 img{
+  width: 85%;
+}
+
+.imgWidth70 img{
+  width: 70%;
+}
+
+.imgWidth50 img{
+  width: 50%;
+}
+
+
+/***************WIDGETS*******************/
+
+.centerWidget .html-widget{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widgetWidth100 .html-widget{
+  width: 100% !important;
+}
+
+.widgetWidth90 .html-widget{
+  width: 90% !important;
+}
+
+.widgetWidth85 .html-widget{
+  width: 85% !important;
+}
+
+.widgetWidth70 .html-widget{
+  width: 70% !important;
+}
+
+.widgetWidth60 .html-widget{
+  width: 60% !important;
+}
+
+.widgetWidth50 .html-widget{
+  width: 50% !important;
+}
+
+/***************AUTRES*******************/
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media print {
+  .no-print-pdf {
+    display: none !important;
+  }
+}
+
