@@ -1,8 +1,3 @@
-<!-- badges: start -->
-[![render](https://github.com/ddotta/formation-git/actions/workflows/quarto-render-publish.yml/badge.svg)](https://github.com/ddotta/formation-git/actions/workflows/quarto-render-publish.yml)
-<!-- badges: end -->
-
-
 # Formation Git
 
 Support pour la formation Git dispensée au [MASA](https://agriculture.gouv.fr/) et [MTECT](https://www.ecologie.gouv.fr/) en quarto markdown (.qmd) et reveal.js.
