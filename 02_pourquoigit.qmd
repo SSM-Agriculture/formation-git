@@ -39,6 +39,22 @@ What are the primary version control systems you use?
 ![](img/git_popularity.png)
 Source : [Stackoverflow](https://survey.stackoverflow.co/2022/#version-control-version-control-system)
 
+## À propos de Git
+
+Git est un logiciel libre de versioning.
+
+::: {.column width="70%"}
+
+Créé en 2005 par [Linus Torvalds](https://fr.wikipedia.org/wiki/Linus_Torvalds) et utilisé pour le code source de Linux (+ de 1 200 000 commits en mars 2024).
+
+:::
+
+::: {.column width="30%"}
+
+![](img/Linus_Torvalds.jpg)
+:::
+
+
 ## C'est quoi une forge ?
 
 Définition Wikipédia :
