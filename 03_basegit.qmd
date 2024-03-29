@@ -1,4 +1,38 @@
 # Les bases de Git {.backgroundTitre}
 
-## A venir
+## Git - un modèle distribué
+
+![](img/git_distributed.png)
+
+## Comment utiliser Git ?
+
+3 façons seront présentées dans ce support :
+
+- Via l'interface visuelle de l'IDE RStudio  
+    *Pour les commandes les plus courantes du quotidien*
+
+- Via les commandes du terminal
+    *Pour les commandes plus avancées*
+    
+- Via le package R `gitssp`
+    *Pour simplifier l'articulation avec les dépôts distants*
+
+## Fonctionnement
+
+![](img/etats_fichiers_git.png)
+
+
+
+## Le versioning
+
+![](img/git-workflow-allisonhorst.png)
+
+
+## toto
+
+![](img/git-workflow-allisonhorst.png)
+
+## Le versioning
+
+![](img/schema_vaches_branches_git.png)
 

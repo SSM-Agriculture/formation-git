@@ -39,25 +39,6 @@ What are the primary version control systems you use?
 ![](img/git_popularity.png)
 Source : [Stackoverflow](https://survey.stackoverflow.co/2022/#version-control-version-control-system)
 
-## Git - un modèle distribué
-
-![](img/git_distributed.png)
-
-## Fonctionnement
-
-![](img/etats_fichiers_git.png)
+## C'est quoi une forge ?
 
 
-
-## Le versioning
-
-![](img/git-workflow-allisonhorst.png)
-
-
-## toto
-
-![](img/git-workflow-allisonhorst.png)
-
-## Le versioning
-
-![](img/schema_vaches_branches_git.png)
