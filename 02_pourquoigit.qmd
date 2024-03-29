@@ -49,7 +49,9 @@ qui offre des fonctionnalités supplémentaires à Git comme la gestion des tick
 les merge requests ou pull requests, un affichage plus agréable du dépôt avec une interface web, 
 la possibilité d'ajouter un wiki, l'intégration et le déploiement continus...
 
-Exemples de forges connues : Gitlab, Github, Bitbucket...
+## Exemples de forges
+
+Les plus connues : Gitlab, Github, Bitbucket...
 
 Une forge peut être interne ou externes à un ministère.
 
@@ -58,3 +60,9 @@ URL de la forge interne du MTECT : https://gitlab-forge.din.developpement-durabl
 
 URL du MTECT sur Github : https://github.com/MTES-MCT
 
+::: callout-note
+## À retenir ! 
+
+- Les forges externes ont vocation à héberger les projets open-source. 
+Il s'agit d'être très vigilant sur le code déposé sur ces forges
+:::
