@@ -1,9 +1,5 @@
 # Les bases de Git {.backgroundTitre}
 
-## Git - un modèle distribué
-
-![](img/git_distributed.png)
-
 ## Comment utiliser Git ?
 
 3 façons seront présentées dans ce support :
@@ -16,11 +12,42 @@
     
 - Via le package R `gitssp`
     *Pour simplifier l'articulation avec les dépôts distants*
+    
+## Git - un modèle distribué
+
+- Dépôt local : dépôt de l'agent sur son espace de travail (sous Cerise ou en local par ex.)
+- Dépôt distant (remote) : dépôt correspondant situé sur la forge.
+
+::: callout-
+## Convention 
+
+Par défaut, le dépôt distant porte l'alias `origin`
+:::
+
+
+![](img/git_distributed.png)
 
 ## Fonctionnement
 
-![](img/etats_fichiers_git.png)
+Pour évoquer le fonctionnement de Git et son articulation avec une forge, cela 
+nécessite d'apprendre à utiliser de nouveau termes (voir lexique diapo suivante).
 
+> 
+
+
+
+![](img/completeworkflow.png)
+*Source : [itnext.io](https://itnext.io/git-concepts-for-newcomers-part-2-git-repository-working-tree-and-staging-area-a2e720bf3528)
+
+## Lexique de survie
+
+
+- `git add` : ajout des changements à l'index
+- `git commit` : enregistre les changements placés dans l'index
+- `git push` :
+- `git pull` :
+- `git checkout` :
+- `git merge` :
 
 
 ## Le versioning
