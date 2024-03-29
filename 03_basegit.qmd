@@ -41,19 +41,22 @@ nécessite d'apprendre à utiliser de nouveau termes (voir lexique diapo suivant
 
 ## Lexique de survie
 
+- `working directory` : répertoire de travail de l'agent
+- `staging area` : zone tampon dans laquelle l'agent regroupe les changements en vue du prochain commit.
+- `local repository` : dépôt local présent dans votre espace de travail (.git)
+- `remote repository` : dépôt distant sur une forge
 
 - `git add` : ajout des changements à l'index
 - `git commit` : enregistre les changements placés dans l'index
-- `git push` :
-- `git pull` :
-- `git checkout` :
-- `git merge` :
+- `git push` : envoie les changements vers le dépôt distant
+- `git pull` : télécharge les changements depuis le dépôt distant
+- `git checkout` : permet de se déplacer dans l'arbre (retour vers le passé, changement de branche)
 
 
-## Le versioning
+## Une 2ème illustration pour fixer les idées :)
 
 ![](img/git-workflow-allisonhorst.png)
-
+*Source :  [Allison Horst](https://allisonhorst.com/git-github)
 
 ## toto
 
