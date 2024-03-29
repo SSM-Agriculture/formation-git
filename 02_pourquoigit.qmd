@@ -41,4 +41,20 @@ Source : [Stackoverflow](https://survey.stackoverflow.co/2022/#version-control-v
 
 ## C'est quoi une forge ?
 
+Définition Wikipédia :
+> En informatique, une forge est un système de gestion et de maintenance collaborative de texte.
+
+C'est un espace où on peut archiver du code informatique (R mais pas que bien sûr) 
+qui offre des fonctionnalités supplémentaires à Git comme la gestion des tickets (issues), 
+les merge requests ou pull requests, un affichage plus agréable du dépôt avec une interface web, 
+la possibilité d'ajouter un wiki, l'intégration et le déploiement continus...
+
+Exemples de forges connues : Gitlab, Github, Bitbucket...
+
+Une forge peut être interne ou externes à un ministère.
+
+URL de la forge interne du MASA : https://forge.agriculture.rie.gouv.fr/gitlab/
+URL de la forge interne du MTECT : https://gitlab-forge.din.developpement-durable.gouv.fr/
+
+URL du MTECT sur Github : https://github.com/MTES-MCT
 
