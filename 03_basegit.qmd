@@ -1,5 +1,59 @@
 # Les bases de Git {.backgroundTitre}
 
+## Qu'est-ce qu'on versionne ?
+
+On versionne les fichiers de type texte donc par exemple les programmes R, SAS, 
+la documentation au format texte, Markdown, quarto..., les fichiers de configuration 
+de type yaml par exemple...
+Eventuellement, on peut aussi versionner des images si on en a besoin dans une application 
+ou une documentation.
+
+## Qu'est-ce qu'on NE versionne PAS ? (1/2)
+
+TOUT LE RESTE :)
+
+C'est-à-dire les fichiers tableurs, de traitements de texte, les pdf, les diaporamas, 
+les fichiers spécifiques aux projets R....
+
+Pour se faciliter la tâche, on utiliser un fichier spécifique `.gitignore` situé 
+le plus souvent à la racine des projets.  
+
+Il s’agit d’un fichier texte, qui liste les fichiers et dossiers (sous forme d’expressions régulières) à ne pas
+versionner.
+
+– une ligne = une règle
+
+– on peut ignorer :
+    • des fichiers
+    • des dossiers
+    • des extensions
+    • ...
+
+## Qu'est-ce qu'on NE versionne PAS ? (2/2)
+
+Si vous utiliser le package R `gitssp` mis à disposition des agents du MASA, voici 
+ce qui est exclu par défaut avec la fonction `gitssp::creer_gitignore()` :  
+
+```
+.Rproj.user
+.Rhistory
+.RData
+.Renviron
+.Ruserdata
+
+
+/* Les fichiers avec ces extensions
+*.xls
+*.xlsx
+*.ods
+*.pdf
+*.docx
+*.odt
+*.ppt
+*.odp
+*.html
+```
+
 ## Comment utiliser Git ?
 
 3 façons seront présentées dans ce support :
