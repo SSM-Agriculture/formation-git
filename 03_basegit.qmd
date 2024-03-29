@@ -41,11 +41,14 @@ nécessite d'apprendre à utiliser de nouveau termes (voir lexique diapo suivant
 
 ## Lexique de survie
 
+**Les zones de Git :**  
+
 - `working directory` : répertoire de travail de l'agent
-- `staging area` : zone tampon dans laquelle l'agent regroupe les changements en vue du prochain commit.
+- `staging area` ou `index` : zone tampon dans laquelle l'agent regroupe les changements en vue du prochain commit.
 - `local repository` : dépôt local présent dans votre espace de travail (.git)
 - `remote repository` : dépôt distant sur une forge
 
+**Les principales commandes de Git :**  
 - `git add` : ajout des changements à l'index
 - `git commit` : enregistre les changements placés dans l'index
 - `git push` : envoie les changements vers le dépôt distant
@@ -58,11 +61,65 @@ nécessite d'apprendre à utiliser de nouveau termes (voir lexique diapo suivant
 ![](img/git-workflow-allisonhorst.png)
 *Source :  [Allison Horst](https://allisonhorst.com/git-github)
 
-## toto
+## Le working directory
 
-![](img/git-workflow-allisonhorst.png)
+Il s'agit de notre copie de travail c'est-à-dire le répertoire et sous-répertoires dans lesquels se trouvent les fichiers suivis par Git.  
 
-## Le versioning
+C'est là que l'agent effectue les changements sur les fichiers. Il correspond à votre espace de travail.
+
+::: callout-important
+## Avis aux utilisateurs novices
+
+Faire très attention au début de l'utilisation de Git : en fonction de la 
+commande Git que vous allez utiliser (par exemple un `git checkout` pour changer 
+de branche ou revenir dans le passé), **Git va changer le contenu de cet espace 
+sans vous avertir**.
+:::
+
+## La staging area ou l'index
+
+Zone tampon dans laquelle l'agent regroupe les changements en vue du prochain commit.  
+
+L'agent peut **ajouter** ou **retirer** les changements à l'index.
+
+Il peut faire cela en une seule ou plusieurs opérations (voir diapos suivantes).
+
+::: callout-warning
+## Attention
+
+Ajouter des changements à plusieurs fichiers en même temps nécessite d'être sûr 
+de ce que l'on fait et d'avoir correctement configuré le fichier `.gitignore`.
+:::
+
+
+## Ajouter des changements à l'index
+
+Pour ajouter des changements :  
+
+- **En ligne de commandes :** 
+
+- Un seul fichier : `git add <file-name>`
+- Tous les fichiers : `git add .`
+    
+- **Avec RStudio**
+
+- Un seul fichier : **en cochant un fichier dans l'onglet Git**
+![](img/git_add_un_fichier.png)
+- Plusieurs fichiers : **en cochant plusieurs fichiers dans l'onglet Git**
+![](img/git_add_plusieurs_fichiers.png)
+
+
+## Le commit
+
+Action de figer l'état du dépôt
+
+## Les états des fichiers
+
+- untracked pour les nouveaux fichiers (sauf ceux ignorés) ;  
+- modified pour les fichiers versionnés (présents dans le dernier commit ou le stage) puis modifiés depuis ;  
+- staged pour les fichiers ajoutés au stage ;  
+
+## Les branches
 
 ![](img/schema_vaches_branches_git.png)
 
