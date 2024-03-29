@@ -52,6 +52,7 @@ Créé en 2005 par [Linus Torvalds](https://fr.wikipedia.org/wiki/Linus_Torvalds
 ::: {.column width="30%"}
 
 ![](img/Linus_Torvalds.jpg)
+*Source : Wikipédia*
 :::
 
 
