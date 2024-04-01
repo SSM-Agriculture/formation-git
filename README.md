@@ -24,12 +24,12 @@ OU
 
 - **Ouvrez votre diaporama avec Edge ou Chrome.**  
 - Passer en mode export pdf  
-  - cliquer sur l'icône du menu : [{{< fa solid bars >}}]{style="color : '#3ea0e5';"} {{< fa solid arrow-right >}} sous-menu "Tools" {{< fa solid arrow-right >}} cliquer sur "PDF Export mode" ou taper sur la lettre "e" (raccourci).  
+  - cliquer sur l'icône de menu puis choizir sous-menu "Tools" puis cliquer sur "PDF Export mode" ou taper sur la lettre "e" (raccourci).  
   
 Le mode export PDF est activé quand le support passe en navigation verticale (scrollable). Retaper sur "e" pour revenir au mode de navigation normal.  
 
 
-- Dans la barre d'outils de votre navigateur: aller dans Fichier {{< fa solid arrow-right >}} Imprimer...
+- Dans la barre d'outils de votre navigateur: aller dans Fichier puis Imprimer...
 - Dans la fenêtre qui s'ouvre :
   - Sélectionner dans le champ destination "Enregistrer au format PDF"
   - Cocher l'option "Imprimer les arrières plans"
