@@ -2,20 +2,21 @@
 
 ## Le versioning
 
-Principe général :
+### Principe général :
 
 Le versioning consiste à conserver la version d'une entité logicielle quelconque 
 de façon à pouvoir la retrouver facilement même après l'apparition et la mise 
 en place de versions plus récentes.
 
-## Sans versioning
+### Sans versioning
 
 Exemple de ce que l'on peut trouver sur un server :  
 
 ![](img/cerise_sans_versionning.png)
+
 ## Avantages du versioning
 
-Le versioning permet de :  
+**Le versioning permet de :**  
 
 - Travailler collectivement sur les mêmes fichiers **en même temps**  
 - Obtenir de la traçabilité : on sait qui a changé quoi, quand, comment et pourquoi
@@ -23,63 +24,78 @@ Le versioning permet de :
 - Faire de la relecture (revues de codes...)
 - Voyager dans le temps
 
-Avec une forge, il permet en plus de :
-- D'archiver le code
-- D'apporter de la visibilité à vos projets 
+**Avec une forge, il permet en plus de :**  
 
-=> Un usage qui se justifie même quand on est tout seul sur un projet !
+- D'archiver le code  
+- D'apporter de la visibilité à vos projets  
+
+**=> Un usage qui se justifie même quand on est tout seul sur un projet !** 
 
 ## Git
 
 Parmi les logiciels de versioning existants, Git est le plus populaire depuis quelques années :
 
 
-What are the primary version control systems you use?
+[What are the primary version control systems you use?]{.bolder}
 
-![](img/git_popularity.png)
+![](img/git_popularity.png){width=1200}
+
 Source : [Stackoverflow](https://survey.stackoverflow.co/2022/#version-control-version-control-system)
 
 ## À propos de Git
 
 Git est un logiciel libre de versioning.
 
+:::: {.columns}
+
 ::: {.column width="70%"}
 
-Créé en 2005 par [Linus Torvalds](https://fr.wikipedia.org/wiki/Linus_Torvalds) et utilisé pour le code source de Linux (+ de 1 200 000 commits en mars 2024).
+Créé en 2005 par [Linus Torvalds](https://fr.wikipedia.org/wiki/Linus_Torvalds) et utilisé pour le code source de Linux.  
+
+- Codé en C  
+
+- Plus de 1 200 000 commits en mars 2024 !
 
 :::
 
 ::: {.column width="30%"}
 
 ![](img/Linus_Torvalds.jpg)
+
 *Source : Wikipédia*
 :::
 
+::::
 
 ## C'est quoi une forge ?
 
-Définition Wikipédia :
-> En informatique, une forge est un système de gestion et de maintenance collaborative de texte.
+Définition Wikipédia :  
 
-C'est un espace où on peut archiver du code informatique (R mais pas que bien sûr) 
-qui offre des fonctionnalités supplémentaires à Git comme la gestion des tickets (issues), 
-les merge requests ou pull requests, un affichage plus agréable du dépôt avec une interface web, 
-la possibilité d'ajouter un wiki, l'intégration et le déploiement continus...
+[En informatique, une forge est un système de gestion et de maintenance collaborative de texte.]{.bolder}
+
+[C'est un espace où on peut archiver du code informatique]{.souligneRouge} (R mais pas que bien sûr) qui offre des fonctionnalités supplémentaires à Git comme :
+
+- la **gestion des tickets** (issues) ;  
+- les **merge requests ou pull requests** ;
+- **un affichage** plus agréable du dépôt **avec une interface web** ;  
+- la possibilité d'ajouter **un wiki** ;  
+- **l'intégration et le déploiement continus**...
 
 ## Exemples de forges
 
-Les plus connues : Gitlab, Github, Bitbucket...
+Les plus connues : [Gitlab](https://gitlab.com), [Github](https://github.com), [Bitbucket](https://bitbucket.org)...
 
-Une forge peut être interne ou externes à un ministère.
+Une forge peut être **interne** ou **externe** à un ministère.
 
-URL de la forge interne du MASA : https://forge.agriculture.rie.gouv.fr/gitlab/
-URL de la forge interne du MTECT : https://gitlab-forge.din.developpement-durable.gouv.fr/
+- URL de la forge interne du MASA : [https://forge.agriculture.rie.gouv.fr/gitlab/](https://forge.agriculture.rie.gouv.fr/gitlab/)  
 
-URL du MTECT sur Github : https://github.com/MTES-MCT
+- URL de la forge interne du MTECT : [https://gitlab-forge.din.developpement-durable.gouv.fr/](https://gitlab-forge.din.developpement-durable.gouv.fr/)  
+
+- URL du MTECT sur Github : [https://github.com/MTES-MCT](https://github.com/MTES-MCT)
 
 ::: callout-note
 ## À retenir ! 
 
 - Les forges externes ont vocation à héberger les projets open-source. 
-Il s'agit d'être très vigilant sur le code déposé sur ces forges
+Il s'agit donc d'être très vigilant sur le code déposé sur ces forges
 :::
