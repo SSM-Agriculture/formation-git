@@ -347,10 +347,24 @@ Il informe les utilisateurs :
 
 ## Les messages de commit
 
-doc
-fix
-feat
-chore...
+D'après [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), 
+l'écriture des messages de commits devrait suivre la la structure minimale suivante :  
+
+```
+<type>: <description>
+```
+
+Le tableau suivant reprend les types les plus couramment utilisés :  
+
+| Type Detail | Detail                             |
+|-------------|------------------------------------|
+| wip         | Développement d'une fonctionnalité |
+| feat        | Ajout d'une fonctionnalité         |
+| fix         | Correction d'un bug/erreur         |
+| doc         | Documentation                      |
+| deprecated  | Fonctionnalité dépréciée           |
+| chore       | Tâches de routine/automatisées     |
+
 
 
 ## Consulter l'historique avec RStudio (1/2)
