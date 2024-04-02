@@ -11,11 +11,11 @@ Par exemple :
 - Les fichiers quarto, Rmarkdown...  
 - Les fichiers de configuration de type yaml par exemple...  
 
-Eventuellement, on peut aussi versionner **des images** si on en a besoin dans une application ou une documentation.
+Éventuellement, on peut aussi versionner **des images** si on en a besoin dans une application ou une documentation.
 
 ## Qu'est-ce qu'on NE versionne PAS ? (1/2)
 
-<p style="text-align: center;">TOUT LE RESTE :)</p>      
+<p style="text-align: center;">[TOUT LE RESTE :)]{.content-box-red}</p>      
 
 **C'est-à-dire notamment les fichiers tableurs, de traitements de texte, les pdf, les diaporamas de type powerpoint ou impress, les fichiers spécifiques aux projets R...**
 
