@@ -273,6 +273,13 @@ repères visuels sur les changements apportés à chacun de vos fichiers :]{.red
 
 ::::
 
+*Attention lors du renommage d'un fichier, l'état des fichier sera :*  
+
+| AVANT l'ajout à l'index               | APRÈS l'ajout à l'index               |
+|---------------------------------------|---------------------------------------|
+|![](img/renommer_avant_staging.png)    | ![](img/renommer_apres_staging.png)   |
+
+
 ## Les états des fichiers avec le terminal
 
 ![](img/icone_terminal.png){.inlineimage} [La commande `git status` affiche l'état du working directory et de l'index.]{.red}  
