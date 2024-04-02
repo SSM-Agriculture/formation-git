@@ -246,9 +246,9 @@ En décochant les fichiers dans l'onglet Git
 - Un seul fichier : `git reset <file-name>`
 - Tous les fichiers : `git reset`
 
-## Les états des fichiers avec RStudio
+## Les états des fichiers avec RStudio ![](img/icone_rstudio.png) 
 
-![](img/icone_rstudio.png){.inlineimage} [L'onglet de RStudio permet d'avoir des 
+[L'onglet de RStudio permet d'avoir des 
 repères visuels sur les changements apportés à chacun de vos fichiers :]{.red}  
 
 <br>
@@ -265,24 +265,16 @@ repères visuels sur les changements apportés à chacun de vos fichiers :]{.red
 
 - `Deleted` : le fichier a été supprimé du working directory   
 - `Modified` : le contenu du fichier a été modifié  
-- `Renamed` : le fichier a été renommé   
-- `Untracked` : le fichier a été ajouté au working directory  
-
+- `Untracked` : le fichier a été ajouté au working directory et Git ne l'a jamais vu auparavant 
 
 :::
 
 ::::
 
-*Attention lors du renommage d'un fichier, l'état des fichier sera :*  
 
-| AVANT l'ajout à l'index               | APRÈS l'ajout à l'index               |
-|---------------------------------------|---------------------------------------|
-|![](img/renommer_avant_staging.png)    | ![](img/renommer_apres_staging.png)   |
+## Les états des fichiers avec le terminal ![](img/icone_terminal.png)
 
-
-## Les états des fichiers avec le terminal
-
-![](img/icone_terminal.png){.inlineimage} [La commande `git status` affiche l'état du working directory et de l'index.]{.red}  
+[La commande `git status` affiche l'état du working directory et de l'index.]{.red}  
 <br>
 
 Voici un exemple d'équivalence entre les icônes RStudio et le résultat renvoyé par la commande `git status` :  
@@ -309,9 +301,43 @@ Voici un exemple d'équivalence entre les icônes RStudio et le résultat renvoy
 
 ::::
 
-## Revenir en arrière
+## Les états des fichiers APRÈS l'ajout à l'index
 
-[Git permet de consulter n’importe quel état passé du dépôt]{.content-box-yellow}</p>    
+Après l'ajout de fichier à l'index, 2 nouvelles icônes apparaissent dans RStudio 
+(**même fonctionnement avec le terminal**) :
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+![](img/etats_fichiers_apres.png){fig-align="center"}
+
+:::
+
+::: {.column width="70%"}
+
+- `Added` : Git comprend que vous voulez ajouter le fichier au dépôt  
+- `Renamed` : Git comprend que le fichier a été renommé   
+
+:::
+
+::::
+
+| Changement           | AVANT l'ajout à l'index               | APRÈS l'ajout à l'index               |
+|----------------------|---------------------------------------|---------------------------------------|
+| Ajout de fichier     |![](img/ajouter_avant_staging.png)     | ![](img/ajouter_apres_staging.png)    |
+| Renommage de fichier |![](img/renommer_avant_staging.png)    | ![](img/renommer_apres_staging.png)   |
+
+
+
+## Revenir en arrière avec RStudio ![](img/icone_rstudio.png) 
+
+<p style="text-align: center;">[Git permet de consulter n’importe quel état passé du dépôt]{.content-box-yellow}</p>    
+
+
+
+## Revenir en arrière avec le terminal ![](icone_terminal.png) 
+
 
 `git revert`
 
