@@ -382,6 +382,13 @@ est `git diff --staged`.
 
 <p style="text-align: center;">[Git permet de consulter n’importe quel état passé du dépôt]{.content-box-yellow}</p>    
 
+Dans RStudio cliquez sur le bouton `Plus` de l'onglet Git puis choisir le bouton `Inverser` :  
+
+![](img/git_revert_rstudio.png)  
+
+Un message de confirmation vous demande si vous êtes sûr de votre action :  
+
+![](img/git_revert_confirmation_rstudio.png)  
 
 
 ## Revenir en arrière avec le terminal ![](icone_terminal.png) 
