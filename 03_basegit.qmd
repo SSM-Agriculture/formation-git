@@ -392,7 +392,7 @@ Un message de confirmation vous demande si vous êtes sûr de votre action :
 
 ## Revenir en arrière avec le terminal ![](img/icone_terminal.png) 
 
-[La commande git restore permet de restaurer des fichiers]
+[La commande git restore permet de restaurer des fichiers]{.red}
 
 | Action                                                | Commande                           |
 |-------------------------------------------------------|------------------------------------|
@@ -418,13 +418,13 @@ Un message de confirmation vous demande si vous êtes sûr de votre action :
 
 ## Caractéristiques du commit
 
-- Un commit possède un identifiant (SHA)
+- Un commit possède **un identifiant** (SHA)
 
 Il informe les utilisateurs :
 
-- Qui ? Quoi ? Où ? Quand ? => Avec ses métadonnées  
-- Quoi ? Où ? Comment ? => Avec l'affichage des différences  
-- Pourquoi ? => Avec le message du commit
+- Qui ? Quoi ? Où ? Quand ? => Avec ses **métadonnées ** 
+- Quoi ? Où ? Comment ? => Avec l'affichage des **différences ** 
+- Pourquoi ? => Avec **le message du commit**
 
 ## Les messages de commit
 
@@ -446,6 +446,8 @@ Le tableau suivant reprend les types les plus couramment utilisés :
 | deprecated  | Fonctionnalité dépréciée           |
 | chore       | Tâches de routine/automatisées     |
 
+
+
 ## Modifier le dernier commit
 
 **Il y a au moins deux raisons de revenir sur un commit :**  
@@ -453,14 +455,32 @@ Le tableau suivant reprend les types les plus couramment utilisés :
 - Modifier le message de commit (même pour une faute de frappe)  
 - Ajouter ou supprimer des fichiers au commit. 
 
-La commande à utiliser est `git commit --amend -m 'Mon nouveau message de commit'`
 
-::: callout-important
-## Attention
-Cette commande ne doit être effectuée que si vous n’avez pas encore poussé le 
-commit sur dépôt distant sinon les autres utilisateurs du commit seront affectés 
-puisque le SHA-1 est changé
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](img/icone_rstudio.png){fig-align="center"}  
+
+Cocher la case `Amend previous commit` en dessous du message de commit précédent.  
+
+![](img/git_commit_amend_rstudio.png){fig-align="center"}
 :::
+
+::: {.column width="50%"}
+
+![](img/icone_terminal.png){fig-align="center"}
+
+La commande à utiliser est :  
+`git commit --amend -m 'Mon nouveau message de commit'`
+
+:::
+
+::::
+
+[Attention ! Cette commande ne doit être effectuée que si vous n’avez pas encore poussé le 
+commit sur dépôt distant sinon les autres utilisateurs du commit seront affectés 
+puisque le SHA-1 est changé]{.full-width .content-box-red}
 
 ## Consulter l'historique avec RStudio (1/2)
 
