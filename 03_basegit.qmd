@@ -2,31 +2,34 @@
 
 ## Qu'est-ce qu'on versionne ?
 
-On versionne les fichiers de type texte donc par exemple les programmes R, SAS, 
-la documentation au format texte, Markdown, quarto..., les fichiers de configuration 
-de type yaml par exemple...
-Eventuellement, on peut aussi versionner des images si on en a besoin dans une application 
-ou une documentation.
+<p style="text-align: center;">[On versionne les fichiers de type texte]{.content-box-green}</p>    
+
+Par exemple :  
+
+- Les programmes R, Python, SAS...  
+- La documentation au format texte, Markdown...  
+- Les fichiers quarto, Rmarkdown...  
+- Les fichiers de configuration de type yaml par exemple...  
+
+Eventuellement, on peut aussi versionner **des images** si on en a besoin dans une application ou une documentation.
 
 ## Qu'est-ce qu'on NE versionne PAS ? (1/2)
 
-TOUT LE RESTE :)
+<p style="text-align: center;">TOUT LE RESTE :)</p>      
 
-C'est-à-dire les fichiers tableurs, de traitements de texte, les pdf, les diaporamas, 
-les fichiers spécifiques aux projets R....
+**C'est-à-dire notamment les fichiers tableurs, de traitements de texte, les pdf, les diaporamas de type powerpoint ou impress, les fichiers spécifiques aux projets R...**
 
 Pour se faciliter la tâche, on utiliser un fichier spécifique `.gitignore` situé 
 le plus souvent à la racine des projets.  
 
-Il s’agit d’un fichier texte, qui liste les fichiers et dossiers (sous forme d’expressions régulières) à ne pas
-versionner.
+Il s’agit d’un fichier texte, qui liste les fichiers et dossiers (sous forme d’expressions régulières) à ne pas versionner.  
 
-– une ligne = une règle
+– une ligne = une règle ;
 
-– on peut ignorer :
-    • des fichiers
-    • des dossiers
-    • des extensions
+– on peut ignorer :  
+    • des fichiers  
+    • des dossiers  
+    • des extensions  
     • ...
 
 ## Qu'est-ce qu'on NE versionne PAS ? (2/2)
@@ -41,7 +44,6 @@ ce qui est exclu par défaut avec la fonction `gitssp::creer_gitignore()` :
 .Renviron
 .Ruserdata
 
-
 /* Les fichiers avec ces extensions
 *.xls
 *.xlsx
@@ -51,75 +53,86 @@ ce qui est exclu par défaut avec la fonction `gitssp::creer_gitignore()` :
 *.odt
 *.ppt
 *.odp
-*.html
 ```
 
 ## Comment utiliser Git ?
 
 3 façons seront présentées dans ce support :
 
-- Via l'interface visuelle de l'IDE RStudio  
-    *Pour les commandes les plus courantes du quotidien*
+- ![](img/icone_rstudio.png){.inlineimage} Via l'interface visuelle de l'IDE RStudio  
+    [Pour les commandes les plus courantes du quotidien]{.Macaron2}
 
-- Via les commandes du terminal
-    *Pour les commandes plus avancées*
+- ![](img/icone_terminal.png){.inlineimage}  Via les commandes du terminal  
+    [Pour les commandes plus avancées]{.Macaron2}
     
-- Via le package R `gitssp`
-    *Pour simplifier l'articulation avec les dépôts distants*
+- ![](img/icone_gitssp.png){.inlineimage}  Via le package R `gitssp`  
+    [Pour simplifier l'articulation avec les dépôts distants]{.Macaron2}
     
 ## Git - un modèle distribué
 
-- Dépôt local : dépôt de l'agent sur son espace de travail (sous Cerise ou en local par ex.)
-- Dépôt distant (remote) : dépôt correspondant situé sur la forge.
+- **Dépôt local** : dépôt de l'agent sur son espace de travail (sous Cerise ou en local par ex.)
+- **Dépôt distant (remote)** : dépôt correspondant situé sur la forge.
 
-::: callout-
+::: callout-note
 ## Convention 
 
 Par défaut, le dépôt distant porte l'alias `origin`
 :::
 
 
-![](img/git_distributed.png)
+![](img/git_distributed.png){fig-align="center"}
 
 ## Fonctionnement
 
-Pour évoquer le fonctionnement de Git et son articulation avec une forge, cela 
-nécessite d'apprendre à utiliser de nouveau termes (voir lexique diapo suivante).
 
-> 
+![](img/completeworkflow.png){fig-align="center"}
 
 
-
-![](img/completeworkflow.png)
 *Source : [itnext.io](https://itnext.io/git-concepts-for-newcomers-part-2-git-repository-working-tree-and-staging-area-a2e720bf3528)
 
-## Lexique de survie
+## Les zones de Git :
 
-**Les zones de Git :**  
+Pour évoquer le fonctionnement de Git et son articulation avec une forge, cela 
+nécessite d'apprendre à utiliser de nouveaux termes (voir lexique diapo suivante).
 
 - `working directory` : répertoire de travail de l'agent
 - `staging area` ou `index` : zone tampon dans laquelle l'agent regroupe les changements en vue du prochain commit.
 - `local repository` : dépôt local présent dans votre espace de travail (.git)
 - `remote repository` : dépôt distant sur une forge
 
-**Les principales commandes de Git :**  
-- `git add` : ajout des changements à l'index
-- `git commit` : enregistre les changements placés dans l'index
-- `git push` : envoie les changements vers le dépôt distant
-- `git pull` : télécharge les changements depuis le dépôt distant
-- `git checkout` : permet de se déplacer dans l'arbre (retour vers le passé, changement de branche)
+## Les commandes principales de Git
+
+
+- `git add` : ajout des changements à l'index  
+- `git commit` : enregistre les changements placés dans l'index  
+- `git push` : envoie les changements vers le dépôt distant  
+- `git pull` : télécharge les changements depuis le dépôt distant  
+- `git checkout` : permet de se déplacer dans l'arbre (retour vers le passé, changement de branche)  
 
 
 ## Une 2ème illustration pour fixer les idées :)
 
-![](img/git-workflow-allisonhorst.png)
-*Source :  [Allison Horst](https://allisonhorst.com/git-github)
+:::: {.columns}
+
+::: {.column width="70%"}
+
+![](img/git-workflow-allisonhorst.png){fig-align="center"}
+::: 
+
+::: {.column width="30%"}
+
+*Source :*  [Allison Horst](https://allisonhorst.com/git-github)
+
+:::
+
+::::
 
 ## Le working directory
 
-Il s'agit de notre copie de travail c'est-à-dire le répertoire et sous-répertoires dans lesquels se trouvent les fichiers suivis par Git.  
+Il s'agit de notre **copie de travail** c'est-à-dire le répertoire et sous-répertoires dans lesquels se trouvent les fichiers suivis par Git.  
 
-C'est là que l'agent effectue les changements sur les fichiers. Il correspond à votre espace de travail.
+C'est là que l'agent effectue les changements sur les fichiers.  
+Il correspond à votre **espace de travail**.
 
 ::: callout-important
 ## Avis aux utilisateurs novices
@@ -132,7 +145,7 @@ sans vous avertir**.
 
 ## La staging area ou l'index
 
-Zone tampon dans laquelle l'agent regroupe les changements en vue du prochain commit.  
+**Zone tampon** dans laquelle l'agent regroupe les changements en vue du prochain commit.  
 
 L'agent peut **ajouter** ou **retirer** les changements à l'index.
 
@@ -142,7 +155,7 @@ Il peut faire cela en une seule ou plusieurs opérations (voir diapos suivantes)
 ## Attention
 
 Ajouter des changements à plusieurs fichiers en même temps nécessite d'être sûr 
-de ce que l'on fait et d'avoir correctement configuré le fichier `.gitignore`.
+de ce que l'on fait et d'avoir correctement configuré le fichier `.gitignore` (voir diapositive suivante).
 :::
 
 
@@ -150,28 +163,146 @@ de ce que l'on fait et d'avoir correctement configuré le fichier `.gitignore`.
 
 Pour ajouter des changements :  
 
-- **En ligne de commandes :** 
+![](img/icone_rstudio.png){.inlineimage} **Avec RStudio**
+
+  - Un seul fichier : **en cochant un fichier dans l'onglet Git**  
+![](img/git_add_un_fichier.png)
+
+- Plusieurs fichiers : **en cochant plusieurs fichiers dans l'onglet Git**  
+   ![](img/git_add_plusieurs_fichiers.png)
+   
+
+![](img/icone_terminal.png){.inlineimage} **En ligne de commande :** 
 
 - Un seul fichier : `git add <file-name>`
 - Tous les fichiers : `git add .`
     
-- **Avec RStudio**
+## Retirer des changements à l'index
 
-- Un seul fichier : **en cochant un fichier dans l'onglet Git**
-![](img/git_add_un_fichier.png)
-- Plusieurs fichiers : **en cochant plusieurs fichiers dans l'onglet Git**
-![](img/git_add_plusieurs_fichiers.png)
+Pour retirer des changements :  
+
+![](img/icone_rstudio.png){.inlineimage} **Avec RStudio**
+**En décochant les fichiers dans l'onglet Git**
 
 
-## Le commit
+![](img/icone_terminal.png){.inlineimage} **En ligne de commande :** 
 
-Action de figer l'état du dépôt
+- Un seul fichier : `git reset <file-name>`
+- Tous les fichiers : `git reset`
 
 ## Les états des fichiers
 
 - untracked pour les nouveaux fichiers (sauf ceux ignorés) ;  
 - modified pour les fichiers versionnés (présents dans le dernier commit ou le stage) puis modifiés depuis ;  
-- staged pour les fichiers ajoutés au stage ;  
+- staged pour les fichiers ajoutés au stage ; 
+
+## Revenir en arrière
+
+[Git permet de consulter n’importe quel état passé du dépôt]{.content-box-yellow}</p>    
+
+`git revert`
+
+Pour faire l’équivalent du bouton `revert` de RStudio c’est-à-dire undo les changements sur un fichier qui n’a pas encore été commité, faire
+`git checkout monscript.R`
+
+Pour revenir en arrière :
+
+- Sur l'ensemble du dépôt avec l'identifiant d'un commit : `git checkout <commitID>`    
+- Sur un seul fichier : `git checkout <commitID> <file-name>`  
+
+Pour revenir au présent : `git checkout <branch-name>`
+
+## Le commit
+
+Action de figer l'état du dépôt sous forme de `snapshot`.  
+
+Un bon commit :  
+
+- Change une seule chose
+- Peut être décrit avec un message clair et explicite
+
+Erreur courante du débutant sur Git :  
+
+- Il code pendant des heures/jours/semaines  
+- Ajoute toutes les modifications à l'index avec `git add .`  
+- Puis il commite...
+
+
+
+## Caractéristiques du commit
+
+- Un commit possède un identifiant (SHA)
+
+Il informe les utilisateurs :
+
+- Qui ? Quoi ? Où ? Quand ? => Avec ses métadonnées  
+- Quoi ? Où ? Comment ? => Avec l'affichage des différences  
+- Pourquoi ? => Avec le message du commit
+
+## Les messages de commit
+
+doc
+fix
+feat
+chore...
+
+## Focus sur la commande `git status`
+
+![](img/icone_terminal.png){.inlineimage} La commande `git status` affiche l'état working directory et de l'index. 
+Elle permet de voir les changements qui ont été ajoutés à l'index, ceux qui ne l'ont pas été, ainsi que les fichiers qui sont suivis par Git.
+
+EXEMPLE : A FAIRE
+
+## Consulter l'historique avec RStudio (1/2)
+
+![](img/icone_rstudio.png){.inlineimage} En cliquant sur le bouton `History` de  RStudio :
+![](img/history_rstudio.png)
+Ce qui permet d'accéder à la fenêtre suivante :
+
+![](img/history_fenetre_rstudio.png)
+
+## Consulter l'historique avec RStudio (2/2)
+
+On peut balayer l'historique du projet en sélectionnant les différents commits.  
+On accède aux informations correspondants à chaque commit.  
+On peut cliquer sur les fichiers concernés par chaque commit et afficher leur état au moment d'intérêt.
+
+## Consulter l'historique avec le terminal
+
+![](img/icone_terminal.png){.inlineimage} Avec la commande `git log` :
+Exemple :
+```
+C:\Users\damien.dotta\DEMESIS\Formations_Git\formation_git_2024>git log
+commit efb2b38f3f4c7719201119c5bf1dea575e0621ab (HEAD -> main, origin/main)
+Author: Damien Dotta <damien.dotta@live.fr>
+Date:   Fri Mar 29 17:13:00 2024 +0100
+
+    doc: ajout de ce qu'on versionne et ceux qu'on ne versionne pas
+```
+
+Ce qu'on y trouve :  
+
+- l'identifiant du commit  
+- l'auteur du commit (nom + email)  
+- la date et l'heure du commit  
+- le message du commit
+
+::: callout-note
+La commande `git log --oneline` affiche les informations concernant l'historique de façon plus compacte mais moins riche.
+:::
+
+
+## Fréquence des commits
+
+Quelle fréquence pour les commit / push ?
+
+– Aussi souvent que possible
+– Regrouper les modifications en lots qui “font sens”, avec un message pertinent qui résume bien les modifications apportées
+
+## Afficher les différences
+
+git diff
+
 
 ## Les branches
 
