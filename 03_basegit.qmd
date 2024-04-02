@@ -380,7 +380,6 @@ est `git diff --staged`.
 
 ## Revenir en arrière avec RStudio ![](img/icone_rstudio.png) 
 
-<p style="text-align: center;">[Git permet de consulter n’importe quel état passé du dépôt]{.content-box-yellow}</p>    
 
 Dans RStudio cliquez sur le bouton `Plus` de l'onglet Git puis choisir le bouton `Inverser` :  
 
@@ -388,39 +387,33 @@ Dans RStudio cliquez sur le bouton `Plus` de l'onglet Git puis choisir le bouton
 
 Un message de confirmation vous demande si vous êtes sûr de votre action :  
 
-![](img/git_revert_confirmation_rstudio.png)  
+![](img/git_revert_confirmation_rstudio.png){fig-align="center"}
 
 
-## Revenir en arrière avec le terminal ![](icone_terminal.png) 
+## Revenir en arrière avec le terminal ![](img/icone_terminal.png) 
 
+[La commande git restore permet de restaurer des fichiers]
 
-`git revert`
+| Action                                                | Commande                           |
+|-------------------------------------------------------|------------------------------------|
+| Inverser les changements pas encore ajoutés à l'index | `git restore <file-name>`          |
+| Inverser les changements déjà ajoutés à l'index       | `git restore --staged <file-name>` |
 
-Pour faire l’équivalent du bouton `revert` de RStudio c’est-à-dire undo les changements sur un fichier qui n’a pas encore été commité, faire
-`git checkout monscript.R`
-
-Pour revenir en arrière :
-
-- Sur l'ensemble du dépôt avec l'identifiant d'un commit : `git checkout <commitID>`    
-- Sur un seul fichier : `git checkout <commitID> <file-name>`  
-
-Pour revenir au présent : `git checkout <branch-name>`
 
 ## Le commit
 
-Action de figer l'état du dépôt sous forme de `snapshot`.  
+<p style="text-align: center;">[Action de figer l'état du dépôt sous forme de `snapshot`]{.content-box-green}</p>    
 
-Un bon commit :  
+**Un bon commit :**  
 
 - Change une seule chose
 - Peut être décrit avec un message clair et explicite
 
-Erreur courante du débutant sur Git :  
+**Erreur courante du débutant sur Git :**  
 
 - Il code pendant des heures/jours/semaines  
 - Ajoute toutes les modifications à l'index avec `git add .`  
 - Puis il commite...
-
 
 
 ## Caractéristiques du commit
@@ -453,7 +446,21 @@ Le tableau suivant reprend les types les plus couramment utilisés :
 | deprecated  | Fonctionnalité dépréciée           |
 | chore       | Tâches de routine/automatisées     |
 
+## Modifier le dernier commit
 
+**Il y a au moins deux raisons de revenir sur un commit :**  
+
+- Modifier le message de commit (même pour une faute de frappe)  
+- Ajouter ou supprimer des fichiers au commit. 
+
+La commande à utiliser est `git commit --amend -m 'Mon nouveau message de commit'`
+
+::: callout-important
+## Attention
+Cette commande ne doit être effectuée que si vous n’avez pas encore poussé le 
+commit sur dépôt distant sinon les autres utilisateurs du commit seront affectés 
+puisque le SHA-1 est changé
+:::
 
 ## Consulter l'historique avec RStudio (1/2)
 
@@ -501,6 +508,18 @@ Quelle fréquence pour les commit / push ?
 – Aussi souvent que possible
 – Regrouper les modifications en lots qui “font sens”, avec un message pertinent qui résume bien les modifications apportées
 
+## Git revert, git checkout ...
+
+<p style="text-align: center;">[Git permet de consulter n’importe quel état passé du dépôt]{.content-box-yellow}</p>    
+
+Pour revenir en arrière :
+
+- Sur l'ensemble du dépôt avec l'identifiant d'un commit : `git checkout <commitID>`    
+- Sur un seul fichier : `git checkout <commitID> <file-name>`  
+
+Pour revenir au présent : `git checkout <branch-name>`
+
+`git revert`
 
 
 ## Les branches
