@@ -99,3 +99,14 @@ Une forge peut être **interne** ou **externe** à un ministère.
 - Les forges externes ont vocation à héberger les projets open-source. 
 Il s'agit donc d'être très vigilant sur le code déposé sur ces forges
 :::
+
+## Dialoguer avec Git
+
+Pour travailler avec Git, il faut mettre en place un mode d'authentification.  
+
+2 modes principaux existent : 
+
+- `SSH`  
+- `HTTPS`  
+
+Au MASA, [une procédure existe et a été validée](https://orion.agriculture/confluence/pages/viewpage.action?pageId=1068303025) pour établir la connexion entre Cerise et la forge gitlab interne. Celle-ci est basée sur le mode `HTTPS` et utilise le credential helper de Git qui évite d'avoir à re-saisir son mot de passe (ou token) à chaque action.
