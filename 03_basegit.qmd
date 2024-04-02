@@ -86,7 +86,44 @@ Pensez à cocher la case ![](img/montrer_fichiers_caches.png){.inlineimage}
 - À l'ouverture du projet R, un onglet Git s'affiche dans RStudio :
 ![](img/onglet_git.png){fig-align="center"}
 
-    
+[=> Une utilisation de Git en cliquant sur les boutons de RStudio]{.red}
+
+## Git avec le terminal
+
+- En local, vous pouvez directement utiliser les commandes du terminal sans RStudio.  
+
+Pour cela, il vous suffit de vous placer dans le bon répertoire (par exemple avec 
+la commande `cd` pour `change directory`).
+
+- Sur un server Posit comme Cerise, le terminal est désormais intégré dans les 
+sessions RStudio à côté de la console classique de R ![](img/onglet_terminal.png){.inlineimage}
+
+Vous pouvez alors soit utiliser la même méthode qu'en local avec la commande `cd` 
+soit de préférence :  
+
+- Vous placez dans le répertoire voulu dans l'explorateur de fichiers  
+- Cliquez sur le bouton `Plus` en haut à droite  
+- Cliquez sur le bouton ![](img/ouvrir_nouveau_terminal_ici.png){.inlineimage} 
+
+[=> Une utilisation de Git en tapant des commandes qui commencent par git...]{.red}
+
+## Git avec le package R `gitssp`
+
+Un package à installer et chargé comme d'habitude.  
+
+Pour l'instant, les sources ne sont présentes que sur la forge interne du MASA :  
+
+```r
+remotes::install_git("https://forge.agriculture.rie.gouv.fr/gitlab/ssp/bmis/gitssp",
+                     dependencies = T,
+                     git = "external")
+```
+
+
+Par exemple, pour tester si un dossier est versionné avec Git, on peut utiliser 
+la fonction `git_projet_existe()` qui teste l’existence d’un fichier .git dans le 
+répertoire courant.
+
 ## Git - un modèle distribué
 
 - **Dépôt local** : dépôt de l'agent sur son espace de travail (sous Cerise ou en local par ex.)
@@ -200,8 +237,8 @@ Pour ajouter des changements :
 
 Pour retirer des changements :  
 
-![](img/icone_rstudio.png){.inlineimage} **Avec RStudio**
-**En décochant les fichiers dans l'onglet Git**
+![](img/icone_rstudio.png){.inlineimage} **Avec RStudio**  
+En décochant les fichiers dans l'onglet Git
 
 
 ![](img/icone_terminal.png){.inlineimage} **En ligne de commande :** 
@@ -209,11 +246,64 @@ Pour retirer des changements :
 - Un seul fichier : `git reset <file-name>`
 - Tous les fichiers : `git reset`
 
-## Les états des fichiers
+## Les états des fichiers avec RStudio
 
-- untracked pour les nouveaux fichiers (sauf ceux ignorés) ;  
-- modified pour les fichiers versionnés (présents dans le dernier commit ou le stage) puis modifiés depuis ;  
-- staged pour les fichiers ajoutés au stage ; 
+![](img/icone_rstudio.png){.inlineimage} [L'onglet de RStudio permet d'avoir des 
+repères visuels sur les changements apportés à chacun de vos fichiers :]{.red}  
+
+<br>
+<br>
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+![](img/etats_fichiers.png){fig-align="center"}
+:::
+
+::: {.column width="70%"}
+
+- `Deleted` : le fichier a été supprimé du working directory   
+- `Modified` : le contenu du fichier a été modifié  
+- `Renamed` : le fichier a été renommé   
+- `Untracked` : le fichier a été ajouté au working directory  
+
+
+:::
+
+::::
+
+## Les états des fichiers avec le terminal
+
+![](img/icone_terminal.png){.inlineimage} [La commande `git status` affiche l'état du working directory et de l'index.]{.red}  
+<br>
+
+Voici un exemple d'équivalence entre les icônes RStudio et le résultat renvoyé par la commande `git status` :  
+
+<br>
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](img/icone_rstudio.png){fig-align="center"}
+<br>
+
+![](img/equivalence_rstudio.png){fig-align="center"}
+
+:::
+
+::: {.column width="50%"}
+
+![](img/icone_terminal.png){fig-align="center"}
+<br>
+
+![](img/equivalence_terminal.png){fig-align="center"}
+
+:::
+
+::::
 
 ## Revenir en arrière
 
@@ -265,12 +355,6 @@ fix
 feat
 chore...
 
-## Focus sur la commande `git status`
-
-![](img/icone_terminal.png){.inlineimage} La commande `git status` affiche l'état working directory et de l'index. 
-Elle permet de voir les changements qui ont été ajoutés à l'index, ceux qui ne l'ont pas été, ainsi que les fichiers qui sont suivis par Git.
-
-EXEMPLE : A FAIRE
 
 ## Consulter l'historique avec RStudio (1/2)
 
