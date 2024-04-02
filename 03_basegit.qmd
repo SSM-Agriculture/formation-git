@@ -329,6 +329,14 @@ Après l'ajout de fichier à l'index, 2 nouvelles icônes apparaissent dans RStu
 | Renommage de fichier |![](img/renommer_avant_staging.png)    | ![](img/renommer_apres_staging.png)   |
 
 
+## Comment Git stocke les différentes versions d'un fichier ?
+
+![](img/Git_stockage_versions.png){fig-align="center"}
+
+*"À chaque fois que vous validez ou enregistrez l’état du projet dans Git, il prend un "snapshot" du contenu de votre working directory à ce moment et enregistre une référence à ce snapshot. Pour être efficace, si les fichiers n’ont pas changé, Git ne stocke pas le fichier à nouveau, juste une référence vers le fichier original qu’il a déjà enregistré."*
+
+Source : [git-scm](https://git-scm.com/)
+
 
 ## Revenir en arrière avec RStudio ![](img/icone_rstudio.png) 
 
