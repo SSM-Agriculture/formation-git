@@ -281,14 +281,12 @@ repères visuels sur les changements apportés à chacun de vos fichiers :]{.red
 Voici un exemple d'équivalence entre les icônes RStudio et le résultat renvoyé par la commande `git status` :  
 
 <br>
-<br>
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 
 ![](img/icone_rstudio.png){fig-align="center"}
-<br>
 
 ![](img/equivalence_rstudio.png){fig-align="center"}
 
@@ -297,7 +295,6 @@ Voici un exemple d'équivalence entre les icônes RStudio et le résultat renvoy
 ::: {.column width="50%"}
 
 ![](img/icone_terminal.png){fig-align="center"}
-<br>
 
 ![](img/equivalence_terminal.png){fig-align="center"}
 
