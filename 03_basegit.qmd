@@ -376,6 +376,8 @@ La commande `git diff` affiche les différences.
 Pour afficher les différences sur les fichiers déjà ajoutés à l'index, la commande 
 est `git diff --staged`.
 
+[Le terminal permet d'aller plus loin dans l'observation des différences, par exemple en comparant 2 commits...]{.full-width .content-box-yellow}
+
 ## Revenir en arrière avec RStudio ![](img/icone_rstudio.png) 
 
 <p style="text-align: center;">[Git permet de consulter n’importe quel état passé du dépôt]{.content-box-yellow}</p>    
