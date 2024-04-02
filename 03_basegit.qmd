@@ -68,6 +68,25 @@ ce qui est exclu par défaut avec la fonction `gitssp::creer_gitignore()` :
 - ![](img/icone_gitssp.png){.inlineimage}  Via le package R `gitssp`  
     [Pour simplifier l'articulation avec les dépôts distants]{.Macaron2}
     
+## Git avec RStudio
+
+[Pré-requis : pour pouvoir utiliser correctement Git avec l'IDE RStudio, il convient 
+d'utiliser le mode projet.]{.red}
+
+
+### Comment savoir si un projet R est versionné avec Git ?
+
+- Un fichier `.git`  ![](img/fichier_git.png){.inlineimage} est présent dans l'explorateur 
+de fichier.
+
+::: callout-note
+Pensez à cocher la case ![](img/montrer_fichiers_caches.png){.inlineimage}
+:::
+
+- À l'ouverture du projet R, un onglet Git s'affiche dans RStudio :
+![](img/onglet_git.png){fig-align="center"}
+
+    
 ## Git - un modèle distribué
 
 - **Dépôt local** : dépôt de l'agent sur son espace de travail (sous Cerise ou en local par ex.)
