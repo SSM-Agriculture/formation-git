@@ -255,12 +255,7 @@ Un message de confirmation vous demande si vous êtes sûr de votre action
 
 ## Le commit
 
-<p style="text-align: center;">
-
-[Action de figer l'état du dépôt sous forme de
-`snapshot`]{.content-box-green}
-
-</p>
+<p style="text-align: center;">[Action de figer l'état du dépôt sous forme de `snapshot`]{.content-box-green}</p>
 
 **Un bon commit :**
 
@@ -420,12 +415,8 @@ apportées
 
 ## Git revert, git checkout ...
 
-<p style="text-align: center;">
-
-[Git permet de consulter n'importe quel état passé du
-dépôt]{.content-box-yellow}
-
-</p>
+<p style="text-align: center;">[Git permet de consulter n'importe quel état passé du
+dépôt]{.content-box-yellow}</p>
 
 Pour revenir en arrière :
 
