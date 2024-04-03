@@ -450,11 +450,15 @@ l'historique de façon plus compacte mais moins riche.
 
 ## Fréquence des commits
 
-Quelle fréquence pour les commit / push ?
+**Quelle fréquence pour les commit ?**  
 
--- Aussi souvent que possible -- Regrouper les modifications en lots qui
-"font sens", avec un message pertinent qui résume bien les modifications
-apportées
+- Aussi souvent que possible  
+
+- Regrouper les modifications en lots qui "font sens", avec un message pertinent 
+qui résume bien les modifications apportées  
+
+- **Il ne faut commiter sur la base du temps passé mais plutôt sur la base des fonctionnalités.**
+
 
 ## Git revert, git checkout ...
 
