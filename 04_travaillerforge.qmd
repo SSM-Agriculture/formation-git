@@ -61,6 +61,14 @@ pour établir la connexion entre Cerise et la forge gitlab interne.
 Celle-ci est basée sur le mode `HTTPS` et utilise le credential helper de Git qui 
 évite d'avoir à re-saisir son mot de passe (ou token) à chaque action.
 
+## Les groupes dans les forges
+
+A VENIR
+
+## Le système de ticketing (issues)
+
+A VENIR
+
 ## Lier un dépôt local à un dépôt distant (1/2)
 
 **1ère étape commune à toutes les méthodes : création d'un dépôt vide sur la forge Gitlab**
@@ -77,7 +85,7 @@ Celle-ci est basée sur le mode `HTTPS` et utilise le credential helper de Git q
 
 - Renseigner le nom du projet, éventuellement une courte description, l'espace 
 d'appartenance du projet dans la forge, son niveau de visibilité et penser à 
-décocher l'option "Initialize repository with a README" :  
+décocher l'option "Initialize repository with a README". Puis cliquer sur "Create Project".  
 
 ![](img/gitlab_infos_projet.png){fig-align="center"}
 
@@ -120,12 +128,71 @@ Exemple : `git pull origin developpement`
 
 A VENIR
 
-## Les branches
+## Définition des branches
 
 ![](img/schema_vaches_branches_git.png)
 
+## Quand créer une branche ?
 
-## Git revert, git checkout ...
+On crée une branche pour :  
+
+- Continuer le développement de manière isolée sans altérer le reste du dépôt  
+  -> Pour corriger un bug  
+  -> Pour implémenter une nouvelle fonctionnalité  
+  -> Pour refactorer le code...
+
+- Isoler les différentes étapes du développement (une branche = un environnement)
+
+## Organisation au DEMESIS
+
+![](img/gitflow_demesis.png)
+
+
+## Que devienne les branches ?
+
+Les branches permanentes persistent tout au long de la vie du projet.  
+
+Les branches temporaires :  
+
+- Apparaissent et disparaissent au fil de la vie du projet  
+- Ont une durée de vie limitée...    
+- ... et doivent donc être détruites (manuellement ou suite à une fusion)
+
+
+
+## Créer une nouvelle branche avec RStudio ![](img/icone_rstudio.png)
+
+A VENIR
+
+## Créer une nouvelle branche avec Gitlab ![](img/icone_gitlab.png)
+
+A VENIR
+
+## Créer une nouvelle branche avec le terminal ![](img/icone_terminal.png)
+A VENIR
+
+## Créer une nouvelle branche avec gitssp ![](img/icone_gitssp.png)
+A VENIR
+
+## Fusionner deux branches avec le terminal ![](img/icone_terminal.png)
+
+A VENIR
+
+## Fusionner deux branches avec Gitlab ![](img/icone_gitlab.png)
+
+A VENIR
+
+## Supprimer un dépôt dans Gitlab ![](img/icone_gitlab.png)
+
+A VENIR
+
+## Revenir en arrière avec Gitlab ![](img/icone_gitlab.png)
+
+A VENIR
+
+## Revenir en arrière avec le terminal ![](img/icone_terminal.png)
+
+Git revert, git checkout ...
 
 <p style="text-align: center;">[Git permet de consulter n'importe quel état passé du
 dépôt]{.content-box-yellow}</p>
