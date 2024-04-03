@@ -1,0 +1,16 @@
+# Pour en savoir plus {.backgroundTitre}
+
+## Bibliographie à consulter
+
+En français :  
+
+- [Documentation officielle de Git en français](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git)  
+- [Les fiches consacrées à Git dans utilitr](https://www.book.utilitr.org/)  
+- [Formation aux bonnes pratiques avec Git et R](https://inseefrlab.github.io/formation-bonnes-pratiques-git-R/) par l'Insee  
+
+En anglais :  
+
+- [Happy Git and Github for the useR](https://happygitwithr.com/) par Jennifer Bryan (Posit)  
+- [Cheatsheet - Using Git and Github with RStudio](https://rstudio.github.io/cheatsheets/git-github.pdf)  
+
+
