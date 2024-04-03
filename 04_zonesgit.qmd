@@ -301,7 +301,37 @@ Le tableau suivant reprend les types les plus couramment utilisés :
 
 ## Comment commiter avec RStudio ? ![](img/icone_rstudio.png)
 
+Après avoir ajouté les fichiers modifiés à l'index, il est temps de "commiter" 
+les changements c'est-à-dire de prendre une photo / un snapshot de ces fichiers modifiés.  
+
+Dans RStudio, il faut cliquer sur le bouton "Commit" de l'onglet "Git"   
+
+
+![](img/git_commit_rstudio.png){fig-align="center"}  
+
+
+Puis, renseigner dans la nouvelle fenêtre qui s'affiche le message du commit et 
+cliquer sur le bouton "Commit" :  
+
+![](img/git_commit_message_rstudio.png){fig-align="center"}
+
+
 ## Comment commiter avec le terminal ? ![](img/icone_terminal.png)
+
+<br>
+<p style="text-align: center;">**La commande `git commit -m "message du commit"` permet à la fois de faire le commit 
+tout en renseignant le message associé**</p>
+
+<br>
+
+*Voici un exemple :*  
+
+`git commit -m "fix: ajout fichier odt dans .gitignore"`
+
+<br>
+::: callout-note
+La commande `git commit` propose de nombreuses options qui sont disponibles [ici](https://git-scm.com/docs/git-commit/fr).
+:::
 
 ## Modifier le dernier commit
 
