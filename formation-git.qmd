@@ -30,7 +30,9 @@ editor:
 
 {{< include 03_basegit.qmd >}}
 
-{{< include 04_travaillerforge.qmd >}}
+{{< include 04_zonesgit.qmd >}}
+
+{{< include 05_travaillerforge.qmd >}}
 
 
 
