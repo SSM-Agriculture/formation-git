@@ -395,7 +395,7 @@ changé]{.full-width .content-box-red}
 ::: {.column width="48%"}
 
 En cliquant sur le bouton
-`History` de RStudio :  
+`Historique` de RStudio :  
 ![](img/history_rstudio.png)  
 
 Ce qui permet d'accéder à la fenêtre suivante : 
