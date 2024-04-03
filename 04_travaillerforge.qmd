@@ -56,10 +56,69 @@ Pour travailler avec Gitlab, il faut mettre en place un mode d'authentification.
 - `SSH`  
 - `HTTPS`  
 
-Au MASA, [une procédure existe et a été validée](https://orion.agriculture/confluence/pages/viewpage.action?pageId=1068303025) 
+Au MASA, [une procédure de configuration existe et a été validée en mars 2024](https://orion.agriculture/confluence/pages/viewpage.action?pageId=1068303025) 
 pour établir la connexion entre Cerise et la forge gitlab interne. 
 Celle-ci est basée sur le mode `HTTPS` et utilise le credential helper de Git qui 
 évite d'avoir à re-saisir son mot de passe (ou token) à chaque action.
+
+## Lier un dépôt local à un dépôt distant (1/2)
+
+**1ère étape commune à toutes les méthodes : création d'un dépôt vide sur la forge Gitlab**
+
+- Cliquez sur le bouton "New project" situé en haut à droite :  
+
+![](img/gitlab_nouveau_depot.png){fig-align="center"}
+
+- Choisir "blank project" :  
+
+![](img/gitlab_projet_vide.png){fig-align="center"}
+
+## Lier un dépôt local à un dépôt distant (2/2)
+
+- Renseigner le nom du projet, éventuellement une courte description, l'espace 
+d'appartenance du projet dans la forge, son niveau de visibilité et penser à 
+décocher l'option "Initialize repository with a README" :  
+
+![](img/gitlab_infos_projet.png){fig-align="center"}
+
+## Lier un dépôt local à un dépôt distant avec RStudio ![](img/icone_rstudio.png)
+
+## Lier un dépôt local à un dépôt distant avec terminal ![](img/icone_terminal.png)
+
+Retrouver l'URL du dépôt distant : `git remote -v`
+
+## Lier un dépôt local à un dépôt distant avec gitssp ![](img/icone_gitssp.png)
+
+
+## Récupérer un projet depuis une forge ?
+
+`git clone <URL-depot-distant>`
+
+## Pousser les changements sur la forge avec RStudio ![](img/icone_rstudio.png)
+
+## Pousser les changements sur la forge avec le terminal ![](img/icone_terminal.png)
+
+Pousser les changements du dépôt local vers le dépôt distant :  
+
+`git push <alias> <nom-branche>`
+
+Exemple : `git push origin developpement`
+
+## Pousser les changements sur la forge avec gitssp ![](img/icone_gitssp.png)
+
+## Récupérer les changements en local avec RStudio ![](img/icone_rstudio.png)
+
+## Récupérer les changements en local avec le terminal ![](img/icone_terminal.png)
+
+Récupérer les changements du dépôt distant vers le dépôt local :  
+
+`git pull <alias> <nom-branche>`
+
+Exemple : `git pull origin developpement`
+
+## Récupérer les changements en local avec gitssp ![](img/icone_gitssp.png)
+
+A VENIR
 
 ## Les branches
 
