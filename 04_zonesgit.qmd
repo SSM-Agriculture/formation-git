@@ -389,21 +389,38 @@ changé]{.full-width .content-box-red}
 | vos collègues          |                            |                            |
 +------------------------+----------------------------+----------------------------+
 
-## Consulter l'historique avec RStudio (1/2)
+## Consulter l'historique avec RStudio (1/2) ![](img/icone_rstudio.png)
 
-![](img/icone_rstudio.png){.inlineimage} En cliquant sur le bouton
-`History` de RStudio : ![](img/history_rstudio.png) Ce qui permet
-d'accéder à la fenêtre suivante :
+::: columns
+::: {.column width="48%"}
+
+En cliquant sur le bouton
+`History` de RStudio :  
+![](img/history_rstudio.png)  
+
+Ce qui permet d'accéder à la fenêtre suivante : 
+
+:::
+
+::: {.column width="52%"}
 
 ![](img/history_fenetre_rstudio.png)
 
-## Consulter l'historique avec RStudio (2/2)
+:::
 
-On peut balayer l'historique du projet en sélectionnant les différents
-commits.\
-On accède aux informations correspondants à chaque commit.\
-On peut cliquer sur les fichiers concernés par chaque commit et afficher
-leur état au moment d'intérêt.
+::::
+
+
+## Consulter l'historique avec RStudio (2/2) ![](img/icone_rstudio.png)
+
+RStudio permet facilement de :  
+
+- Balayer l'historique du projet en sélectionnant les différents commits.  
+
+- Accèder aux informations correspondants à chaque commit.  
+
+- Cliquer sur les fichiers concernés par chaque commit et afficher leur état au moment choisi.
+
 
 ## Consulter l'historique avec le terminal
 
