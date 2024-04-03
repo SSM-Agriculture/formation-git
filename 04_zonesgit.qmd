@@ -458,23 +458,3 @@ l'historique de façon plus compacte mais moins riche.
 qui résume bien les modifications apportées  
 
 - **Il ne faut commiter sur la base du temps passé mais plutôt sur la base des fonctionnalités.**
-
-
-## Git revert, git checkout ...
-
-<p style="text-align: center;">[Git permet de consulter n'importe quel état passé du
-dépôt]{.content-box-yellow}</p>
-
-Pour revenir en arrière :
-
--   Sur l'ensemble du dépôt avec l'identifiant d'un commit :
-    `git checkout <commitID>`\
--   Sur un seul fichier : `git checkout <commitID> <file-name>`
-
-Pour revenir au présent : `git checkout <branch-name>`
-
-`git revert`
-
-## Les branches
-
-![](img/schema_vaches_branches_git.png)

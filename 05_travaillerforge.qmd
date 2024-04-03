@@ -1,3 +1,28 @@
 # Travailler avec une forge {.backgroundTitre}
 
-## A venir
+
+
+## Les branches
+
+![](img/schema_vaches_branches_git.png)
+
+
+## Git revert, git checkout ...
+
+<p style="text-align: center;">[Git permet de consulter n'importe quel état passé du
+dépôt]{.content-box-yellow}</p>
+
+Pour revenir en arrière :
+
+-   Sur l'ensemble du dépôt avec l'identifiant d'un commit :
+    `git checkout <commitID>`\
+-   Sur un seul fichier : `git checkout <commitID> <file-name>`
+
+Pour revenir au présent : `git checkout <branch-name>`
+
+Pour remonter de 4 commits dans le passé : `git checkout <nom-de-branche~3>`
+
+
+`git revert`
+
+
