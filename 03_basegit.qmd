@@ -83,7 +83,7 @@ MASA, voici ce qui est exclu par défaut avec la fonction
 -   ![](img/icone_gitssp.png){.inlineimage} Via le package R `gitssp`\
     [Pour simplifier l'articulation avec les dépôts distants]{.Macaron2}
 
-## Git avec RStudio
+## Git avec RStudio ![](img/icone_rstudio.png)
 
 [Pré-requis : pour pouvoir utiliser correctement Git avec l'IDE RStudio,
 il convient d'utiliser le mode projet.]{.red}
@@ -104,7 +104,7 @@ Pensez à cocher la case
 [=\> Une utilisation de Git en cliquant sur les boutons de
 RStudio]{.red}
 
-## Git avec le terminal
+## Git avec le terminal ![](img/icone_terminal.png)
 
 -   En local, vous pouvez directement utiliser les commandes du terminal
     sans RStudio.
@@ -127,7 +127,7 @@ commande `cd` soit de préférence :
 [=\> Une utilisation de Git en tapant des commandes qui commencent par
 git...]{.red}
 
-## Git avec le package R `gitssp`
+## Git avec le package R `gitssp` ![](img/icone_gitssp.png)
 
 Un package à installer et chargé comme d'habitude.
 
@@ -143,18 +143,3 @@ remotes::install_git("https://forge.agriculture.rie.gouv.fr/gitlab/ssp/bmis/gits
 Par exemple, pour tester si un dossier est versionné avec Git, on peut
 utiliser la fonction `git_projet_existe()` qui teste l'existence d'un
 fichier .git dans le répertoire courant.
-
-## Git - un modèle distribué
-
--   **Dépôt local** : dépôt de l'agent sur son espace de travail (sous
-    Cerise ou en local par ex.)
--   **Dépôt distant (remote)** : dépôt correspondant situé sur la forge.
-
-::: callout-note
-## Convention
-
-Par défaut, le dépôt distant porte l'alias `origin`
-:::
-
-![](img/git_distributed.png){fig-align="center"}
-
