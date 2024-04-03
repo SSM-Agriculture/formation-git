@@ -363,35 +363,31 @@ pas encore poussé le commit sur dépôt distant sinon les autres
 utilisateurs du commit seront affectés puisque le SHA-1 est
 changé]{.full-width .content-box-red}
 
-## Si vous ne deviez retenir que quelques commandes !
+## Si vous ne deviez retenir que quelques commandes ! ![](img/a_retenir.png)
 
-Vous apportez des modifications sur votre code, puis :
-
-+------------------------+-----------------------+--------------------+
-| Action                 |                       |                    |
-+:======================:+:=====================:+:==================:+
-| Vous ajoutez vos       | Cochez les fichiers   | `git add`          |
-| fichiers à l'index     |                       |                    |
-+------------------------+-----------------------+--------------------+
-| Vous committez vos     | Appuyez sur le bouton | `git commit -      |
-| changements            | "Commit" et vous      | m "Votre message"` |
-|                        | renseignez votre      |                    |
-|                        | message de commit     |                    |
-+------------------------+-----------------------+--------------------+
-| Vous envoyez vos       | Appuyez sur le bouton | `git push origin   |
-| commits en local sur   | "Push"                |  <nom-de-branche>` |
-| le serveur distant     |                       |                    |
-+------------------------+-----------------------+--------------------+
-| **Supplément si vous   |                       |                    |
-| travaillez à plusieurs |                       |                    |
-| :**                    |                       |                    |
-+------------------------+-----------------------+--------------------+
-| Au début de votre      | Appuyez sur le bouton | `git pull origin   |
-| séance de travail,     | "Pull"                |  <nom-de-branche>` |
-| vous récupérer les     |                       |                    |
-| éventuels commits de   |                       |                    |
-| vos collègues          |                       |                    |
-+------------------------+-----------------------+--------------------+
++------------------------+----------------------------+----------------------------+
+| Action                 |![](img/icone_rstudio.png)  |![](img/icone_terminal.png) |
++:======================:+:==========================:+:==========================:+
+| Vous ajoutez vos       | Cochez les fichiers        | `git add`                  |
+| fichiers à l'index     |                            |                            |
++------------------------+----------------------------+----------------------------+
+| Vous committez vos     | Appuyez sur le bouton      | `git commit -              |
+| changements            | "Commit" et vous           | m "Votre message"`         |
+|                        | renseignez votre           |                            |
+|                        | message de commit          |                            |
++------------------------+----------------------------+----------------------------+
+| Vous envoyez vos       | Appuyez sur le bouton      | `git push origin           |
+| commits en local sur   | "Push"                     |  <nom-de-branche>`         |
+| le serveur distant     |                            |                            |
++------------------------+----------------------------+----------------------------+
+| **Supplément si vous   |                            |                            |
+| travaillez à plusieurs |                            |                            |
+| :**                    |                            |                            |
++------------------------+----------------------------+----------------------------+
+| Récupérer les          | Appuyez sur le bouton      | `git pull origin           |
+| éventuels commits de   | "Pull"                     |  <nom-de-branche>`         |
+| vos collègues          |                            |                            |
++------------------------+----------------------------+----------------------------+
 
 ## Consulter l'historique avec RStudio (1/2)
 
