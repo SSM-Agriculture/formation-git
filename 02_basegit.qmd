@@ -172,3 +172,12 @@ Pour l’instant, aucun fichier n’est encore versionné !
 Il s'agit d'être vigilant sur l'emplacement du terminal au moment du lancement de 
 la commande `git init` au risque d'initialiser le mauvais répertoire !
 :::
+
+## Initialiser un dossier local en dépôt Git avec gitssp ![](img/icone_gitssp.png)
+
+<br> 
+
+Le package R `{gitssp}` permet d'initialiser un dossier local avec Git tout en 
+le synchronisant avec une forge.   
+
+Cela sera abordé dans la partie 4 de cette formation.
