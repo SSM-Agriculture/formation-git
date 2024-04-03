@@ -88,6 +88,7 @@ MASA, voici ce qui est exclu par défaut avec la fonction
 [Pré-requis : pour pouvoir utiliser correctement Git avec l'IDE RStudio,
 il convient d'utiliser le mode projet.]{.red}
 
+
 ### Comment savoir si un projet R est versionné avec Git ?
 
 -   Un fichier `.git` ![](img/fichier_git.png){.inlineimage} est présent
@@ -143,3 +144,31 @@ remotes::install_git("https://forge.agriculture.rie.gouv.fr/gitlab/ssp/bmis/gits
 Par exemple, pour tester si un dossier est versionné avec Git, on peut
 utiliser la fonction `git_projet_existe()` qui teste l'existence d'un
 fichier .git dans le répertoire courant.
+
+
+## Initialiser un dossier local en dépôt Git avec RStudio ![](img/icone_rstudio.png)
+
+Créer un nouveau projet puis choisir un nouveau répertoire :  
+
+![](img/git_init_rstudio_nouveau_projet_fenetre_1.png){fig-align="center"} 
+
+Après avoir choisi le nom du nouveau projet, cocher la case "Créer un répôt git" :  
+
+![](img/git_init_rstudio_nouveau_projet_fenetre_2.png){fig-align="center"}  
+
+
+## Initialiser un dossier local en dépôt Git avec le terminal ![](img/icone_terminal.png)
+
+<br> 
+
+**La commande `git init` permet d'initialiser un dossier avec Git**  
+
+Cette commande crée un nouveau sous-répertoire nommé `.git` qui contient tous les 
+fichiers nécessaires au dépôt — un squelette de dépôt Git.  
+
+Pour l’instant, aucun fichier n’est encore versionné !  
+
+::: callout-important
+Il s'agit d'être vigilant sur l'emplacement du terminal au moment du lancement de 
+la commande `git init` au risque d'initialiser le mauvais répertoire !
+:::

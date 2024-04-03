@@ -26,13 +26,13 @@ editor:
   render-on-save: true
 ---
 
-{{< include 02_pourquoigit.qmd >}}
+{{< include 01_pourquoigit.qmd >}}
 
-{{< include 03_basegit.qmd >}}
+{{< include 02_basegit.qmd >}}
 
-{{< include 04_zonesgit.qmd >}}
+{{< include 03_zonesgit.qmd >}}
 
-{{< include 05_travaillerforge.qmd >}}
+{{< include 04_travaillerforge.qmd >}}
 
 
 
