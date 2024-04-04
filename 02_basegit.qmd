@@ -178,11 +178,16 @@ fichiers nécessaires au dépôt — un squelette de dépôt Git.
 
 Pour l’instant, aucun fichier n’est encore versionné !  
 
-<br>
-
 ::: callout-important
 Il s'agit d'être vigilant sur l'emplacement du terminal au moment du lancement de 
 la commande `git init` au risque d'initialiser le mauvais répertoire !
+:::
+
+::: callout-note
+## Astuce
+Lors de l'initialisation du dépôt Git, on peut directement choisir le nom de la 
+branche avec la commande `git init --initial-branch=<nom-de-branche>`.  
+=> voir partie 4 de ce support
 :::
 
 ## Initialiser un dossier local en dépôt Git avec gitssp ![](img/icone_gitssp.png)
