@@ -63,6 +63,7 @@ Celle-ci est basée sur le mode `HTTPS` et utilise le credential helper de Git q
 
 ## Les groupes dans les forges Gitlab ![](img/icone_gitlab.png)
 
+
 - Une forge Gitlab est structurée par **groupe**.  
 - Chaque **groupe** est constitué de **projets** (les fameux dépôts distants).  
 - Chaque **groupe** est associé à des utilisateurs dont chacun dispose **d'un niveau 
@@ -75,7 +76,13 @@ documentation de Gitlab(https://docs.gitlab.com/ee/user/permissions.html#project
 
 Ce qu'il faut retenir :  
 
-
+| Rôle       | Permissions                                                                                                                                             |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Owner      | Les propriétaires ont un contrôle total sur le projet ou le groupe.                                                                                     |
+| Maintainer | Les mainteneurs ont généralement des droits similaires aux propriétaires, <br>mais ils n'ont pas accès à l'intégralité des paramètres du projet/groupe. |
+| Developer  | Les développeurs ont des droits d'écriture sur le projet ou le groupe.                                                                                  |
+| Reporter   | Les rapporteurs ont des droits de lecture sur le projet ou le groupe.                                                                                   |
+| Guest      | Les invités ont des droits d'accès limités et sont souvent utilisés <br>pour donner un accès en lecture seule à des personnes extérieures au projet.    |                                                                         |
 
 ## Le système de ticketing (issues)
 
