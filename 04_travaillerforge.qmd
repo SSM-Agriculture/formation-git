@@ -212,12 +212,51 @@ A VENIR
 
 A VENIR
 
-## Les conflits
+## Définition des conflits
 
-Il y a un conflit dans Git lorsqu'il ne parvient pas à gérer des changements 
-concurrents sur les mêmes fichiers et aux mêmes lignes.  
+Les conflits surviennent généralement lorsque **deux personnes ont modifié les mêmes lignes dans un fichier**, ou si un développeur a supprimé un fichier alors qu'un autre développeur le modifiait. Dans ces cas, **Git ne peut pas déterminer automatiquement la version correcte**.    
+
+**Les conflits n'affectent que le développeur qui effectue le merge**, 
+les autres membres de l'équipe ne sont pas conscients du conflit. Git marquera 
+le fichier comme étant en conflit et arrêtera le processus de merge.   
+
+**Il incombe alors aux développeurs de résoudre le conflit.**
+
+*Source: [Atlassian](https://www.atlassian.com/fr/git/tutorials/using-branches/merge-conflicts)
+
+## Simulation d'un conflit
+
+Exemple :
 
 
+
+    On se place dans la même configuration que dans l’application précédente : un mainteneur et deux/trois développeurs
+    Le mainteneur modifie le contenu de son fichier, puis commit et push les modifications
+    Sans faire de pull préalable, les développeurs modifient également le contenu du fichier du mainteneur, puis commit et push les modifications
+    Le push est rejeté pour la même raison que dans l’application précédente : les dépôts ne sont plus synchronisés, il faut pull les changements distants au préalable. Mais cette fois, le pull est également rejeté : il y a un conflit entre l’historique du projet distant et celui du projet local. Git nous indique qu’il faut résoudre le conflit avant de pouvoir modifier l’historique du projet.
+    Utiliser l’interface de RStudio pour résoudre le conflit, en choisissant la version du fichier que vous souhaitez conserver, puis commit/push les modifications
+    Comme dans l’application précédente, seul le développeur le plus rapide parvient à push. Les autres doivent répéter l’opération.
+
+
+
+
+## Repérer les conflits
+
+Pour délimiter la zone de conflit, Git utilise les annotations suivantes :  
+
+- La ligne qui commence par <<<<<<< marque le début de la zone conflictuelle.  
+- Le marqueur ======= représente la frontière entre les deux zones à fusionner.  
+- La ligne qui commence par >>>>>>> délimite la fin de la zone conflictuelle.
+  
+## Éviter au maximum les conflits
+
+Quelques conseils :  
+
+- S'interroger sur la question de l'intersection des modifications et des fichiers potentiellement impactés lors de la planification des tâches
+- Les durées de vie des branches doit être la plus courte possible
+- Modulariser son code (par ex. sous forme de fonctions)  
+- Résoudre les conflits le plus tôt possible et ne pas laisser la situation empirer.  
+- Faire des "bons" commits fréquemment
 
 ## Supprimer les branches
 
