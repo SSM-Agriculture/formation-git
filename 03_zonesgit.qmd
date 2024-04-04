@@ -270,7 +270,7 @@ Un message de confirmation vous demande si vous êtes sûr de votre action
 
 ## Caractéristiques du commit
 
--   Un commit possède **un identifiant** (SHA)
+-   Un commit possède **un identifiant unique** (SHA)
 
 Il informe les utilisateurs :
 

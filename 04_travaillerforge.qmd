@@ -61,9 +61,21 @@ pour établir la connexion entre Cerise et la forge gitlab interne.
 Celle-ci est basée sur le mode `HTTPS` et utilise le credential helper de Git qui 
 évite d'avoir à re-saisir son mot de passe (ou token) à chaque action.
 
-## Les groupes dans les forges
+## Les groupes dans les forges Gitlab ![](img/icone_gitlab.png)
 
-A VENIR
+- Une forge Gitlab est structurée par **groupe**.  
+- Chaque **groupe** est constitué de **projets** (les fameux dépôts distants).  
+- Chaque **groupe** est associé à des utilisateurs dont chacun dispose **d'un niveau 
+de permissions** sur les projets du groupe et sur le groupe lui-même.  
+
+## Permissions et rôles dans Gitlab ![](img/icone_gitlab.png)
+
+- Les **permissions** se traduisent par plusieurs **rôles** qui sont détaillés dans la 
+documentation de Gitlab(https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions).  
+
+Ce qu'il faut retenir :  
+
+
 
 ## Le système de ticketing (issues)
 
@@ -156,8 +168,9 @@ Les branches temporaires :
 
 - Apparaissent et disparaissent au fil de la vie du projet  
 - Ont une durée de vie limitée...    
-- ... et doivent donc être détruites (manuellement ou suite à une fusion)
+- ... et doivent donc être détruites (manuellement ou suite à une fusion)  
 
+=> voir plus loin dans ce support.
 
 
 ## Créer une nouvelle branche avec RStudio ![](img/icone_rstudio.png)
@@ -182,7 +195,26 @@ A VENIR
 
 A VENIR
 
+## Les conflits
+
+Il y a un conflit dans Git lorsqu'il ne parvient pas à gérer des changements 
+concurrents sur les mêmes fichiers et aux mêmes lignes.  
+
+
+
+## Supprimer les branches
+
+A VENIR
+
 ## Supprimer un dépôt dans Gitlab ![](img/icone_gitlab.png)
+
+A VENIR
+
+## Faire référence à des issues dans les commits
+
+A VENIR
+
+## Créer une branche à partir d'une issue
 
 A VENIR
 

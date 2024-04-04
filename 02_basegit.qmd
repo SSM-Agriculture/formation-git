@@ -61,7 +61,7 @@ MASA, voici ce qui est exclu par défaut avec la fonction
 *.xls
 *.xlsx
 *.ods
-*.pdf
+*.pdfF
 *.docx
 *.odt
 *.ppt
@@ -82,6 +82,16 @@ MASA, voici ce qui est exclu par défaut avec la fonction
 
 -   ![](img/icone_gitssp.png){.inlineimage} Via le package R `gitssp`\
     [Pour simplifier l'articulation avec les dépôts distants]{.Macaron2}
+    
+## Installer Git
+
+- **Si vous travaillez avec Cerise**, Git est déjà installé.  
+=> Vous pouvez directement commencer à l'utiliser.
+(il vous faudra simplement régler votre configuration pour faire en sorte de dialoguer 
+avec la forge interne Gitlab => voir [ici](#dialoguer-avec-gitlab))
+
+- **Si vous travaillez en local**, consultez [cette procédure interne au MASA](https://orion.agriculture/confluence/display/CER/GIT+-+Installation+en+local)
+
 
 ## Git avec RStudio ![](img/icone_rstudio.png)
 
@@ -168,6 +178,8 @@ fichiers nécessaires au dépôt — un squelette de dépôt Git.
 
 Pour l’instant, aucun fichier n’est encore versionné !  
 
+<br>
+
 ::: callout-important
 Il s'agit d'être vigilant sur l'emplacement du terminal au moment du lancement de 
 la commande `git init` au risque d'initialiser le mauvais répertoire !
@@ -181,3 +193,12 @@ Le package R `{gitssp}` permet d'initialiser un dossier local avec Git tout en
 le synchronisant avec une forge.   
 
 Cela sera abordé dans la partie 4 de cette formation.
+
+<br>
+<br>
+
+::: callout-note
+D'autres packages comme `{usethis}` ou `{gert}` permettent de manipuler Git avec 
+des fonctions R. Vous trouverez leurs liens dans [la partie bibliographique de ce 
+support](#packages-r-pour-utiliser-git)
+:::
