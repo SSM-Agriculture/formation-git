@@ -74,7 +74,7 @@ Aperçu des groupes au MASA/SSP :
 :::
 
 ::: {.column width="70%"}
-![](img/gitlab_groupes_ssp.png)
+![](img/gitlab_groupes_ssp.png){fig-align="center"}
 :::
 
 ::::
@@ -96,7 +96,33 @@ Ce qu'il faut retenir :
 
 ## Le système de ticketing (issues)
 
-A VENIR
+**Une issue est une tâche à effectuer** : il peut s’agir tout autant de correctifs à apporter au projet que de fonctionnalités à ajouter.  
+
+Ouvrir une issue depuis Gitlab permet de :   
+
+– **Discuter un point** : il est possible d’échanger à plusieurs dans une
+issue pour définir comment la traiter.  
+– **Assigner une tâche à une personne** : lorsqu’on crée une issue, on
+peut assigner la tâche à une ou plusieurs personnes. Elle s’affiche
+alors sur le tableau de bord.  
+– **Définir une échéance, classer une issue avec un label** : le tableau de
+bord permet alors d’avoir une vision complète des issues en cours.  
+
+## Activer les issues sur la forge interne du MASA ![](img/icone_gitlab.png)
+
+Par défaut, les issues ne sont pas activées à la création d'un dépôt sur la forge Gitlab du MASA.  
+
+Pour les activer, il faut :  
+
+- Cliquer sur `Settings` dans le bandeau de gauche puis `General` 
+- Cliquer sur le bouton **Expand** à côté de `Visibility, project features, permissions`  
+- Activer les issues :  
+
+![](img/activer_issues.png){fig-align="center"}
+
+- Enregistrer les changements :
+
+![](img/activer_issues_valider.png){fig-align="center"}
 
 ## Lier un dépôt local à un dépôt distant (1/2)
 
