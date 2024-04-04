@@ -63,12 +63,21 @@ Celle-ci est basée sur le mode `HTTPS` et utilise le credential helper de Git q
 
 ## Les groupes dans les forges Gitlab ![](img/icone_gitlab.png)
 
-<br>
-
 - Une forge Gitlab est structurée par **groupe**.  
 - Chaque **groupe** est constitué de **projets** (les fameux dépôts distants).  
 - Chaque **groupe** est associé à des utilisateurs dont chacun dispose **d'un niveau 
 de permissions** sur les projets du groupe et sur le groupe lui-même.  
+
+::: columns
+::: {.column width="30%"}
+Aperçu des groupes au MASA/SSP :
+:::
+
+::: {.column width="70%"}
+![](img/gitlab_groupes_ssp.png)
+:::
+
+::::
 
 ## Permissions et rôles dans Gitlab ![](img/icone_gitlab.png)
 
