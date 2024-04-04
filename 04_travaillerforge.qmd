@@ -47,7 +47,7 @@ Une forge peut être **interne** ou **externe** à un ministère.
 Il s'agit donc d'être très vigilant sur le code déposé sur ces forges
 :::
 
-## Dialoguer avec Gitlab
+## Dialoguer avec Gitlab ![](img/icone_gitlab.png)
 
 Pour travailler avec Gitlab, il faut mettre en place un mode d'authentification.  
 
@@ -63,6 +63,7 @@ Celle-ci est basée sur le mode `HTTPS` et utilise le credential helper de Git q
 
 ## Les groupes dans les forges Gitlab ![](img/icone_gitlab.png)
 
+<br>
 
 - Une forge Gitlab est structurée par **groupe**.  
 - Chaque **groupe** est constitué de **projets** (les fameux dépôts distants).  
