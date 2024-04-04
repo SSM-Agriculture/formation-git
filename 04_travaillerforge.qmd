@@ -118,7 +118,39 @@ décocher l'option "Initialize repository with a README". Puis cliquer sur "Crea
 
 ![](img/gitlab_infos_projet.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant avec RStudio ![](img/icone_rstudio.png)
+## Lier un dépôt local à un dépôt distant avec RStudio (1/3) ![](img/icone_rstudio.png)
+
+Créer un nouveau projet, puis choisir "Contrôle de version" :  
+
+![](img/gitlab_rstudio_lier_projet.png){fig-align="center"}
+
+## Lier un dépôt local à un dépôt distant avec RStudio (2/3) ![](img/icone_rstudio.png)
+
+Puis choisir "Git" :  
+
+
+![](img/gitlab_rstudio_lier_gitlab_git.png){fig-align="center"}
+
+## Lier un dépôt local à un dépôt distant avec RStudio (3/3) ![](img/icone_rstudio.png)
+
+
+::: columns
+::: {.column width="60%"}
+Puis renseigner :  
+
+- L'URL du dépôt distant (voir ci-contre comment la récupérer) ->   
+- Le nom du répertoire du projet  
+- Le chemin du dépôt local dans votre espace de travail
+
+:::
+
+::: {.column width="40%"}
+![](img/gitlab_copier_coller_URL.png){fig-align="center"}
+:::
+
+::::
+
+![](img/gitlab_rstudio_lier_projet_URL.png){fig-align="center"}
 
 ## Lier un dépôt local à un dépôt distant avec terminal ![](img/icone_terminal.png)
 
@@ -171,6 +203,43 @@ On crée une branche pour :
   -> Pour refactorer le code...
 
 - Isoler les différentes étapes du développement (une branche = un environnement)
+
+## Noms des branches
+
+Concernant le noms des branches, une bonne pratique est d'utiliser la structure suivante :  
+
+```         
+<categorie>-<nom>
+```
+
+| Catégorie | Signification                                       |
+|-----------|-----------------------------------------------------|
+| hotfix    | Pour résoudre rapidement des problèmes critiques    |
+| bugfix    | Pour résoudre des erreurs/bugs                      |
+| feature   | Pour ajouter/supprimer/modifier des fonctionnalités |
+| test      | Pour tester une idée expérimentale (hors issue)     |
+| issue-X   | Pour faire référence à l'issue n°X                  |
+
+
+## Créer une branche à partir d'une issue Gitlab ![](img/icone_gitlab.png)
+
+Depuis l'interface Gitlab, on peut directement créer une branche comme ci-dessous :  
+
+![](img/gitlab_creer_branch_depuis_issue.png)
+
+## Fermer une issue à partir d'une branche
+
+Avec les forges Gitlab et Github, la fermeture des issues peut être **automatiquement gérée via les messages de commit**.  
+
+Pour cela, vous pouvez utiliser des [mots-clés](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically) comme `Close`, `Fix`, `Resolve` ou `Implement` avec le `#numero-issue`.  
+
+Exemple de message de commit : 
+
+``` 
+feat: Ajout documentation utilisateurs
+
+Close #31, en lien avec #29
+```
 
 ## Organisation au DEMESIS
 
@@ -226,7 +295,16 @@ le fichier comme étant en conflit et arrêtera le processus de merge.
 
 ## Simulation d'un conflit
 
-Exemple :
+::: {.callout-note icon=false}
+## Exercice :
+
+1. Dans le projet formation-git, créer une nouvelle branche   
+2. Se placer dans la branche, ajouter un programme, l’enregistrer puis commit.
+3. Vérifier dans Gitlab les modifications apportées, dans la branche principale et dans la nouvelle branche.
+4. Fusionner la nouvelle branche avec la branche principale.
+5. Dans RStudio, récupérer les modifications avec un pull.
+
+:::
 
 
 
@@ -270,7 +348,9 @@ A VENIR
 
 A VENIR
 
-## Créer une branche à partir d'une issue
+
+
+## Créer des tags
 
 A VENIR
 
