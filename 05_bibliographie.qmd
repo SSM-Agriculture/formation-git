@@ -1,5 +1,12 @@
 # Pour en savoir plus {.backgroundTitre}
 
+## Packages R pour utiliser Git
+
+- [usethis](https://usethis.r-lib.org/reference/index.html#git-and-github) - Un package R 
+qui contient plusieurs fonctions très utiles pour les opérations courantes avec Git (par Posit).  
+- [gert](https://docs.ropensci.org/gert/) qui est un client Git pour R très efficace 
+(par rOpenSci).  
+
 ## Bibliographie à consulter
 
 En français :  
