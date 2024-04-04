@@ -14,6 +14,7 @@ En français :
 - [Documentation officielle de Git en français](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git)  
 - [Les fiches consacrées à Git dans utilitr](https://www.book.utilitr.org/)  
 - [Formation aux bonnes pratiques avec Git et R](https://inseefrlab.github.io/formation-bonnes-pratiques-git-R/) par l'Insee  
+- [Tutoriel Git](https://www.atlassian.com/fr/git/tutorials) par Atlassian  
 
 En anglais :  
 
