@@ -173,15 +173,10 @@ RStudio (**même fonctionnement avec le terminal**) :
 :::
 :::
 
-+----------------+--------------------------+--------------------------+
-| Changement     | AVANT l'ajout à l'index  | APRÈS l'ajout à l'index  |
-+================+==========================+==========================+
-| Ajout de       | ![](img/aj               | ![](img/aj               |
-| fichier        | outer_avant_staging.png) | outer_apres_staging.png) |
-+----------------+--------------------------+--------------------------+
-| Renommage de   | ![](img/ren              | ![](img/ren              |
-| fichier        | ommer_avant_staging.png) | ommer_apres_staging.png) |
-+----------------+--------------------------+--------------------------+
+| Changement           | AVANT l’ajout à l’index             | APRÈS l’ajout à l’index             |
+|----------------------|-------------------------------------|-------------------------------------|
+| Ajout de fichier     | ![](img/ajouter_avant_staging.png)  | ![](img/ajouter_apres_staging.png)  |
+| Renommage de fichier | ![](img/renommer_avant_staging.png) | ![](img/renommer_apres_staging.png) |
 
 ## Comment Git stocke les différentes versions d'un fichier ?
 
