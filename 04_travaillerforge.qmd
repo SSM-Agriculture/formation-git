@@ -396,25 +396,36 @@ Close #31, en lien avec #29
 
 ## Organisation au DEMESIS
 
-![](img/gitflow_demesis.png)
+![](img/gitflow_demesis.png){fig-align="center"}
 
 
 ## Que deviennent les branches ?
 
-Les branches permanentes persistent tout au long de la vie du projet.  
+<br>
 
-Les branches temporaires :  
+**Les branches permanentes** persistent tout au long de la vie du projet.  
+
+**Les branches temporaires** :  
 
 - Apparaissent et disparaissent au fil de la vie du projet  
 - Ont une durée de vie limitée...    
 - ... et doivent donc être détruites (manuellement ou suite à une fusion)  
 
-=> voir plus loin dans ce support.
-
 
 ## Créer une nouvelle branche avec RStudio ![](img/icone_rstudio.png)
 
-A VENIR
+Pour créer une nouvelle branche avec RStudio, il faut :  
+
+- Cliquer sur le bouton "Nouvelle branche" dans l'onglet Git  
+
+![](img/nouvelle_branche_rstudio.png){fig-align="center"}
+
+- Renseigner le nom de la nouvelle branche  
+
+![](img/creer_branche_rstudio.png){fig-align="center"}
+  
+Cette procédure va créer la nouvelle branche **à la fois sur le dépôt local  mais aussi sur le dépôt distant.**  
+
 
 ## Créer une nouvelle branche avec Gitlab ![](img/icone_gitlab.png)
 
