@@ -124,6 +124,26 @@ Pour les activer, il faut :
 
 ![](img/activer_issues_valider.png){fig-align="center"}
 
+## Créer une issue ![](img/icone_gitlab.png)
+
+::: columns
+::: {.column width="25%"}
+![](img/gitlab_creer_issue.png){fig-align="center"}
+![](img/gitlab_creer_issue_bouton.png){fig-align="center"}
+
+:::
+::: {.column width="75%"}
+Puis renseigner les informations concernant l'issue. 
+
+![](img/gitlab_creer_issue_page.png){fig-align="center"}
+
+:::
+
+::::
+
+## Afficher les issues sous forme de tableau (board) ![](img/icone_gitlab.png)
+
+
 ## Lier un dépôt local à un dépôt distant (1/2)
 
 **1ère étape commune à toutes les méthodes : création d'un dépôt vide sur la forge Gitlab**
