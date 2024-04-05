@@ -143,6 +143,11 @@ Puis renseigner les informations concernant l'issue.
 
 ## Afficher les issues sous forme de tableau (board) ![](img/icone_gitlab.png)
 
+Si vous utilisez **des labels** pour classer vos issues, Gitlab propose un affichage sous forme de tableau de bord qui permet de faire **un suivi de projet sous forme de tâches**.  
+
+Exemple :  
+
+![](img/gitlab_creer_issue_board.png){fig-align="center"}
 
 ## Lier un dépôt local à un dépôt distant (1/2)
 
