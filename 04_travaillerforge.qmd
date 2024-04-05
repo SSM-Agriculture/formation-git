@@ -280,15 +280,32 @@ Dans l'exemple ci-dessous, après avoir commiter une fois, RStudio me prévient 
 
 ![](img/git_rstudio_message_avant_push.png){fig-align="center"}
 
-Pour pousser ce commit sur le dépôt distant, il suffit simplement de cliquer sur le bouton ![](img/git_push_bouton.png){.inlineimage}.
+Pour pousser ce commit sur le dépôt distant, il suffit simplement de cliquer sur le bouton ![](img/git_push_bouton.png){.inlineimage}
 
 ## Pousser les changements sur la forge avec le terminal ![](img/icone_terminal.png)
 
-Pousser les changements du dépôt local vers le dépôt distant :  
+Voilà comment pousser vos modifications sur la forge avec le terminal :
 
-`git push <alias> <nom-branche>`
+- Taper la commande `git status` pour récupérer l'information de la situation de notre dépôt local par rapport au dépôt distant.  
 
-Exemple : `git push origin developpement`
+![](img/git_message_terminal_avant_push.png){fig-align="center"}
+
+- Taper la commande `git push` pour pousser ce commit sur le dépôt distant.  
+
+![](img/git_push_terminal.png){fig-align="center"}
+
+## Utilisation des instructions `git push` et `git pull` ![](img/icone_terminal.png)
+
+Dans les slides précédentes, une utilisation succinte des instructions `git push` et `git pull` a été faite.  
+
+Pour être sûr de maîtriser vos interactions entre le dépôt local et le dépôt distant, il est recommandé d'utiliser la syntaxe plus complète sur le modèle suivant :  
+
+- `git push <alias> <nom-branche>`  
+- `git pull <alias> <nom-branche>`  
+
+Exemples :  
+- `git push origin developpement`  
+- `git pull origin production`  
 
 
 ## Récupérer les changements en local avec RStudio ![](img/icone_rstudio.png)
