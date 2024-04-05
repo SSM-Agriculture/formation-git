@@ -272,11 +272,15 @@ ajouter_git(
 )
 ```
 
-## Récupérer un projet depuis une forge ?
-
-`git clone <URL-depot-distant>`
-
 ## Pousser les changements sur la forge avec RStudio ![](img/icone_rstudio.png)
+
+Après avoir ajouté vos changements à l'index et fait vos commits, vous pouvez **"pousser"** ces modifications sur la forge avec RStudio.  
+
+Dans l'exemple ci-dessous, après avoir commiter une fois, RStudio me prévient dans l'onglet "Git" que je suis sur la branche `developpement` d'un commit :  
+
+![](img/git_rstudio_message_avant_push.png){fig-align="center"}
+
+Pour pousser ce commit sur le dépôt distant, il suffit simplement de cliquer sur le bouton ![](img/git_push_bouton.png){.inlineimage}.
 
 ## Pousser les changements sur la forge avec le terminal ![](img/icone_terminal.png)
 
@@ -286,7 +290,6 @@ Pousser les changements du dépôt local vers le dépôt distant :
 
 Exemple : `git push origin developpement`
 
-## Pousser les changements sur la forge avec gitssp ![](img/icone_gitssp.png)
 
 ## Récupérer les changements en local avec RStudio ![](img/icone_rstudio.png)
 
