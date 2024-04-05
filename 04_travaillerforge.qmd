@@ -244,8 +244,33 @@ Par exemple :
 `git remote add origin https://forge.agriculture.rie.gouv.fr/gitlab/damien.dotta/test.git`
 
 
-## Lier un dépôt local à un dépôt distant avec gitssp ![](img/icone_gitssp.png)
+## Lier un dépôt local à un dépôt distant avec gitssp (1/2) ![](img/icone_gitssp.png)
 
+<br>
+
+Le package `gitssp` peut également être utilisé pour effectuer la liaison.  
+  
+**Avantage :** plusieurs branches distantes (developpement, recette et production) vont être créées en une seule instruction R.  
+**Inconvénient :** il y a 1 étape supplémentaire dans les pré-requis.    
+
+- Créer un projet .Rproj dans votre working directory (sans choisir "Contrôle de version")
+- Charger le package avec `library(git=ssp)`
+- Lancer la fonction R `ajouter_git()`
+
+## Lier un dépôt local à un dépôt distant avec gitssp (2/2) ![](img/icone_gitssp.png)
+
+La fonction `ajouter_git()` comprend 2 arguments :  
+  
+- `origin` : URL du dépôt distant (obligatoire)  
+- `dossier` : chemin vers le projet .Rproj que vous avez crée (facultatif car Si aucun dossier n'est précisé, les opérations vont se dérouler dans le dossier courant)  
+  
+Par exemple :  
+```r
+ajouter_git(
+  origin = "https://forge.agriculture.rie.gouv.fr/gitlab/damien.dotta/test.git",
+  dossier = "~/test/"
+)
+```
 
 ## Récupérer un projet depuis une forge ?
 
