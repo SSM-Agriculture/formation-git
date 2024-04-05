@@ -363,17 +363,6 @@ Concernant le noms des branches, une bonne pratique est d'utiliser la structure 
 | issue-X   | Pour faire référence à l'issue n°X                  |
 
 
-## Créer une branche à partir d'une issue Gitlab ![](img/icone_gitlab.png)
-
-Depuis l'interface Gitlab, on peut directement créer une branche comme ci-dessous :  
-
-![](img/gitlab_creer_branch_depuis_issue.png){fig-align="center"}
-
-- Pour récupérer cette branche distante dans votre dépôt local, on fera un `git pull` dans le terminal ou RStudio.  
-
-![](img/gitlab_pull_branche_cree_dans_issue.png){fig-align="center"}
-
-
 ## Fermer une issue à partir d'une branche
 
 Avec les forges Gitlab et Github, la fermeture des issues peut être **automatiquement gérée via les messages de commit**.  
@@ -427,9 +416,16 @@ Pour créer une nouvelle branche avec RStudio, il faut :
 Cette procédure va créer la nouvelle branche **à la fois sur le dépôt local  mais aussi sur le dépôt distant.**  
 
 
-## Créer une nouvelle branche avec Gitlab ![](img/icone_gitlab.png)
+## Créer une branche à partir d'une issue Gitlab ![](img/icone_gitlab.png)
 
-A VENIR
+Depuis l'interface Gitlab et à partir d'une issue, on peut créer une branche comme ci-dessous :  
+
+![](img/gitlab_creer_branch_depuis_issue.png){fig-align="center"}
+
+- Pour récupérer cette branche distante dans votre dépôt local, on fera un `git pull` dans le terminal ou RStudio.  
+
+![](img/gitlab_pull_branche_cree_dans_issue.png){fig-align="center"}
+
 
 ## Créer une nouvelle branche avec le terminal ![](img/icone_terminal.png)
 A VENIR
