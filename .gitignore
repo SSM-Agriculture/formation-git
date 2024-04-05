@@ -9,6 +9,7 @@ formation-git_files/
 _output/
 /.quarto/
 /_site/
+/img/excalidraw/
 
 # Les fichiers suivants
 *.html
