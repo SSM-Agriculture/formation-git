@@ -203,9 +203,46 @@ Puis renseigner :
 
 ![](img/gitlab_rstudio_lier_projet_URL.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant avec terminal ![](img/icone_terminal.png)
+## Lier un dépôt local à un dépôt distant avec terminal (1/3) ![](img/icone_terminal.png)
 
-Retrouver l'URL du dépôt distant : `git remote -v`
+<br>
+La méthode à utiliser est différente selon les cas :  
+
+1. **Vous voulez créer un nouveau répertoire** dans votre working directory  
+2. **Vous avez déjà un répertoire** dans votre working directory  
+
+<br>
+
+::: {.callout-note icon=false}
+## À retenir
+Pour vérifier qu'un dépôt local est lié à un dépôt distant, la commande `git remote -v` est très utile car elle renvoit l'URL du dépôt distant s'il existe.
+:::
+
+## Lier un dépôt local à un dépôt distant avec terminal (2/3) ![](img/icone_terminal.png)
+
+<br>
+
+[**CAS 1 : création d'un nouveau répertoire**]{.souligneRouge}
+
+- Lancer le terminal dans le répertoire où on souhaite créer le nouveau dossier correspondant au dépôt distant (rappel sur [comment faire](#git-avec-le-terminal))  
+- Taper la commande `git clone <URL-depot-distant>`  
+  
+Par exemple :  
+`git clone https://forge.agriculture.rie.gouv.fr/gitlab/damien.dotta/test.git`
+- Ouvrir le nouveau répertoire et commencer à y travailler comme d'habitude en y créant un projet, des scripts...
+
+## Lier un dépôt local à un dépôt distant avec terminal (3/3) ![](img/icone_terminal.png)
+
+<br>
+
+[**CAS 2 : un répertoire existe déjà**]{.souligneRouge}
+
+- Lancer le terminal dans le répertoire non versionné que l'on souhaite lié au dépôt distant (rappel sur [comment faire](#git-avec-le-terminal))  
+- Taper la commande `git remote add origin <URL-depot-distant>`  
+  
+Par exemple :  
+`git remote add origin https://forge.agriculture.rie.gouv.fr/gitlab/damien.dotta/test.git`
+
 
 ## Lier un dépôt local à un dépôt distant avec gitssp ![](img/icone_gitssp.png)
 
