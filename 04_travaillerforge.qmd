@@ -280,7 +280,7 @@ Dans l'exemple ci-dessous, après avoir commiter une fois, RStudio me prévient 
 
 ![](img/git_rstudio_message_avant_push.png){fig-align="center"}
 
-Pour pousser ce commit sur le dépôt distant, il suffit simplement de cliquer sur le bouton ![](img/git_push_bouton.png){.inlineimage}
+**Pour pousser ce commit sur le dépôt distant**, il suffit simplement de cliquer sur le bouton ![](img/git_push_bouton.png){.inlineimage}
 
 ## Pousser les changements sur la forge avec le terminal ![](img/icone_terminal.png)
 
@@ -290,7 +290,7 @@ Voilà comment pousser vos modifications sur la forge avec le terminal :
 
 ![](img/git_message_terminal_avant_push.png){fig-align="center"}
 
-- Taper la commande `git push` pour pousser ce commit sur le dépôt distant.  
+- Taper la commande `git push` **pour pousser ce commit sur le dépôt distant**.  
 
 ![](img/git_push_terminal.png){fig-align="center"}
 
@@ -310,17 +310,27 @@ Exemples :
 
 ## Récupérer les changements en local avec RStudio ![](img/icone_rstudio.png)
 
+Pour récupérer sur le dépôt local des changements qui ont été poussés sur le dépôt distant avec RStudio.  
+
+Exemples de cas d'usage :  
+- Si un membre de l'équipe projet a poussé des modifications avant vous sur le dépôt distant.  
+- Si vous voulez récupérer les dernières modifications apportées à la branche distante suite à une `merge request` (voir plus loin)  
+
+**Pour récupérer les commits depuis le dépôt distant**, il suffit simplement de cliquer sur le bouton ![](img/git_pull_bouton.png){.inlineimage}
+
+Dans le cas d'un travail en équipe, il s'agit d'une [opération à faire très fréquemment]{.souligneRouge}.  
+Git vous empêchera de pousser vos modifications sur le dépôt distant si vous n'avez pas au préalable récupérer toutes les dernières modifications qui s'y trouvent.
+
+Message qui s'affiche dans ce cas :**  
+
+![](img/git_push_sans_pull.png){fig-align="center"}
+
 ## Récupérer les changements en local avec le terminal ![](img/icone_terminal.png)
 
-Récupérer les changements du dépôt distant vers le dépôt local :  
+- Taper la commande `git pull` **pour récupérer les derniers commits depuis dépôt distant**.  
 
-`git pull <alias> <nom-branche>`
+![](img/git_pull_terminal.png){fig-align="center"}
 
-Exemple : `git pull origin developpement`
-
-## Récupérer les changements en local avec gitssp ![](img/icone_gitssp.png)
-
-A VENIR
 
 ## Définition des branches
 
