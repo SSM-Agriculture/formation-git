@@ -321,13 +321,15 @@ Exemples de cas d'usage :
 Dans le cas d'un travail en équipe, il s'agit d'une [opération à faire très fréquemment]{.souligneRouge}.  
 Git vous empêchera de pousser vos modifications sur le dépôt distant si vous n'avez pas au préalable récupérer toutes les dernières modifications qui s'y trouvent.
 
-Message qui s'affiche dans ce cas :**  
+**Message qui s'affiche dans ce cas :**  
 
 ![](img/git_push_sans_pull.png){fig-align="center"}
 
 ## Récupérer les changements en local avec le terminal ![](img/icone_terminal.png)
 
 - Taper la commande `git pull` **pour récupérer les derniers commits depuis dépôt distant**.  
+
+<br>
 
 ![](img/git_pull_terminal.png){fig-align="center"}
 
@@ -338,22 +340,19 @@ Message qui s'affiche dans ce cas :**
 
 ## Quand créer une branche ?
 
-On crée une branche pour :  
+<br>
+**On crée une branche** pour :  
 
 - Continuer le développement de manière isolée sans altérer le reste du dépôt  
-  -> Pour corriger un bug  
-  -> Pour implémenter une nouvelle fonctionnalité  
-  -> Pour refactorer le code...
+  - Pour **corriger un bug**  
+  - Pour **implémenter une nouvelle fonctionnalité**  
+  - Pour **refactorer le code**...
 
 - Isoler les différentes étapes du développement (une branche = un environnement)
 
 ## Noms des branches
 
-Concernant le noms des branches, une bonne pratique est d'utiliser la structure suivante :  
-
-```         
-<categorie>-<nom>
-```
+Concernant le noms des branches, une bonne pratique est d'utiliser la structure suivante : `<categorie>-<nom>`
 
 | Catégorie | Signification                                       |
 |-----------|-----------------------------------------------------|
@@ -368,13 +367,24 @@ Concernant le noms des branches, une bonne pratique est d'utiliser la structure 
 
 Depuis l'interface Gitlab, on peut directement créer une branche comme ci-dessous :  
 
-![](img/gitlab_creer_branch_depuis_issue.png)
+![](img/gitlab_creer_branch_depuis_issue.png){fig-align="center"}
+
+- Pour récupérer cette branche distante dans votre dépôt local, on fera un `git pull` dans le terminal ou RStudio.  
+
+![](img/gitlab_pull_branche_cree_dans_issue.png){fig-align="center"}
+
 
 ## Fermer une issue à partir d'une branche
 
 Avec les forges Gitlab et Github, la fermeture des issues peut être **automatiquement gérée via les messages de commit**.  
 
-Pour cela, vous pouvez utiliser des [mots-clés](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically) comme `Close`, `Fix`, `Resolve` ou `Implement` avec le `#numero-issue`.  
+Pour cela, vous pouvez utiliser des [mots-clés](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically) comme (au choix) :    
+- `Close`  
+- `Fix`  
+- `Resolve`    
+- `Implement`   
+  
+En précisant le `#numero-issue`.  
 
 Exemple de message de commit : 
 
@@ -389,7 +399,7 @@ Close #31, en lien avec #29
 ![](img/gitflow_demesis.png)
 
 
-## Que devienne les branches ?
+## Que deviennent les branches ?
 
 Les branches permanentes persistent tout au long de la vie du projet.  
 
