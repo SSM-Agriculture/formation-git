@@ -454,5 +454,6 @@ Il y a encore pleins d'instructions Git très utiles que vous découvrirez (ou p
 
 - git cherry-pick : sélectionner et appliquer un seul commit d'une branche à une autre  
 - git blame : montrer la révision et l’auteur qui ont modifié en dernier chaque ligne d’un fichier  
+- git rebase : réappliquer une série de commits d'une branche sur une autre branche
 - git bisect : trouver par recherche binaire la modification qui a introduit une erreur  
 ...  
