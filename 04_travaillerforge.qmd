@@ -412,6 +412,24 @@ Les instructions Git ci-dessus peuvent aussise décliner sur un fichier spécifi
 Par exemple avec la syntaxe : `git checkout commitID file-name`
 :::
 
+git revert : git revert permet de défaire un changement fait par
+n’importe quel commit en le “repassant à l’envers”
+ce changement devient un nouveau commit
+nécessite de trouver le commitId concerné avec git log
+
+Dans RStudio, tant qu’on n’a pas “commité”, on peut revenir directement à l’état du dernier commit. Dans la fenètre “Diff” ou “Commit”, on peut
+cliquer sur “Revert”
+
+
+## Autres instructions Git
+
+Il y a encore pleins d'instructions Git très utiles que vous découvrirez (ou pas) :
+
+- git cherry-pick : sélectionner et appliquer un seul commit d'une branche à une autre  
+- git blame : montrer la révision et l’auteur qui ont modifié en dernier chaque ligne d’un fichier  
+- git bisect : trouver par recherche binaire la modification qui a introduit une erreur  
+...  
+
 
 <!-- annuler un truc genre 5 commits en arrière ! -->
 
