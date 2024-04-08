@@ -238,15 +238,15 @@ Un message de confirmation vous demande si vous êtes sûr de votre action
 
 [La commande git restore permet de restaurer des fichiers]{.red}
 
-+------------------------------------------+---------------------------+
-| Action                                   | Commande                  |
-+==========================================+===========================+
-| Inverser les changements pas encore      | `git restore <file-name>` |
-| ajoutés à l'index                        |                           |
-+------------------------------------------+---------------------------+
-| Inverser les changements déjà ajoutés à  | `git rest                 |
-| l'index                                  | ore --staged <file-name>` |
-+------------------------------------------+---------------------------+
++------------------------------------------+--------------------------------------------------+
+| Action                                   | Commande                                         |
++==========================================+==================================================+
+| Inverser les changements pas encore      | `git restore <file-name>`                        |
+| ajoutés à l'index                        |                                                  |
++------------------------------------------+--------------------------------------------------+
+| Inverser les changements déjà ajoutés à  | `git restore --staged <file-name>`               |
+| l'index                                  |                                                  |
++------------------------------------------+--------------------------------------------------+
 
 ## Le commit
 
@@ -294,9 +294,9 @@ Le tableau suivant reprend les types les plus couramment utilisés :
 | deprecated  | Fonctionnalité dépréciée           |
 | chore       | Tâches de routine/automatisées     |
 
-## Comment commiter avec RStudio ? ![](img/icone_rstudio.png)
+## Comment committer avec RStudio ? ![](img/icone_rstudio.png)
 
-Après avoir ajouté les fichiers modifiés à l'index, il est temps de "commiter" 
+Après avoir ajouté les fichiers modifiés à l'index, il est temps de "committer" 
 les changements c'est-à-dire de prendre une photo / un snapshot de ces fichiers modifiés.  
 
 Dans RStudio, il faut cliquer sur le bouton "Commit" de l'onglet "Git"   
@@ -311,7 +311,7 @@ cliquer sur le bouton "Commit" :
 ![](img/git_commit_message_rstudio.png){fig-align="center"}
 
 
-## Comment commiter avec le terminal ? ![](img/icone_terminal.png)
+## Comment committer avec le terminal ? ![](img/icone_terminal.png)
 
 <br>
 <p style="text-align: center;">**La commande `git commit -m "message du commit"` permet à la fois de faire le commit 
@@ -439,8 +439,7 @@ Ce qu'on y trouve :
 -   le message du commit
 
 ::: callout-note
-La commande `git log --oneline` affiche les informations concernant
-l'historique de façon plus compacte mais moins riche.
+La commande `git log --oneline` affiche les informations concernant l'historique de façon plus compacte mais moins riche.
 :::
 
 ## Fréquence des commits
@@ -449,7 +448,6 @@ l'historique de façon plus compacte mais moins riche.
 
 - Aussi souvent que possible  
 
-- Regrouper les modifications en lots qui "font sens", avec un message pertinent 
-qui résume bien les modifications apportées  
+- Regrouper les modifications en lots qui "font sens", avec un message pertinent qui résume bien les modifications apportées  
 
-- **Il ne faut commiter sur la base du temps passé mais plutôt sur la base des fonctionnalités.**
+- **Il ne faut committer sur la base du temps passé mais plutôt sur la base des fonctionnalités.**
