@@ -353,7 +353,18 @@ Descendre en bas de la page puis :
 
 ## Créer des tags avec le terminal ![](img/icone_terminal.png)
 
-A VENIR
+Les tags (ou étiquettes) sont des réfs qui pointent vers des points spécifiques dans l'historique de Git.  
+Ils sont très utiles pour étiqueter les versions de vos projets (v0.1, v0.2...).  
+
+Pour créer un tag v0.1 sur le dernier commit :  
+`git tag -a v0.1 -m "Message de tag"`  
+
+Pour créer un tag v0.1 a posteriori (avec l'ID du commit) :  
+`git tag -a v0.1 0af8bfd9 -m "Message de tag"`  
+
+Pour partager les tags sur le dépôt distant :  
+`git push origin --tags`
+
 
 ## Créer des tags avec gitlab ![](img/icone_gitlab.png)
 
