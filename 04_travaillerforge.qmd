@@ -368,7 +368,20 @@ Pour partager les tags sur le dépôt distant :
 
 ## Créer des tags avec gitlab ![](img/icone_gitlab.png)
 
-A VENIR
+::: columns
+::: {.column width="25%"}
+![](img/gitlab_ajout_tag.png){fig-align="center"}
+:::
+
+::: {.column width="75%"}
+![](img/gitlab_bouton_ajout_tag.png){fig-align="center"}
+
+![](img/gitlab_fenetre_ajout_tag.png){fig-align="center"}
+
+Il reste à faire un `git pull` pour récupérer le nouveau tag dans votre working directory.
+:::
+
+::::
 
 ## Revenir en arrière avec Gitlab ![](img/icone_gitlab.png)
 
