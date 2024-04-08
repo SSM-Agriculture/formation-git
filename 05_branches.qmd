@@ -1,0 +1,356 @@
+# Les branches {.backgroundTitre}
+
+## Définition des branches
+
+![](img/schema_vaches_branches_git.png)
+
+## Quand créer une branche ?
+
+<br>
+**On crée une branche** pour :  
+
+- Continuer le développement de manière isolée sans altérer le reste du dépôt  
+  - Pour **corriger un bug**  
+  - Pour **implémenter une nouvelle fonctionnalité**  
+  - Pour **refactorer le code**...
+
+- Isoler les différentes étapes du développement (une branche = un environnement)
+
+## Noms des branches
+
+Concernant le noms des branches, une bonne pratique est d'utiliser la structure suivante : `<categorie>-<nom>`
+
+| Catégorie | Signification                                       |
+|-----------|-----------------------------------------------------|
+| hotfix    | Pour résoudre rapidement des problèmes critiques    |
+| bugfix    | Pour résoudre des erreurs/bugs                      |
+| feature   | Pour ajouter/supprimer/modifier des fonctionnalités |
+| test      | Pour tester une idée expérimentale (hors issue)     |
+| issue-X   | Pour faire référence à l'issue n°X                  |
+
+
+## Fermer une issue à partir d'une branche
+
+Avec les forges Gitlab et Github, la fermeture des issues peut être **automatiquement gérée via les messages de commit**.  
+
+Pour cela, vous pouvez utiliser des [mots-clés](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically) comme (au choix) :    
+- `Close`  
+- `Fix`  
+- `Resolve`    
+- `Implement`   
+  
+En précisant le `#numero-issue`.  
+
+Exemple de message de commit : 
+
+``` 
+feat: Ajout documentation utilisateurs
+
+Close #31, en lien avec #29
+```
+
+## Organisation au DEMESIS
+
+![](img/gitflow_demesis.png){fig-align="center"}
+
+
+## Que deviennent les branches ?
+
+<br>
+
+**Les branches permanentes** persistent tout au long de la vie du projet.  
+
+**Les branches temporaires** :  
+
+- Apparaissent et disparaissent au fil de la vie du projet  
+- Ont une durée de vie limitée...    
+- ... et doivent donc être détruites (manuellement ou suite à une fusion)  
+
+## Savoir sur quelle branche on se situe
+
+::: columns
+::: {.column width="33%"}
+![](img/icone_rstudio.png){fig-align="center"}  
+
+RStudio indique la branche sur laquelle on se situe en haut à droite de l'onglet "Git" :  
+
+![](img/git_rstudio_get_active_branche.png){fig-align="center"}  
+:::
+
+::: {.column width="33%"}
+![](img/icone_terminal.png){fig-align="center"}  
+
+`git status` est la commande la plus simple
+
+![](img/git_status_branche.png){fig-align="center"} 
+
+:::
+
+::: {.column width="33%"}
+![](img/icone_gitssp.png){fig-align="center"}  
+
+[`gitssp$get_current_branch()`]{.tiny}
+
+:::
+
+::::
+
+## Lister les branches
+
+::: columns
+::: {.column width="33%"}
+
+![](img/icone_rstudio.png){fig-align="center"}
+
+Cliquer sur la petite flèche située à côté du nom de la branche courante :  
+
+![](img/git_rstudio_liste_branches.png){fig-align="center"}
+:::
+
+::: {.column width="33%"}
+
+![](img/icone_terminal.png){fig-align="center"}
+
+- Pour afficher uniquement les branches locales
+
+`git branch`
+
+- Pour afficher les branches locales et distantes
+
+`git branch -a`
+
+:::
+
+::: {.column width="33%"}
+
+![](img/icone_gitssp.png){fig-align="center"}
+
+
+- Pour afficher uniquement les branches locales
+
+`gitssp$list_branch_local()`
+
+- Pour afficher les branches locales et distantes
+
+`gitssp$list_branch_all()`
+
+:::
+
+::::
+
+## Liste des branches et position sur les branches
+
+Lorsqu'on affiche la liste des branches, la branche sur laquelle on se situe est identifiée avec un astérisque * devant.  
+
+
+![](img/git_note_active_branche.png){width=600}
+
+
+## Créer une nouvelle branche avec RStudio ![](img/icone_rstudio.png)
+
+Pour créer une nouvelle branche avec RStudio, il faut :  
+
+- Cliquer sur le bouton "Nouvelle branche" dans l'onglet Git  
+
+![](img/nouvelle_branche_rstudio.png){fig-align="center"}
+
+- Renseigner le nom de la nouvelle branche  
+
+![](img/creer_branche_rstudio.png){fig-align="center"}
+  
+Cette procédure va créer la nouvelle branche **à la fois sur le dépôt local  mais aussi sur le dépôt distant.**  
+
+
+## Créer une nouvelle branche à partir d'une issue Gitlab ![](img/icone_gitlab.png)
+
+Depuis l'interface Gitlab et à partir d'une issue, on peut créer une branche comme ci-dessous :  
+
+![](img/gitlab_creer_branch_depuis_issue.png){fig-align="center"}
+
+- Pour récupérer cette branche distante dans votre dépôt local, on fera un `git pull` dans le terminal ou RStudio.  
+
+![](img/gitlab_pull_branche_cree_dans_issue.png){fig-align="center"}
+
+
+## Créer une nouvelle branche avec le terminal ![](img/icone_terminal.png)
+
+**Pour créer une branche dans le dépôt local** avec le terminal, les commandes `git branch` et `git checkout` sont utilisées.  
+
+Créer une nouvelle branche "bugfix" dans le dépôt local :  
+`git branch bugfix`  
+  
+Créer une nouvelle branche "bugfix" dans le dépôt local et se placer dessus :  
+`git checkout -b bugfix`  
+  
+Synchroniser la nouvelle branche locale "bugfix" avec la branche distante :   
+`git push -u origin bugfix`
+
+
+## Créer une nouvelle branche avec gitssp ![](img/icone_gitssp.png)
+
+
+**Créer une nouvelle branche**
+
+`gitssp$create_branch_local("nom-de-branche")`
+
+**Pousser la branche locale sur le dépôt distant**
+
+`gitssp$push_branch_gitlab("nom-de-branche")`
+
+
+## Changer de branche
+
+::: columns
+
+::: {.column width="33%"}
+![](img/icone_rstudio.png){fig-align="center"}
+
+![](img/git_rstudio_changement_branche.png){fig-align="center"}
+
+:::
+
+::: {.column width="33%"}
+![](img/icone_terminal.png){fig-align="center"}
+
+Avec la commande dans le terminal :  
+
+`git checkout nom-de-branche`
+:::
+
+::: {.column width="33%"}
+![](img/icone_gitssp.png){fig-align="center"}
+
+Avec l'instruction R :  
+
+`gitssp$switch_branch_local("nom-de-branche")`
+
+:::
+
+::::
+
+
+## Supprimer des branches locales
+
+::: columns
+
+::: {.column width="33%"}
+![](img/icone_rstudio.png){fig-align="center"}
+
+Avec l'IHM RStudio, on ne peut pas supprimer de branches locales.  
+:::
+
+::: {.column width="33%"}
+![](img/icone_terminal.png){fig-align="center"}
+
+Avec la commande dans le terminal :  
+
+`git branch -d nom-de-branche`
+:::
+
+::: {.column width="33%"}
+![](img/icone_gitssp.png){fig-align="center"}
+
+Avec l'instruction R :  
+
+`gitssp$delete_branch_local("nom-de-branche")`
+
+:::
+
+::::
+
+<br>
+
+::: {.callout-important}
+Git empêche la suppression de branche si vous êtes positionnés dessus. 
+Dans ce cas, il faut au préalable changer de branche avec `git checkout nom-de-branche`
+:::
+
+## Supprimer des branches distantes
+
+::: columns
+
+::: {.column width="33%"}
+![](img/icone_rstudio.png){fig-align="center"}
+
+Avec l'IHM RStudio, on ne peut pas supprimer de branches distantes.  
+:::
+
+::: {.column width="33%"}
+![](img/icone_terminal.png){fig-align="center"}
+
+`git push origin --delete nom-de-branche`
+:::
+
+::: {.column width="33%"}
+![](img/icone_gitssp.png){fig-align="center"}
+
+`gitssp$delete_branch_gitlab("nom-de-branche")`
+
+:::
+
+::::
+
+
+## Fusionner deux branches avec le terminal ![](img/icone_terminal.png)
+
+A VENIR
+
+## Fusionner deux branches avec Gitlab ![](img/icone_gitlab.png)
+
+A VENIR
+
+## Définition des conflits
+
+Les conflits surviennent généralement lorsque **deux personnes ont modifié les mêmes lignes dans un fichier**, ou si un développeur a supprimé un fichier alors qu'un autre développeur le modifiait. Dans ces cas, **Git ne peut pas déterminer automatiquement la version correcte**.    
+
+**Les conflits n'affectent que le développeur qui effectue le merge**, 
+les autres membres de l'équipe ne sont pas conscients du conflit. Git marquera 
+le fichier comme étant en conflit et arrêtera le processus de merge.   
+
+**Il incombe alors aux développeurs de résoudre le conflit.**
+
+*Source: [Atlassian](https://www.atlassian.com/fr/git/tutorials/using-branches/merge-conflicts)
+
+## Simulation d'un conflit
+
+::: {.callout-note icon=false}
+## Exercice :
+
+1. Dans le projet formation-git, créer une nouvelle branche   
+2. Se placer dans la branche, ajouter un programme, l’enregistrer puis commit.
+3. Vérifier dans Gitlab les modifications apportées, dans la branche principale et dans la nouvelle branche.
+4. Fusionner la nouvelle branche avec la branche principale.
+5. Dans RStudio, récupérer les modifications avec un pull.
+
+:::
+
+
+
+    On se place dans la même configuration que dans l’application précédente : un mainteneur et deux/trois développeurs
+    Le mainteneur modifie le contenu de son fichier, puis commit et push les modifications
+    Sans faire de pull préalable, les développeurs modifient également le contenu du fichier du mainteneur, puis commit et push les modifications
+    Le push est rejeté pour la même raison que dans l’application précédente : les dépôts ne sont plus synchronisés, il faut pull les changements distants au préalable. Mais cette fois, le pull est également rejeté : il y a un conflit entre l’historique du projet distant et celui du projet local. Git nous indique qu’il faut résoudre le conflit avant de pouvoir modifier l’historique du projet.
+    Utiliser l’interface de RStudio pour résoudre le conflit, en choisissant la version du fichier que vous souhaitez conserver, puis commit/push les modifications
+    Comme dans l’application précédente, seul le développeur le plus rapide parvient à push. Les autres doivent répéter l’opération.
+
+
+
+
+## Repérer les conflits
+
+Pour délimiter la zone de conflit, Git utilise les annotations suivantes :  
+
+- La ligne qui commence par <<<<<<< marque le début de la zone conflictuelle.  
+- Le marqueur ======= représente la frontière entre les deux zones à fusionner.  
+- La ligne qui commence par >>>>>>> délimite la fin de la zone conflictuelle.
+  
+## Éviter au maximum les conflits
+
+Quelques conseils :  
+
+- S'interroger sur la question de l'intersection des modifications et des fichiers potentiellement impactés lors de la planification des tâches
+- Communiquer avec les autres membre de l'équipe pour dire qui travaille sur quoi
+- La durée de vie des branches doit être la plus courte possible
+- Modulariser son code (par ex. sous forme de fonctions)  
+- Résoudre les conflits le plus tôt possible et ne pas laisser la situation empirer.  
+- Faire des "bons" commits fréquemment

@@ -34,7 +34,9 @@ editor:
 
 {{< include 04_travaillerforge.qmd >}}
 
-{{< include 05_bibliographie.qmd >}}
+{{< include 05_branches.qmd >}}
+
+{{< include 06_bibliographie.qmd >}}
 
 
 
