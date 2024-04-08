@@ -336,11 +336,20 @@ Git vous empêchera de pousser vos modifications sur le dépôt distant si vous 
 
 ## Supprimer un dépôt dans Gitlab ![](img/icone_gitlab.png)
 
-A VENIR
+<br> 
 
-## Faire référence à des issues dans les commits
+::: columns
+::: {.column width="25%"}
+![](img/gitlab_menu_general.png){fig-align="center"}
+:::
+::: {.column width="75%"}
+Descendre en bas de la page puis :  
 
-A VENIR
+![](img/gitlab_suppression_projet.png){fig-align="center"}
+
+:::
+
+::::
 
 ## Créer des tags avec le terminal ![](img/icone_terminal.png)
 
