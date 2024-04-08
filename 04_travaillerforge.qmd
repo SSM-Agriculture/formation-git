@@ -276,7 +276,7 @@ ajouter_git(
 
 Après avoir ajouté vos changements à l'index et fait vos commits, vous pouvez **"pousser"** ces modifications sur la forge avec RStudio.  
 
-Dans l'exemple ci-dessous, après avoir commiter une fois, RStudio me prévient dans l'onglet "Git" que je suis sur la branche `developpement` d'un commit :  
+Dans l'exemple ci-dessous, après avoir committer une fois, RStudio me prévient dans l'onglet "Git" que je suis sur la branche `developpement` d'un commit :  
 
 ![](img/git_rstudio_message_avant_push.png){fig-align="center"}
 
@@ -312,7 +312,7 @@ Exemples :
 
 Pour récupérer sur le dépôt local des changements qui ont été poussés sur le dépôt distant avec RStudio.  
 
-Exemples de cas d'usage :  
+[Exemples de cas d'usage :]{.souligneRouge}  
 - Si un membre de l'équipe projet a poussé des modifications avant vous sur le dépôt distant.  
 - Si vous voulez récupérer les dernières modifications apportées à la branche distante suite à une `merge request` (voir plus loin)  
 
@@ -400,6 +400,85 @@ Close #31, en lien avec #29
 - Ont une durée de vie limitée...    
 - ... et doivent donc être détruites (manuellement ou suite à une fusion)  
 
+## Savoir sur quelle branche on se situe
+
+::: columns
+::: {.column width="33%"}
+![](img/icone_rstudio.png){fig-align="center"}  
+
+RStudio indique la branche sur laquelle on se situe en haut à droite de l'onglet "Git" :  
+
+![](img/git_rstudio_get_active_branche.png){fig-align="center"}  
+:::
+
+::: {.column width="33%"}
+![](img/icone_terminal.png){fig-align="center"}  
+
+`git status` est la commande la plus simple
+
+![](img/git_status_branche.png){fig-align="center"} 
+
+:::
+
+::: {.column width="33%"}
+![](img/icone_gitssp.png){fig-align="center"}  
+
+[`gitssp$get_current_branch()`]{.tiny}
+
+:::
+
+::::
+
+## Lister les branches
+
+::: columns
+::: {.column width="33%"}
+
+![](img/icone_rstudio.png){fig-align="center"}
+
+Cliquer sur la petite flèche située à côté du nom de la branche courante :  
+
+![](img/git_rstudio_liste_branches.png){fig-align="center"}
+:::
+
+::: {.column width="33%"}
+
+![](img/icone_terminal.png){fig-align="center"}
+
+- Pour afficher uniquement les branches locales
+
+`git branch`
+
+- Pour afficher les branches locales et distantes
+
+`git branch -a`
+
+:::
+
+::: {.column width="33%"}
+
+![](img/icone_gitssp.png){fig-align="center"}
+
+
+- Pour afficher uniquement les branches locales
+
+`gitssp$list_branch_local()`
+
+- Pour afficher les branches locales et distantes
+
+`gitssp$list_branch_all()`
+
+:::
+
+::::
+
+## Liste des branches et position sur les branches
+
+Lorsqu'on affiche la liste des branches, la branche sur laquelle on se situe est identifiée avec un astérisque * devant.  
+
+
+![](img/git_note_active_branche.png){width=600}
+
 
 ## Créer une nouvelle branche avec RStudio ![](img/icone_rstudio.png)
 
@@ -416,7 +495,7 @@ Pour créer une nouvelle branche avec RStudio, il faut :
 Cette procédure va créer la nouvelle branche **à la fois sur le dépôt local  mais aussi sur le dépôt distant.**  
 
 
-## Créer une branche à partir d'une issue Gitlab ![](img/icone_gitlab.png)
+## Créer une nouvelle branche à partir d'une issue Gitlab ![](img/icone_gitlab.png)
 
 Depuis l'interface Gitlab et à partir d'une issue, on peut créer une branche comme ci-dessous :  
 
@@ -428,10 +507,91 @@ Depuis l'interface Gitlab et à partir d'une issue, on peut créer une branche c
 
 
 ## Créer une nouvelle branche avec le terminal ![](img/icone_terminal.png)
-A VENIR
+
+**Pour créer une branche dans le dépôt local** avec le terminal, les commandes `git branch` et `git checkout` sont utilisées.  
+
+Créer une nouvelle branche "bugfix" dans le dépôt local :  
+`git branch bugfix`  
+  
+Créer une nouvelle branche "bugfix" dans le dépôt local et se placer dessus :  
+`git checkout -b bugfix`  
+  
+Synchroniser la nouvelle branche locale "bugfix" avec la branche distante :   
+`git push -u origin bugfix`
+
 
 ## Créer une nouvelle branche avec gitssp ![](img/icone_gitssp.png)
-A VENIR
+
+
+**Créer une nouvelle branche**
+
+`gitssp$create_branch_local("nom-de-branche")`
+
+**Pousser la branche locale sur le dépôt distant**
+
+`gitssp$push_branch_gitlab("nom-de-branche")`
+
+
+## Changer de branche
+
+::: columns
+
+::: {.column width="33%"}
+![](img/icone_rstudio.png){fig-align="center"}
+:::
+
+::: {.column width="33%"}
+![](img/icone_terminal.png){fig-align="center"}
+
+`git checkout nom-de-branche`
+:::
+
+::: {.column width="33%"}
+![](img/icone_gitssp.png){fig-align="center"}
+
+`gitssp$switch_branch_local("nom-de-branche")`
+
+:::
+
+::::
+
+
+## Supprimer des branches
+
+::: columns
+
+::: {.column width="33%"}
+![](img/icone_rstudio.png){fig-align="center"}
+
+Avec l'IHM RStudio, on ne peut pas supprimer de branches.  
+:::
+
+::: {.column width="33%"}
+![](img/icone_terminal.png){fig-align="center"}
+
+`git branch -d nom-de-branche`
+:::
+
+::: {.column width="33%"}
+![](img/icone_gitssp.png){fig-align="center"}
+
+`gitssp$delete_branch_local("nom-de-branche")`
+
+:::
+
+::::
+
+- Avec l'IHM RStudio, on ne peut pas supprimer de branches.  
+
+- Avec le terminal, la commande à utiliser est : `git branch -d <nom-de-branche>`
+
+::: {.callout-note}
+## Important
+
+Git empêche la suppression de branche si vous êtes positionnés dessus. 
+Dans ce cas, il faut au préalable changer de branche avec `git checkout <nom-de-branche>`
+:::
+
 
 ## Fusionner deux branches avec le terminal ![](img/icone_terminal.png)
 
@@ -491,7 +651,8 @@ Pour délimiter la zone de conflit, Git utilise les annotations suivantes :
 Quelques conseils :  
 
 - S'interroger sur la question de l'intersection des modifications et des fichiers potentiellement impactés lors de la planification des tâches
-- Les durées de vie des branches doit être la plus courte possible
+- Communiquer avec les autres membre de l'équipe pour dire qui travaille sur quoi
+- La durée de vie des branches doit être la plus courte possible
 - Modulariser son code (par ex. sous forme de fonctions)  
 - Résoudre les conflits le plus tôt possible et ne pas laisser la situation empirer.  
 - Faire des "bons" commits fréquemment
@@ -508,9 +669,11 @@ A VENIR
 
 A VENIR
 
+## Créer des tags avec le terminal ![](img/icone_terminal.png)
 
+A VENIR
 
-## Créer des tags
+## Créer des tags avec gitlab ![](img/icone_gitlab.png)
 
 A VENIR
 
@@ -538,4 +701,14 @@ Pour remonter de 4 commits dans le passé : `git checkout <nom-de-branche~3>`
 
 `git revert`
 
+<!-- annuler un truc genre 5 commits en arrière ! -->
+
+# trouver le commit que vous devez annuler
+git log
+# se déplacer dans l'historique avec flèche haut / flèche bas
+# une fois le commit trouvé, mémoriser son hash
+git revert [hash mémorisé]
+# git va créer un nouveau commit qui annule ce commit
+# suivre les instructions pour éditer le message de commit
+# ou contentez-vous d'enregistrer et valider
 
