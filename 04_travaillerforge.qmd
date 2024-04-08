@@ -570,17 +570,21 @@ Avec l'instruction R :
 ::: {.column width="33%"}
 ![](img/icone_rstudio.png){fig-align="center"}
 
-Avec l'IHM RStudio, on ne peut pas supprimer de branches.  
+Avec l'IHM RStudio, on ne peut pas supprimer de branches locales.  
 :::
 
 ::: {.column width="33%"}
 ![](img/icone_terminal.png){fig-align="center"}
+
+Avec la commande dans le terminal :  
 
 `git branch -d nom-de-branche`
 :::
 
 ::: {.column width="33%"}
 ![](img/icone_gitssp.png){fig-align="center"}
+
+Avec l'instruction R :  
 
 `gitssp$delete_branch_local("nom-de-branche")`
 
@@ -594,6 +598,31 @@ Avec l'IHM RStudio, on ne peut pas supprimer de branches.
 Git empêche la suppression de branche si vous êtes positionnés dessus. 
 Dans ce cas, il faut au préalable changer de branche avec `git checkout nom-de-branche`
 :::
+
+## Supprimer des branches distantes
+
+::: columns
+
+::: {.column width="33%"}
+![](img/icone_rstudio.png){fig-align="center"}
+
+Avec l'IHM RStudio, on ne peut pas supprimer de branches distantes.  
+:::
+
+::: {.column width="33%"}
+![](img/icone_terminal.png){fig-align="center"}
+
+`git push origin --delete nom-de-branche`
+:::
+
+::: {.column width="33%"}
+![](img/icone_gitssp.png){fig-align="center"}
+
+`gitssp$delete_branch_gitlab("nom-de-branche")`
+
+:::
+
+::::
 
 
 ## Fusionner deux branches avec le terminal ![](img/icone_terminal.png)
