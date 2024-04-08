@@ -439,21 +439,23 @@ Les instructions Git ci-dessus peuvent aussise décliner sur un fichier spécifi
 Par exemple avec la structure suivante pour un commit et un fichier particulier : `git checkout commitID file-name`
 :::
 
-git revert : git revert permet de défaire un changement fait par
-n’importe quel commit en le “repassant à l’envers”
-ce changement devient un nouveau commit
-nécessite de trouver le commitId concerné avec git log
+## Inverser un commit
 
-Dans RStudio, tant qu’on n’a pas “commité”, on peut revenir directement à l’état du dernier commit. Dans la fenètre “Diff” ou “Commit”, on peut
-cliquer sur “Revert”
+La commande `git revert SHA-commit` permet d'inverser/de défaire ce qui avait été 
+fait au moment du commit d'intérêt.  
+
+Attention, le `git revert` crée un nouveau commit (d'inversion c'est-à-dire que les lignes ajoutées 
+seront supprimées et les fichiers supprimés seront recréés...).  
+
+![](img/git_revert.png){fig-align="center"}
 
 
 ## Autres instructions Git
 
 Il y a encore pleins d'instructions Git très utiles que vous découvrirez (ou pas) :
 
-- git cherry-pick : sélectionner et appliquer un seul commit d'une branche à une autre  
-- git blame : montrer la révision et l’auteur qui ont modifié en dernier chaque ligne d’un fichier  
-- git rebase : réappliquer une série de commits d'une branche sur une autre branche
-- git bisect : trouver par recherche binaire la modification qui a introduit une erreur  
+- [git cherry-pick](https://git-scm.com/docs/git-cherry-pick/fr) : sélectionner et appliquer un seul commit d'une branche à une autre  
+- [git blame](https://git-scm.com/docs/git-blame/fr) : montrer la révision et l’auteur qui ont modifié en dernier chaque ligne d’un fichier  
+- [git rebase](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing) : réappliquer une série de commits d'une branche sur une autre branche
+- [git bisect](https://git-scm.com/docs/git-bisect/fr) : trouver par recherche binaire la modification qui a introduit une erreur  
 ...  
