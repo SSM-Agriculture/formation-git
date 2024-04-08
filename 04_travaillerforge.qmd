@@ -385,13 +385,40 @@ Il reste à faire un `git pull` pour récupérer le nouveau tag dans votre worki
 
 ::::
 
-## Revenir en arrière avec Gitlab ![](img/icone_gitlab.png)
+## Revenir en arrière avec Gitlab (1/3) ![](img/icone_gitlab.png)
 
 L'interface de Gitlab permet de facilement se déplacer dans l'historique d'un projet versionné.  
 
 Par exemple :  
 
+::: columns
+::: {.column width="25%"}
 
+![](img/gitlab_commits.png){fig-align="center"}
+
+:::
+
+::: {.column width="75%"}
+
+![](img/gitlab_historique_commits.png){fig-align="center"}
+:::
+
+::::
+
+
+## Revenir en arrière avec Gitlab (2/3) ![](img/icone_gitlab.png)
+
+Cliquer sur le commit d'intérêt et dans la fenêtre qui en détaille le contenu, cliquer sur "Browse file" :  
+
+![](img/gitlab_acces_detail_commit.png){fig-align="center"}
+
+## Revenir en arrière avec Gitlab (3/3) ![](img/icone_gitlab.png)
+
+On accède ainsi à l'état du projet tel qu'il était au moment du commit d'intérêt.  
+
+![](img/gitlab_etat_precedent.png){fig-align="center"}
+
+Remarque : des manipulations quasi-identiques permettent de faire la même chose avec les tags.
 
 ## Revenir en arrière avec le terminal ![](img/icone_terminal.png)
 
@@ -409,7 +436,7 @@ Pour revenir au présent :
 
 ::: callout-note
 Les instructions Git ci-dessus peuvent aussise décliner sur un fichier spécifique.  
-Par exemple avec la syntaxe : `git checkout commitID file-name`
+Par exemple avec la structure suivante pour un commit et un fichier particulier : `git checkout commitID file-name`
 :::
 
 git revert : git revert permet de défaire un changement fait par
@@ -429,16 +456,3 @@ Il y a encore pleins d'instructions Git très utiles que vous découvrirez (ou p
 - git blame : montrer la révision et l’auteur qui ont modifié en dernier chaque ligne d’un fichier  
 - git bisect : trouver par recherche binaire la modification qui a introduit une erreur  
 ...  
-
-
-<!-- annuler un truc genre 5 commits en arrière ! -->
-
-<!-- # trouver le commit que vous devez annuler -->
-git log
-<!-- # se déplacer dans l'historique avec flèche haut / flèche bas -->
-<!-- # une fois le commit trouvé, mémoriser son hash -->
-git revert [hash mémorisé]
-<!-- # git va créer un nouveau commit qui annule ce commit -->
-<!-- # suivre les instructions pour éditer le message de commit -->
-<!-- # ou contentez-vous d'enregistrer et valider -->
-
