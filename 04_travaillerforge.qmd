@@ -387,27 +387,31 @@ Il reste à faire un `git pull` pour récupérer le nouveau tag dans votre worki
 
 ## Revenir en arrière avec Gitlab ![](img/icone_gitlab.png)
 
-A VENIR
+L'interface de Gitlab permet de facilement se déplacer dans l'historique d'un projet versionné.  
+
+Par exemple :  
+
+
 
 ## Revenir en arrière avec le terminal ![](img/icone_terminal.png)
 
-Git revert, git checkout ...
+Pour revenir à la version du tag v0.1 :  
+`git checkout v1.0`
 
-<p style="text-align: center;">[Git permet de consulter n'importe quel état passé du
-dépôt]{.content-box-yellow}</p>
+Pour revenir à la version du commit 0af8bfd9 :  
+`git checkout 0af8bfd9`
 
-Pour revenir en arrière :
+Pour remonter de 4 commits dans le passé :  
+`git checkout nom-de-branche~4`
 
--   Sur l'ensemble du dépôt avec l'identifiant d'un commit :
-    `git checkout <commitID>`\
--   Sur un seul fichier : `git checkout <commitID> <file-name>`
+Pour revenir au présent :  
+`git checkout nom-de-branche`
 
-Pour revenir au présent : `git checkout <branch-name>`
+::: callout-note
+Les instructions Git ci-dessus peuvent aussise décliner sur un fichier spécifique.  
+Par exemple avec la syntaxe : `git checkout commitID file-name`
+:::
 
-Pour remonter de 4 commits dans le passé : `git checkout <nom-de-branche~3>`
-
-
-`git revert`
 
 <!-- annuler un truc genre 5 commits en arrière ! -->
 
