@@ -538,16 +538,23 @@ Synchroniser la nouvelle branche locale "bugfix" avec la branche distante :
 
 ::: {.column width="33%"}
 ![](img/icone_rstudio.png){fig-align="center"}
+
+![](img/git_rstudio_changement_branche.png){fig-align="center"}
+
 :::
 
 ::: {.column width="33%"}
 ![](img/icone_terminal.png){fig-align="center"}
+
+Avec la commande dans le terminal :  
 
 `git checkout nom-de-branche`
 :::
 
 ::: {.column width="33%"}
 ![](img/icone_gitssp.png){fig-align="center"}
+
+Avec l'instruction R :  
 
 `gitssp$switch_branch_local("nom-de-branche")`
 
@@ -556,7 +563,7 @@ Synchroniser la nouvelle branche locale "bugfix" avec la branche distante :
 ::::
 
 
-## Supprimer des branches
+## Supprimer des branches locales
 
 ::: columns
 
@@ -581,15 +588,11 @@ Avec l'IHM RStudio, on ne peut pas supprimer de branches.
 
 ::::
 
-- Avec l'IHM RStudio, on ne peut pas supprimer de branches.  
+<br>
 
-- Avec le terminal, la commande à utiliser est : `git branch -d <nom-de-branche>`
-
-::: {.callout-note}
-## Important
-
+::: {.callout-important}
 Git empêche la suppression de branche si vous êtes positionnés dessus. 
-Dans ce cas, il faut au préalable changer de branche avec `git checkout <nom-de-branche>`
+Dans ce cas, il faut au préalable changer de branche avec `git checkout nom-de-branche`
 :::
 
 
