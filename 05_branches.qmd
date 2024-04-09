@@ -375,7 +375,7 @@ le fichier comme étant en conflit et arrêtera le processus de merge.
 
 **Il incombe alors aux développeurs de résoudre le conflit.**
 
-*Source: [Atlassian](https://www.atlassian.com/fr/git/tutorials/using-branches/merge-conflicts)
+*Source:* [Atlassian](https://www.atlassian.com/fr/git/tutorials/using-branches/merge-conflicts)
 
 ## Simulation d'un conflit
 
