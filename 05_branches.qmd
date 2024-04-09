@@ -291,13 +291,26 @@ Avec l'IHM RStudio, on ne peut pas supprimer de branches distantes.
 ::::
 
 
-## Fusionner deux branches avec le terminal ![](img/icone_terminal.png)
+## Fusionner deux branches 
 
-A VENIR
+Une fois les changements effectués sur votre branche de travail, on effectue 
+**une fusion de branche** pour rapatrier ces modifications sur une branche permanente.
+
+- On ne peut pas fusionner 2 branches avec RStudio  
+
+- On peut fusionner 2 branches avec le terminal. Par exemple :  
+
+  1. On se place sur la branche de developpement : `git checkout developpement`  
+  2. On la fusionne ave la branche de travail : `git merge branche-de-travail`  
+  3. On pousse sur le dépôt distant : `git push origin developpement`  
+  4. On supprime la branche de travail locale : `git branch -d branche-de-travail`  
 
 ## Fusionner deux branches avec Gitlab ![](img/icone_gitlab.png)
 
-A VENIR
+Il est conseillé de passer par Gitlab pour effectuer les fusions de branches.  
+Sous Gitlab, elle se nomment **merge request** (vs **pull request** sous Github).  
+
+
 
 ## Définition des conflits
 
