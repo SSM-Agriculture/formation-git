@@ -35,3 +35,7 @@ Le mode export PDF est activé quand le support passe en navigation verticale (s
   - Cocher l'option "Imprimer les arrières plans"
   - Vérifier que vous êtes bien au format paysage et régler les marges à "aucune". 
 
+## Déploiement du support de formation
+
+Ce diaporam est déployé sur la branche `gh-pages` avec la commande suivante :  
+`quarto publish gh-pages formation-git.qmd`
