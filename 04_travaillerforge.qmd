@@ -455,6 +455,7 @@ seront supprimées et les fichiers supprimés seront recréés...).
 Il y a encore pleins d'instructions Git très utiles que vous découvrirez (ou pas) :
 
 - [git cherry-pick](https://git-scm.com/docs/git-cherry-pick/fr) : sélectionner et appliquer un seul commit d'une branche à une autre  
+- [git stash](https://git-scm.com/docs/git-stash/fr) : mettre de côté les modifications d’un répertoire de travail  
 - [git blame](https://git-scm.com/docs/git-blame/fr) : montrer la révision et l’auteur qui ont modifié en dernier chaque ligne d’un fichier  
 - [git rebase](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing) : réappliquer une série de commits d'une branche sur une autre branche
 - [git bisect](https://git-scm.com/docs/git-bisect/fr) : trouver par recherche binaire la modification qui a introduit une erreur  
