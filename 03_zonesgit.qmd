@@ -324,6 +324,7 @@ tout en renseignant le message associé**</p>
 `git commit -m "fix: ajout fichier odt dans .gitignore"`
 
 <br>
+
 ::: callout-note
 La commande `git commit` propose de nombreuses options qui sont disponibles [ici](https://git-scm.com/docs/git-commit/fr).
 :::
@@ -353,10 +354,10 @@ La commande à utiliser est :\
 :::
 :::
 
-[Attention ! Cette commande ne doit être effectuée que si vous n'avez
+Attention ! Cette commande ne doit être effectuée que si vous n'avez
 pas encore poussé le commit sur dépôt distant sinon les autres
 utilisateurs du commit seront affectés puisque le SHA-1 est
-changé]{.full-width .content-box-red}
+changé
 
 ## Si vous ne deviez retenir que quelques commandes ! ![](img/a_retenir.png)
 
