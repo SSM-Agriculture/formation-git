@@ -1,6 +1,6 @@
 ---
 title: "Formation Git"
-subtitle: "Apprendre à utiliser Git en tant qu'utilisateur de R"
+subtitle: "Apprendre à utiliser le contrôle de version avec Git en tant qu'utilisateur de RStudio"
 date: today
 date-format: "DD/MM/YYYY"
 author: "SSP/DEMESIS"
@@ -25,6 +25,21 @@ execute:
 editor:
   render-on-save: true
 ---
+
+## Avant-propos
+
+<br>
+
+Ce diaporama de formation a été rédigé dans le but d'être le support visuel des formations dispensées au [MASA](https://agreste.agriculture.gouv.fr/).  
+
+Ces formations sont données en présentiel sur une durée d'une journée à partir de juin 2024.  
+
+::: callout-note
+
+Ce support ne couvre pas tous les aspects du contrôle de version ni toutes les commandes Git.  De même, il est orienté pour être utile aux agents du MASA et se concentre donc sur une utilisation de R via [RStudio](https://posit.co/download/rstudio-desktop/).  
+
+L'utilisation avec d'autre IDE tels que [VS Code](https://code.visualstudio.com/) n'est donc incluse.  
+:::
 
 {{< include 01_pourquoigit.qmd >}}
 
