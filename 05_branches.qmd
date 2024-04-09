@@ -293,26 +293,77 @@ Avec l'IHM RStudio, on ne peut pas supprimer de branches distantes.
 
 ## Fusionner deux branches 
 
-Une fois les changements effectués sur votre branche de travail, on effectue 
-**une fusion de branche** pour rapatrier ces modifications sur une branche permanente.   
+<p style="text-align: center;">[Une fois les changements effectués sur votre branche de travail, on effectue 
+**une fusion de branche** pour rapatrier ces modifications sur une branche permanente.]{.Jaune_moutarde1}</p>   
 
 **Dans le cadre d'un travail collectif, les fusions permettent à plusieurs membres d'une équipe de combiner leur travail.**  
 
-- On ne peut pas fusionner 2 branches avec RStudio  
+![](img/icone_rstudio.png) **Avec RStudio** on ne peut pas fusionner 2 branches    
 
-- On peut fusionner 2 branches avec le terminal. Par exemple :  
+![](img/icone_terminal.png) **Avec le terminal** on peut fusionner 2 branches.  
+Par exemple :  
 
   1. On se place sur la branche de developpement : `git checkout developpement`  
   2. On la fusionne ave la branche de travail : `git merge branche-de-travail`  
   3. On pousse sur le dépôt distant : `git push origin developpement`  
   4. On supprime la branche de travail locale : `git branch -d branche-de-travail`  
 
-## Fusionner deux branches avec Gitlab ![](img/icone_gitlab.png)
+## Fusionner deux branches avec Gitlab (1/3) ![](img/icone_gitlab.png)
 
-Il est conseillé de passer par Gitlab pour effectuer les fusions de branches.  
-Sous Gitlab, elle se nomment **merge request** (vs **pull request** sous Github).  
+[Il est conseillé de passer par Gitlab pour effectuer les fusions de branches.]{.Terre_battue2}  
+Sous Gitlab, elle se nomment **merge request** (et **pull request** sous Github).  
 
+::: columns
 
+::: {.column width="25%"}
+
+Cliquer sur "Merge requests" dans le menu de gauche :  
+
+![](img/gitlab_merge_request.png){fig-align="center"}
+
+:::
+
+::: {.column width="75%"}
+
+Puis selon l'endroit par lequel vous passez, cliquer sur l'un des boutons suivants :  
+
+![](img/gitlab_bouton_create_merge_request.png){fig-align="center"} ou ![](img/gitlab_bouton_new_merge_request.png){fig-align="center"}
+
+Choisir la branche source et la branche cible :  
+
+![](img/gitlab_merge_request_choix_branches.png){fig-align="center"}
+
+:::
+
+::::
+
+## Fusionner deux branches avec Gitlab (2/3) ![](img/icone_gitlab.png)
+
+![](img/gitlab_merge_request_infos_fenetre1.png){fig-align="center"}
+
+## Fusionner deux branches avec Gitlab (2/3) ![](img/icone_gitlab.png)
+
+![](img/gitlab_merge_request_infos_fenetre2.png){fig-align="center"} 
+
+## Les relectures ou revues de code avec Gitlab (1/3) ![](img/icone_gitlab.png)
+
+Les fusions de branches sont aussi l'occasion d'effectuer **des tests** ou **des revues de code** entre les membres de l'équipe projet.  
+
+![](img/gitlab_merge_request_ajout_commentaire.png){fig-align="center"} 
+
+## Les relectures ou revues de code avec Gitlab (2/3) ![](img/icone_gitlab.png)
+
+![](img/gitlab_merge_request_finir_review.png){fig-align="center"} 
+
+## Les relectures ou revues de code avec Gitlab (3/3) ![](img/icone_gitlab.png)
+
+Une fois la revue de code effectuée, appuyer sur le bouton "Merge" pour valider la fusion :  
+
+![](img/gitlab_merge_request_bouton_merge.png){fig-align="center"} 
+
+::: callout-note
+- Voir [cette page](https://docs.gitlab.com/ee/user/project/merge_requests/reviews/) pour la documentation complète officielle sur les merge request reviews.
+:::
 
 ## Définition des conflits
 
