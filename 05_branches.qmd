@@ -294,7 +294,9 @@ Avec l'IHM RStudio, on ne peut pas supprimer de branches distantes.
 ## Fusionner deux branches 
 
 Une fois les changements effectués sur votre branche de travail, on effectue 
-**une fusion de branche** pour rapatrier ces modifications sur une branche permanente.
+**une fusion de branche** pour rapatrier ces modifications sur une branche permanente.   
+
+**Dans le cadre d'un travail collectif, les fusions permettent à plusieurs membres d'une équipe de combiner leur travail.**  
 
 - On ne peut pas fusionner 2 branches avec RStudio  
 
