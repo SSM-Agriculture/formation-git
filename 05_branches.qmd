@@ -381,36 +381,114 @@ Après avoir effectué la fusion sur gitlab, ne pas oublier de faire un `git pul
 
 Sans rentrer dans le détail, il existe 2 principales stratégeries de merge dans Git :  
 
-- le `fast-forward-merge` ou `merge rapide` : utilisée principalement pour la correction de petites fonctionnalités   
-- le `3-way-merge` ou `merge à 3 sources` : utilisée pour l'intégration de fonctionnalités de plus long terme  
+- le `fast-forward-merge` ou `merge rapide` : utilisée principalement pour la **correction de petites fonctionnalités**   
+Il a lieu lorsque le chemin entre la pointe de la branche-de-travail et la branche permanente **est linéaire**.
+
+- le `3-way-merge` ou `merge à 3 sources` : utilisée pour l'intégration de **fonctionnalités de plus long terme**  
+Il a lieu lorsque la branche permanente a été modifiée pendant les développements effectués sur la branche-de-travail.
 
 Pour en savoir plus, consulter [cette page](https://www.atlassian.com/fr/git/tutorials/using-branches/git-merge) très complète sur le sujet et en français.  
 
 
 ## Définition des conflits
 
-Les conflits surviennent généralement lorsque **deux personnes ont modifié les mêmes lignes dans un fichier**, ou si un développeur a supprimé un fichier alors qu'un autre développeur le modifiait.  
+Les conflits surviennent généralement lorsque [**deux personnes ont modifié les mêmes lignes dans un fichier**]{.souligneRouge}, ou si un développeur a supprimé un fichier alors qu'un autre développeur le modifiait.  
 
-Dans ces cas, **Git ne peut pas déterminer automatiquement la version correcte**;   
+Dans ces cas, [**Git ne peut pas déterminer automatiquement la version correcte**]{.souligneRouge}   
 
+<br>
 Comportement de Git lors d'un conflit :  
 - **Les conflits n'affectent que le développeur qui effectue le merge**  
 - Les autres membres de l'équipe ne sont pas conscients du conflit.  
-- Git marquera le fichier comme étant en conflit et bloquera le processus de merge.   
+- Git marquera le fichier comme étant en conflit et [bloquera le processus de merge.]{.souligneRouge}   
 
-**Il incombe alors aux développeurs de résoudre le conflit.**
+=> **Il incombe alors aux développeurs de résoudre le conflit.**
+
+<br>
 
 *Source:* [Atlassian](https://www.atlassian.com/fr/git/tutorials/using-branches/merge-conflicts)
 
 
-## Repérer les conflits
+## Gérer les conflits (1/3)
 
-Pour délimiter la zone de conflit, Git utilise les marqueurs et annotations suivantes :  
+Pour repérer les conflifts, que ce soit avec le terminal ou sur Gitlab, on est vite avertis :)  
+
+::: columns
+::: {.column width="50%"}
+![](img/icone_terminal.png){fig-align="center"}
+
+![](img/terminal_merge_conflit.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](img/icone_gitlab.png){fig-align="center"}
+
+![](img/gitlab_conflits.png){fig-align="center"}
+:::
+
+::::
+
+
+## Gérer les conflits (2/3)
+
+Gitlab nous propose 2 façons de résoudre les conflits, soit localement (ce qui correspond à la procédure à suivre avec le terminal) soit directement dans l'interface de Gitlab :  
+
+![](img/gitlab_boutons_resolution_conflits.png){fig-align="center"} 
+
+- **La résolution locale :**  
+Cela signifie que l'on rapatrie dans son working directory les fichiers tels qu'ils sont en cours lors de la fusion. Après arbitrage de l'équipe projet sur les lignes de code à retenir, il s'agit ensuite de pousser la modification sur le dépôt distant.  
+
+- **La résolution sur Gitlab :**  
+Cela signifie que l'on utilise
+
+[Pour résoudre le conflit, il suffit de se laisser guider par les instructions proposées]{.red}
+
+![](img/resolution_conflit_localement.png){fig-align="center"} 
+
+
+## Gérer les conflits (3/3)
+
+**Pour délimiter la zone de conflit, Git utilise les marqueurs et annotations suivantes :**  
 
 - La ligne qui commence par <<<<<<< marque le début de la zone conflictuelle.  
 - Le marqueur ======= représente la frontière entre les deux zones à fusionner.  
-- La ligne qui commence par >>>>>>> délimite la fin de la zone conflictuelle.
-  
+- La ligne qui commence par >>>>>>> délimite la fin de la zone conflictuelle.  
+
+Exemple :  
+
+```r
+<<<<<<< HEAD
+library(tidyverse)
+=======
+library(tidyr)
+>>>>>>> bugfix-tidyr
+
+```
+
+## Résoudre les conflits avec le terminal ![](img/icone_terminal.png)
+
+
+## Résoudre les conflits sur Gitlab ![](img/icone_gitlab.png)
+
+![](img/gitlab_resolution_conflit.png){fig-align="center"} 
+
+![](img/gitlab_resolution_conflit_message_errone.png){fig-align="center"} 
+
+
+## Gérer les conflits (5/5)
+
+Après une fusion, on peut **supprimer les branches temporaires** qu'elles soient distantes ou locales.  
+
+- Pour **les branches distantes**, elles sont supprimées dès lors que cette case est cochée dans Gitlab (sinon voir [ici](#supprimer-des-branches-distantes) : 
+
+![](img/gitlab_case_delete_source_branch.png){fig-align="center"} 
+- Pour supprimer les branches locales devenues inutiles, voir [ici]()
+
+parler du git fetch -p origin
+
+Pour identifier les conflits pendant un merge
+git log --merge
+
 ## Éviter au maximum les conflits
 
 Quelques conseils :  
@@ -425,33 +503,34 @@ Quelques conseils :
 ## Exercice 5
 
 ::: {.callout-tip icon=false}
-## Exercice 5
+## Exercice 5 - Simulation d'un conflit
 
 Reprendre [l'exercice 4](#exercice-4)
+
+- Dans votre projet R, créer 2 branches `bugfix-tidyverse` et `bugfix-tidyr`  
+<br>
+- Se positionner sur la branche `bugfix-tidyverse` et corriger le script `Analyse.R` en modifiant l'unique ligne avec `library(tidyverse)`.   
+- Pousser la branche `bugfix-tidyverse` et la fusionner avec la branche permanente sur Gitlab.  
+- Récupérer les résultats du merge dans le dépôt local.  
+- Se positionner maintenant sur la branche `bugfix-tidyr` et corriger le script `Analyse.R` en modifiant l'unique ligne avec `library(tidyr)`.  
+<br>
+- Pousser la branche `bugfix-tidyr` et la fusionner avec la branche permanente sur Gitlab.  
+- Se positionner sur la branche permanente.  
+- Fusionner la branche `bugfix-tidyverse` dans la branche permanente.  
+- Puis fusionner la branche `bugfix-tidyr` dans la branche permanente.
+- Résoudre le conflit
+
+:::
+
+*Source :* exercice issue de [cet article de blog](https://blog.microlinux.fr/formation-git-11-conflits/)
+
+## Exercice 6 collectif
+
+::: {.callout-tip icon=false}
+## Exercice 6
 
 - Parcourir l’historique de votre dépôt distant avec Gitlab/RStudio/terminal.  
 - Faire apparaître les différences entre deux versions consécutives du projet  
 - Afficher une version passée du projet (par exemple son état au 2ème commit)
 
 :::
-
-::: {.callout-note icon=false}
-## Exercice :
-
-1. Dans le projet formation-git, créer une nouvelle branche   
-2. Se placer dans la branche, ajouter un programme, l’enregistrer puis commit.
-3. Vérifier dans Gitlab les modifications apportées, dans la branche principale et dans la nouvelle branche.
-4. Fusionner la nouvelle branche avec la branche principale.
-5. Dans RStudio, récupérer les modifications avec un pull.
-
-:::
-
-
-
-    On se place dans la même configuration que dans l’application précédente : un mainteneur et deux/trois développeurs
-    Le mainteneur modifie le contenu de son fichier, puis commit et push les modifications
-    Sans faire de pull préalable, les développeurs modifient également le contenu du fichier du mainteneur, puis commit et push les modifications
-    Le push est rejeté pour la même raison que dans l’application précédente : les dépôts ne sont plus synchronisés, il faut pull les changements distants au préalable. Mais cette fois, le pull est également rejeté : il y a un conflit entre l’historique du projet distant et celui du projet local. Git nous indique qu’il faut résoudre le conflit avant de pouvoir modifier l’historique du projet.
-    Utiliser l’interface de RStudio pour résoudre le conflit, en choisissant la version du fichier que vous souhaitez conserver, puis commit/push les modifications
-    Comme dans l’application précédente, seul le développeur le plus rapide parvient à push. Les autres doivent répéter l’opération.
-
