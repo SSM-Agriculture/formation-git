@@ -51,7 +51,7 @@ Close #31, en lien avec #29
 
 ## Organisation au DEMESIS
 
-![](img/gitflow_demesis.png){fig-align="center"}
+![](img/modele_branches.png){fig-align="center"}
 
 
 ## Que deviennent les branches ?
