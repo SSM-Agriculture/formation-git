@@ -36,11 +36,15 @@ Ces formations s'adressent à des agents **qui découvrent le contrôle de versi
 Elles sont données en présentiel sur une durée **d'une journée** à partir de juin 2024.  
 
 ::: callout-note
+## Champ couvert par cette formation
 
 **Ce support ne couvre pas tous les aspects du contrôle de version ni toutes les commandes Git.**  
+
 De même, il est orienté pour être utile aux agents du MASA et se concentre donc sur une utilisation de R via [RStudio](https://posit.co/download/rstudio-desktop/) qui est mise à disposition des agents sur la plateforme interne Cerise basée sur RStudio Server.  
 
-L'utilisation avec d'autre IDE tels que [VS Code](https://code.visualstudio.com/) ou encore [Github Desktop](https://desktop.github.com/) n'est donc incluse.  
+[L'utilisation avec d'autre IDE tels que [VS Code](https://code.visualstudio.com/) ou encore [Github Desktop](https://desktop.github.com/) n'est donc incluse.]{.red}  
+
+Enfin, en tant que forge interne du MASA, les fonctionnalités principales de [Gitlab](https://about.gitlab.com/) sont présentées dans ce support. Même si la majorité des concepts de base sont équivalents, [Github](https://github.com/) n'est pas abordé dans ce diaporama de formation.
 :::
 
 {{< include 01_pourquoigit.qmd >}}
