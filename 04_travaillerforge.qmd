@@ -151,7 +151,7 @@ Exemple :
 
 ## Lier un dépôt local à un dépôt distant (1/2)
 
-**1ère étape commune à toutes les méthodes : création d'un dépôt vide sur la forge Gitlab**
+[**1ère étape commune à toutes les méthodes : création d'un dépôt vide sur la forge Gitlab**]{.souligneRouge}
 
 - Cliquez sur le bouton "New project" situé en haut à droite :  
 
