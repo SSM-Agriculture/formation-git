@@ -300,11 +300,12 @@ Par exemple :
 
 Le package `gitssp` peut également être utilisé pour effectuer la liaison.  
   
-**Avantage :** plusieurs branches distantes (developpement, recette et production) vont être créées en une seule instruction R.  
-**Inconvénient :** il y a 1 étape supplémentaire dans les pré-requis.    
+Plusieurs branches distantes (developpement, recette et production) peuvent être créées en une seule instruction R.  
+
+**Procédure :**  
 
 - Créer un projet .Rproj dans votre working directory (sans choisir "Contrôle de version")
-- Charger le package avec `library(git=ssp)`
+- Charger le package avec `library(gitssp)`
 - Lancer la fonction R `ajouter_git()`
 
 ## Lier un dépôt local à un dépôt distant avec gitssp (2/2) ![](img/icone_gitssp.png)
@@ -312,7 +313,7 @@ Le package `gitssp` peut également être utilisé pour effectuer la liaison.
 La fonction `ajouter_git()` comprend 2 arguments :  
   
 - `origin` : URL du dépôt distant (obligatoire)  
-- `dossier` : chemin vers le projet .Rproj que vous avez créé (facultatif car Si aucun dossier n'est précisé, les opérations vont se dérouler dans le dossier courant)  
+- `dossier` : chemin vers le projet .Rproj que vous avez créé (facultatif car si aucun dossier n'est précisé, les opérations vont se dérouler dans le dossier courant)  
   
 Par exemple :  
 ```r
@@ -321,6 +322,8 @@ ajouter_git(
   dossier = "~/test/"
 )
 ```
+
+La fonction relance une nouvelle session R et vous l'onglet "Git" est disponible et opérationnel.
 
 ## Pousser les changements sur la forge avec RStudio ![](img/icone_rstudio.png)
 
@@ -365,7 +368,7 @@ Exemples :
 Reprendre [l'exercice 2](#exercice-2-22)
 
 - Créer un dépôt vide dans votre namespace dans la forge Gitlab  
-- Lier votre projet R à ce dépôt distant (de préférence avec le terminal)  
+- Lier votre projet R à ce dépôt distant  
 - Poussez vos commits déjà effectués sur le dépôt distant  
 
 
