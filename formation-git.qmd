@@ -5,7 +5,7 @@ date: today
 date-format: "DD/MM/YYYY"
 author: "SSP/DEMESIS"
 description: |
-  Support de formation de Git pour les utilisateurs de R
+  Support de formation de Git pour les utilisateurs de R au MASA
 
 slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
