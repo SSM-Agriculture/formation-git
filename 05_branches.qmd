@@ -161,13 +161,25 @@ Pour créer une nouvelle branche avec RStudio, il faut :
 Cette procédure va créer la nouvelle branche **à la fois sur le dépôt local  mais aussi sur le dépôt distant.**  
 
 
-## Créer une nouvelle branche à partir d'une issue Gitlab ![](img/icone_gitlab.png)
+## Créer une nouvelle branche à partir de Gitlab ![](img/icone_gitlab.png)
 
-Depuis l'interface Gitlab et à partir d'une issue, on peut créer une branche comme ci-dessous :  
+::: columns
+::: {.column width="50%"}
+Depuis l'interface Gitlab, on peut créer une branche depuis la page d'accueil du dépôt :  
+
+![](img/gitlab_nouvelle_branche_simplement.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+Depuis l'interface Gitlab et à partir d'une issue, on peut aussi créer une branche :  
 
 ![](img/gitlab_creer_branch_depuis_issue.png){fig-align="center"}
+:::
 
-- Pour récupérer cette branche distante dans votre dépôt local, on fera un `git pull` dans le terminal ou RStudio.  
+::::
+
+
+Pour récupérer cette branche distante dans votre dépôt local, on fera un `git pull` dans le terminal ou RStudio.  
 
 ![](img/gitlab_pull_branche_cree_dans_issue.png){fig-align="center"}
 
