@@ -489,6 +489,24 @@ On accède ainsi à l'état du projet tel qu'il était au moment du commit d'int
 
 Remarque : des manipulations quasi-identiques permettent de faire la même chose avec les tags.
 
+## Revenir en arrière avec RStudio ![](img/icone_rstudio.png)
+
+Avec RStudio, en cliquant sur le bouton "Historique" : ![](img/rstudio_bouton_historique.png)  
+
+On accède aux différentes versions des fichiers qui ont été modifiés au fil du temps  
+[Remarque : avec RStudio il n'est pas possible de revenir en arrière sur l'ensemble du projet]{.red}  
+
+::: columns
+::: {.column width="50%"}
+![](img/rstudio_page_historique.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](img/rstudio_page_historique_vue_script.png){fig-align="center"}
+:::
+::::
+
+
 ## Revenir en arrière avec le terminal ![](img/icone_terminal.png)
 
 Pour revenir à la version du tag v0.1 :  
@@ -521,7 +539,7 @@ seront supprimées et les fichiers supprimés seront recréés...).
 
 ## Autres instructions Git
 
-Il y a encore pleins d'instructions et de concepts Git très utiles que vous découvrirez (ou pas) :
+Il y a encore pleins de concepts et d'instruction Git très utiles que vous découvrirez (ou pas) :
 
 - Le [fork](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/forking-workflow) : travailler avec une copie d'un dépôt existant
 
@@ -531,3 +549,19 @@ Il y a encore pleins d'instructions et de concepts Git très utiles que vous dé
 - [git rebase](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing) : réappliquer une série de commits d'une branche sur une autre branche
 - [git bisect](https://git-scm.com/docs/git-bisect/fr) : trouver par recherche binaire la modification qui a introduit une erreur  
 ...  
+
+## Exercice 4
+
+::: {.callout-tip icon=false}
+## Exercice 4
+
+Reprendre [l'exercice 3](#exercice-3)
+
+- Parcourir l’historique de votre dépôt distant sur Gitlab  
+- Faire apparaître les différences entre deux versions consécutives du projet  
+- Afficher une version passée du projet (par exemple son état au 2ème commit)
+<br>
+
+**BONUS : faire l'exercice avec RStudio et pour ceux qui sont en avance avec le terminal :)**
+
+:::
