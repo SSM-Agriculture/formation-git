@@ -350,9 +350,12 @@ La commande `git commit` propose de nombreuses options qui sont disponibles [ici
 ## Exercice 1
 
 - Créer un projet R dans votre espace personnel Cerise en l'initialisant avec Git  
+- Vérifier que votre projet est bien versionné avec Git  
+- Ajouter les nouveaux fichiers à l'index et faire un 1er commit  
+<br>
 - Créer des scripts R à l'intérieur de votre projet  
-- Ajouter ces scripts à l'index  
-- Faire votre commit
+- Enregistrer vos scripts  
+- Ajouter ces scripts à l'index et faire votre 2ème commit  
 
 **BONUS : faire l'exercice avec RStudio et pour ceux qui sont en avance avec le terminal :)**
 
@@ -482,18 +485,39 @@ La commande `git log --oneline` affiche les informations concernant l'historique
 
 - **Il ne faut committer sur la base du temps passé mais plutôt sur la base des fonctionnalités.**
 
-## Exercice 2
+## Exercice 2 (1/2)
 
 ::: {.callout-tip icon=false}
-## Exercice 2
+## Exercice 2 (1/2)
 
 Reprendre [l'exercice 1](#exercice-1)
 
-- Créer un projet R dans votre espace personnel Cerise en l'initialisant avec Git  
-- Créer des scripts R à l'intérieur de votre projet  
-- Ajouter ces scripts à l'index  
-- Faire votre commit
+- Apporter des changements dans un de vos scripts R  
+- Enregistrer votre script modifié  
+- Que se passe t'il dans l'onglet "Git" de RStudio ? Avec la commande `git status` ?  
+- Ajouter vos changements à l'index et faire un nouveau commit  
+<br>
+- Supprimer un de vos scripts  
+- Que se passe t'il dans l'onglet "Git" de RStudio ? Avec la commande `git status` ?  
+- Ajouter vos changements à l'index et faire un nouveau commit  
 
-BONUS : faire l'exercice avec RStudio et pour ceux qui sont en avance avec le terminal :)
+VOIR LA SUITE DE L'EXERCICE SUR LA PROCHAINE DIAPOSITIVE...
+
+:::
+
+## Exercice 2 (2/2)
+
+::: {.callout-tip icon=false}
+## Exercice 2 (suite)
+
+- Ajouter un fichier de type tableur dans votre projet  
+- Que se passe t'il dans l'onglet "Git" de RStudio ? Avec la commande `git status` ?  
+- Modifier le fichier `.gitignore` pour faire en sorte que Git ignore ce fichier tableur.  
+- Ajouter vos changements sur `.gitignore` à l'index et faire un nouveau commit  
+<br>
+- Ajouter un nouveau script `Analyse.R` qui contient uniquement la ligne `library(dplyr)`  
+- Ajouter vos changements à l'index et faire un nouveau commit  
+<br>
+- Consulter l'historique de votre projet avec RStudio et le terminal  
 
 :::
