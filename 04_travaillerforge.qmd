@@ -370,18 +370,10 @@ Reprendre [l'exercice 2](#exercice-2-22)
 - Créer un dépôt vide dans votre namespace dans la forge Gitlab  
 - Lier votre projet R à ce dépôt distant  
 - Poussez vos commits déjà effectués sur le dépôt distant  
-
-
-- Apporter des changements dans un de vos scripts R  
-- Enregistrer votre script modifié  
-- Que se passe t'il dans l'onglet "Git" de RStudio ? Avec la commande `git status` ?  
-- Ajouter vos changements à l'index et faire un nouveau commit  
 <br>
-- Supprimer un de vos scripts  
-- Que se passe t'il dans l'onglet "Git" de RStudio ? Avec la commande `git status` ?  
-- Ajouter vos changements à l'index et faire un nouveau commit  
-
-VOIR LA SUITE DE L'EXERCICE SUR LA PROCHAINE DIAPOSITIVE...
+- Apporter des changements dans un de vos scripts R (sauf `Analyse.R`) 
+- Ajouter vos changements à l'index, faire un nouveau commit et pousser sur le dépôt distant  
+<br>
 
 :::
 
