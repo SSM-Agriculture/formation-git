@@ -10,7 +10,7 @@ editor:
 
 ![](img/completeworkflow.png){fig-align="center"}
 
-\*Source :
+*Source :*
 [itnext.io](https://itnext.io/git-concepts-for-newcomers-part-2-git-repository-working-tree-and-staging-area-a2e720bf3528)
 
 ## Les zones de Git :
