@@ -149,7 +149,7 @@ Exemple :
 
 ![](img/gitlab_creer_issue_board.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant (1/2)
+## Lier un dépôt local à un dépôt distant (1/3)
 
 [**1ère étape commune à toutes les méthodes : création d'un dépôt vide sur la forge Gitlab**]{.souligneRouge}
 
@@ -161,7 +161,7 @@ Exemple :
 
 ![](img/gitlab_projet_vide.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant (2/2)
+## Lier un dépôt local à un dépôt distant (2/3)
 
 - Renseigner le nom du projet, éventuellement une courte description, l'espace 
 d'appartenance du projet dans la forge, son niveau de visibilité et penser à 
@@ -169,20 +169,39 @@ décocher l'option "Initialize repository with a README". Puis cliquer sur "Crea
 
 ![](img/gitlab_infos_projet.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant avec RStudio (1/3) ![](img/icone_rstudio.png)
+## Lier un dépôt local à un dépôt distant (3/3)
+
+<br>
+La méthode à utiliser est différente selon les cas :  
+
+1. **Vous voulez créer un nouveau répertoire** dans votre working directory  
+2. **Vous avez déjà un répertoire** dans votre working directory  
+
+<br>
+
+::: {.callout-note icon=false}
+## À retenir
+Pour vérifier qu'un dépôt local est lié à un dépôt distant, la commande du terminal `git remote -v` est très utile car elle renvoit l'URL du dépôt distant s'il existe.
+:::
+
+## Lier un dépôt local à un dépôt distant avec RStudio (1/4) ![](img/icone_rstudio.png)
+
+<br>
+
+[**CAS 1 : création d'un nouveau répertoire**]{.souligneRouge}
 
 Créer un nouveau projet, puis choisir "Contrôle de version" :  
 
 ![](img/gitlab_rstudio_lier_projet.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant avec RStudio (2/3) ![](img/icone_rstudio.png)
+## Lier un dépôt local à un dépôt distant avec RStudio (2/4) ![](img/icone_rstudio.png)
 
 Puis choisir "Git" :  
 
 
 ![](img/gitlab_rstudio_lier_gitlab_git.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant avec RStudio (3/3) ![](img/icone_rstudio.png)
+## Lier un dépôt local à un dépôt distant avec RStudio (3/4) ![](img/icone_rstudio.png)
 
 
 ::: columns
@@ -203,22 +222,35 @@ Puis renseigner :
 
 ![](img/gitlab_rstudio_lier_projet_URL.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant avec terminal (1/3) ![](img/icone_terminal.png)
-
-<br>
-La méthode à utiliser est différente selon les cas :  
-
-1. **Vous voulez créer un nouveau répertoire** dans votre working directory  
-2. **Vous avez déjà un répertoire** dans votre working directory  
+## Lier un dépôt local à un dépôt distant avec RStudio (4/4) ![](img/icone_rstudio.png)
 
 <br>
 
-::: {.callout-note icon=false}
-## À retenir
-Pour vérifier qu'un dépôt local est lié à un dépôt distant, la commande `git remote -v` est très utile car elle renvoit l'URL du dépôt distant s'il existe.
+[**CAS 2 : un répertoire existe déjà**]{.souligneRouge}
+
+Dans ce cas, l'interface de RStudio est mal pensé et **il est beaucoup plus intuitif d'utiliser le terminal** (voir [ici](#lier-un-dépôt-local-à-un-dépôt-distant-avec-terminal-22))
+
+La fonctionnalité d'ajout d'un dépôt distant est accessible en cliquant sur le bouton "Nouvelle branche" :(  
+
+![](img/gitlab_bouton_nouvelle_branche.png){fig-align="center"}
+
+::: columns
+::: {.column width="50%"}
+Cliquer sur le bouton "Ajouter à distance" :  
+
+![](img/gitlab_ajouter_a_distance.png){fig-align="center"}
 :::
 
-## Lier un dépôt local à un dépôt distant avec terminal (2/3) ![](img/icone_terminal.png)
+::: {.column width="50%"}
+Entrer l'alias origin et l'URL du dépôt distant :  
+
+![](img/gitlab_ajouter_a_distance_URL.png){fig-align="center"}
+:::
+
+::::
+
+
+## Lier un dépôt local à un dépôt distant avec terminal (1/2) ![](img/icone_terminal.png)
 
 <br>
 
@@ -231,7 +263,7 @@ Par exemple :
 `git clone https://forge.agriculture.rie.gouv.fr/gitlab/damien.dotta/test.git`
 - Ouvrir le nouveau répertoire et commencer à y travailler comme d'habitude en y créant un projet, des scripts...
 
-## Lier un dépôt local à un dépôt distant avec terminal (3/3) ![](img/icone_terminal.png)
+## Lier un dépôt local à un dépôt distant avec terminal (2/2) ![](img/icone_terminal.png)
 
 <br>
 
@@ -262,7 +294,7 @@ Le package `gitssp` peut également être utilisé pour effectuer la liaison.
 La fonction `ajouter_git()` comprend 2 arguments :  
   
 - `origin` : URL du dépôt distant (obligatoire)  
-- `dossier` : chemin vers le projet .Rproj que vous avez crée (facultatif car Si aucun dossier n'est précisé, les opérations vont se dérouler dans le dossier courant)  
+- `dossier` : chemin vers le projet .Rproj que vous avez créé (facultatif car Si aucun dossier n'est précisé, les opérations vont se dérouler dans le dossier courant)  
   
 Par exemple :  
 ```r
@@ -307,6 +339,30 @@ Exemples :
 - `git push origin developpement`  
 - `git pull origin production`  
 
+## Exercice 3
+
+::: {.callout-tip icon=false}
+## Exercice 3
+
+Reprendre [l'exercice 2](#exercice-2-22)
+
+- Créer un dépôt vide dans votre namespace dans la forge Gitlab  
+- Lier votre projet R à ce dépôt distant (de préférence avec le terminal)  
+- Poussez vos commits déjà effectués sur le dépôt distant  
+
+
+- Apporter des changements dans un de vos scripts R  
+- Enregistrer votre script modifié  
+- Que se passe t'il dans l'onglet "Git" de RStudio ? Avec la commande `git status` ?  
+- Ajouter vos changements à l'index et faire un nouveau commit  
+<br>
+- Supprimer un de vos scripts  
+- Que se passe t'il dans l'onglet "Git" de RStudio ? Avec la commande `git status` ?  
+- Ajouter vos changements à l'index et faire un nouveau commit  
+
+VOIR LA SUITE DE L'EXERCICE SUR LA PROCHAINE DIAPOSITIVE...
+
+:::
 
 ## Récupérer les changements en local avec RStudio ![](img/icone_rstudio.png)
 
