@@ -14,6 +14,10 @@ Par défaut, le dépôt distant porte l'alias `origin`
 
 ![](img/git_distributed.png){fig-align="center"}
 
+## Architecture générale
+
+![](img/architecture_git_MASA.png){fig-align="center"}
+
 ## C'est quoi une forge ?
 
 Définition Wikipédia :  
