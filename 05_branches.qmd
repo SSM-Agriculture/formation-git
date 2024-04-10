@@ -377,28 +377,63 @@ Une fois la revue de code effectuée (pas obligatoire), appuyer sur le bouton "M
 Après avoir effectué la fusion sur gitlab, ne pas oublier de faire un `git pull` dans votre working directory afin de rapatrier les changements issus du merge !
 :::
 
-## Stratégie de fusion : le `fast-forward-merge`
+## Stratégies de fusion
 
-Il existe 2 principales stratégies lors des fusions de branches dans Git.   
-La première qui correspond aux cas simples et rapide (`fast`) est le `fast-forward-merge`.  
+Sans rentrer dans le détail, il existe 2 principales stratégeries de merge dans Git :  
 
-Le `fast-forward-merge` peut se faire à partir du moment où il existe **un lien linéaire** entre la branche de travail et la branche-cible.  
-C'est le cas lorsque vous ajoutez plusieurs commits sur la branche de travail pendant que la branche cible reste inchangée.  
+- le `fast-forward-merge` ou `merge rapide` : utilisée principalement pour la correction de petites fonctionnalités   
+- le `3-way-merge` ou `merge à 3 sources` : utilisée pour l'intégration de fonctionnalités de plus long terme  
+
+Pour en savoir plus, consulter [cette page](https://www.atlassian.com/fr/git/tutorials/using-branches/git-merge) très complète sur le sujet et en français.  
 
 
 ## Définition des conflits
 
-Les conflits surviennent généralement lorsque **deux personnes ont modifié les mêmes lignes dans un fichier**, ou si un développeur a supprimé un fichier alors qu'un autre développeur le modifiait. Dans ces cas, **Git ne peut pas déterminer automatiquement la version correcte**.    
+Les conflits surviennent généralement lorsque **deux personnes ont modifié les mêmes lignes dans un fichier**, ou si un développeur a supprimé un fichier alors qu'un autre développeur le modifiait.  
 
-**Les conflits n'affectent que le développeur qui effectue le merge**, 
-les autres membres de l'équipe ne sont pas conscients du conflit. Git marquera 
-le fichier comme étant en conflit et arrêtera le processus de merge.   
+Dans ces cas, **Git ne peut pas déterminer automatiquement la version correcte**;   
+
+Comportement de Git lors d'un conflit :  
+- **Les conflits n'affectent que le développeur qui effectue le merge**  
+- Les autres membres de l'équipe ne sont pas conscients du conflit.  
+- Git marquera le fichier comme étant en conflit et bloquera le processus de merge.   
 
 **Il incombe alors aux développeurs de résoudre le conflit.**
 
 *Source:* [Atlassian](https://www.atlassian.com/fr/git/tutorials/using-branches/merge-conflicts)
 
-## Simulation d'un conflit
+
+## Repérer les conflits
+
+Pour délimiter la zone de conflit, Git utilise les marqueurs et annotations suivantes :  
+
+- La ligne qui commence par <<<<<<< marque le début de la zone conflictuelle.  
+- Le marqueur ======= représente la frontière entre les deux zones à fusionner.  
+- La ligne qui commence par >>>>>>> délimite la fin de la zone conflictuelle.
+  
+## Éviter au maximum les conflits
+
+Quelques conseils :  
+
+- S'interroger sur la question de l'intersection des modifications et des fichiers potentiellement impactés lors de la planification des tâches
+- Communiquer avec les autres membre de l'équipe pour dire qui travaille sur quoi
+- La durée de vie des branches doit être la plus courte possible
+- Modulariser son code (par ex. sous forme de fonctions)  
+- Résoudre les conflits le plus tôt possible et ne pas laisser la situation empirer.  
+- Faire des "bons" commits fréquemment
+
+## Exercice 5
+
+::: {.callout-tip icon=false}
+## Exercice 5
+
+Reprendre [l'exercice 4](#exercice-4)
+
+- Parcourir l’historique de votre dépôt distant avec Gitlab/RStudio/terminal.  
+- Faire apparaître les différences entre deux versions consécutives du projet  
+- Afficher une version passée du projet (par exemple son état au 2ème commit)
+
+:::
 
 ::: {.callout-note icon=false}
 ## Exercice :
@@ -420,24 +455,3 @@ le fichier comme étant en conflit et arrêtera le processus de merge.
     Utiliser l’interface de RStudio pour résoudre le conflit, en choisissant la version du fichier que vous souhaitez conserver, puis commit/push les modifications
     Comme dans l’application précédente, seul le développeur le plus rapide parvient à push. Les autres doivent répéter l’opération.
 
-
-
-
-## Repérer les conflits
-
-Pour délimiter la zone de conflit, Git utilise les annotations suivantes :  
-
-- La ligne qui commence par <<<<<<< marque le début de la zone conflictuelle.  
-- Le marqueur ======= représente la frontière entre les deux zones à fusionner.  
-- La ligne qui commence par >>>>>>> délimite la fin de la zone conflictuelle.
-  
-## Éviter au maximum les conflits
-
-Quelques conseils :  
-
-- S'interroger sur la question de l'intersection des modifications et des fichiers potentiellement impactés lors de la planification des tâches
-- Communiquer avec les autres membre de l'équipe pour dire qui travaille sur quoi
-- La durée de vie des branches doit être la plus courte possible
-- Modulariser son code (par ex. sous forme de fonctions)  
-- Résoudre les conflits le plus tôt possible et ne pas laisser la situation empirer.  
-- Faire des "bons" commits fréquemment
