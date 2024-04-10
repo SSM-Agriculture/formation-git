@@ -359,7 +359,7 @@ Choisir la branche source et la branche cible :
 
 ## Les relectures ou revues de code avec Gitlab (1/2) ![](img/icone_gitlab.png)
 
-Les fusions de branches sont aussi l'occasion d'effectuer **des tests** ou **des revues de code** entre les membres de l'équipe projet.  
+Les fusions de branches sont aussi l'occasion d'effectuer des [revues de code](https://docs.gitlab.com/ee/user/project/merge_requests/reviews/) entre les membres de l'équipe projet.  
 
 ![](img/gitlab_merge_request_ajout_commentaire.png){fig-align="center"} 
 
@@ -373,8 +373,8 @@ Une fois la revue de code effectuée (pas obligatoire), appuyer sur le bouton "M
 
 ![](img/gitlab_merge_request_bouton_merge.png){fig-align="center"} 
 
-::: callout-note
-- Voir [cette page](https://docs.gitlab.com/ee/user/project/merge_requests/reviews/) pour la documentation complète officielle sur les merge request reviews.
+::: callout-important
+Après avoir effectué la fusion sur gitlab, ne pas oublier de faire un `git pull` dans votre working directory afin de rapatrier les changements issus du merge !
 :::
 
 ## Stratégie de fusion : le `fast-forward-merge`
