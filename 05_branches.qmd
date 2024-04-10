@@ -428,6 +428,7 @@ Pour repérer les conflifts, que ce soit avec le terminal ou sur Gitlab, on est 
 
 ::::
 
+Et si jamais cela ne suffisait pas, on reçoit un mail pour nous dire qu'une fusion n'a pas pu avoir lieu.
 
 ## Gérer les conflits (2/3)
 
