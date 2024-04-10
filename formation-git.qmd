@@ -32,11 +32,13 @@ editor:
 
 Ce diaporama de formation a été rédigé dans le but d'être le support visuel des formations dispensées au [MASA](https://agreste.agriculture.gouv.fr/).  
 
-Ces formations s'adressent à des agents qui découvrent le contrôle de version. Elles sont données en présentiel sur une durée d'une journée à partir de juin 2024.  
+Ces formations s'adressent à des agents **qui découvrent le contrôle de version**.  
+Elles sont données en présentiel sur une durée **d'une journée** à partir de juin 2024.  
 
 ::: callout-note
 
-Ce support ne couvre pas tous les aspects du contrôle de version ni toutes les commandes Git.  De même, il est orienté pour être utile aux agents du MASA et se concentre donc sur une utilisation de R via [RStudio](https://posit.co/download/rstudio-desktop/) qui est mise à disposition des agents sur la plateforme interne Cerise basée sur RStudio Server.  
+**Ce support ne couvre pas tous les aspects du contrôle de version ni toutes les commandes Git.**  
+De même, il est orienté pour être utile aux agents du MASA et se concentre donc sur une utilisation de R via [RStudio](https://posit.co/download/rstudio-desktop/) qui est mise à disposition des agents sur la plateforme interne Cerise basée sur RStudio Server.  
 
 L'utilisation avec d'autre IDE tels que [VS Code](https://code.visualstudio.com/) ou encore [Github Desktop](https://desktop.github.com/) n'est donc incluse.  
 :::
