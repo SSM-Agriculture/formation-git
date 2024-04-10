@@ -237,7 +237,7 @@ la commande est `git diff --staged`.
 différences, par exemple en comparant 2 commits...]{.full-width
 .content-box-yellow}
 
-## Revenir en arrière avec RStudio ![](img/icone_rstudio.png)
+## Inverser les changements avec RStudio ![](img/icone_rstudio.png)
 
 Dans RStudio cliquez sur le bouton `Plus` de l'onglet Git puis choisir
 le bouton `Inverser` :
@@ -249,7 +249,7 @@ Un message de confirmation vous demande si vous êtes sûr de votre action
 
 ![](img/git_revert_confirmation_rstudio.png){fig-align="center"}
 
-## Revenir en arrière avec le terminal ![](img/icone_terminal.png)
+## Inverser les changements avec le terminal ![](img/icone_terminal.png)
 
 [La commande git restore permet de restaurer des fichiers]{.red}
 
