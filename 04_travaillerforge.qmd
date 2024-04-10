@@ -560,6 +560,5 @@ Reprendre [l'exercice 3](#exercice-3)
 - Parcourir l’historique de votre dépôt distant avec Gitlab/RStudio/terminal.  
 - Faire apparaître les différences entre deux versions consécutives du projet  
 - Afficher une version passée du projet (par exemple son état au 2ème commit)
-<br>
 
 :::
