@@ -224,19 +224,17 @@ Puis renseigner :
 
 ## Lier un dépôt local à un dépôt distant avec RStudio (4/4) ![](img/icone_rstudio.png)
 
-<br>
-
 [**CAS 2 : un répertoire existe déjà**]{.souligneRouge}
 
 Dans ce cas, l'interface de RStudio est mal pensé et **il est beaucoup plus intuitif d'utiliser le terminal** (voir [ici](#lier-un-dépôt-local-à-un-dépôt-distant-avec-terminal-22))
 
 La fonctionnalité d'ajout d'un dépôt distant est accessible en cliquant sur le bouton "Nouvelle branche" :(  
 
-![](img/gitlab_bouton_nouvelle_branche.png){fig-align="center"}
-
 ::: columns
 ::: {.column width="50%"}
-Cliquer sur le bouton "Ajouter à distance" :  
+![](img/gitlab_bouton_nouvelle_branche.png){fig-align="center"}
+
+Puis cliquer sur le bouton "Ajouter à distance" :  
 
 ![](img/gitlab_ajouter_a_distance.png){fig-align="center"}
 :::
@@ -245,6 +243,8 @@ Cliquer sur le bouton "Ajouter à distance" :
 Entrer l'alias origin et l'URL du dépôt distant :  
 
 ![](img/gitlab_ajouter_a_distance_URL.png){fig-align="center"}
+
+Puis cliquer sur "Ajouter" puis "Annuler" sur l'écran précédent (on ne veut pas créer de nouvelle branche ici)
 :::
 
 ::::
@@ -260,8 +260,9 @@ Entrer l'alias origin et l'URL du dépôt distant :
 - Taper la commande `git clone <URL-depot-distant>`  
   
 Par exemple :  
-`git clone https://forge.agriculture.rie.gouv.fr/gitlab/damien.dotta/test.git`
-- Ouvrir le nouveau répertoire et commencer à y travailler comme d'habitude en y créant un projet, des scripts...
+`git clone https://forge.agriculture.rie.gouv.fr/gitlab/damien.dotta/test.git`  
+
+- Ouvrir le nouveau répertoire et commencer à y travailler comme d'habitude en y créant un projet, des scripts...  
 
 ## Lier un dépôt local à un dépôt distant avec terminal (2/2) ![](img/icone_terminal.png)
 
@@ -269,7 +270,7 @@ Par exemple :
 
 [**CAS 2 : un répertoire existe déjà**]{.souligneRouge}
 
-- Lancer le terminal dans le répertoire non versionné que l'on souhaite lié au dépôt distant (rappel sur [comment faire](#git-avec-le-terminal))  
+- Lancer le terminal dans le répertoire que l'on souhaite lié au dépôt distant (rappel sur [comment faire](#git-avec-le-terminal))  
 - Taper la commande `git remote add origin <URL-depot-distant>`  
   
 Par exemple :  
