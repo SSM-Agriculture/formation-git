@@ -1,6 +1,6 @@
 ---
 title: "Formation Git"
-subtitle: "Apprendre à utiliser le contrôle de version avec Git en tant qu'utilisateur de RStudio"
+subtitle: "Apprendre à utiliser le gestionnaire de versions Git et la forge logicielle Gitlab en tant qu'utilisateur de R et RStudio"
 date: today
 date-format: "DD/MM/YYYY"
 author: "SSP/DEMESIS"
