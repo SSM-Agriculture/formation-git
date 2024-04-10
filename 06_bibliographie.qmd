@@ -21,4 +21,11 @@ En anglais :
 - [Happy Git and Github for the useR](https://happygitwithr.com/) par Jennifer Bryan (Posit)  
 - [Cheatsheet - Using Git and Github with RStudio](https://rstudio.github.io/cheatsheets/git-github.pdf)  
 
+## Remerciements
+
+Le DEMESIS remercie :
+
+- [@laurentC35](https://github.com/laurentC35/) : l'auteur des fonctions du package `gitssp`
+
+- Par avance tous les relecteurs/contributeurs à cette nouvelle formation qui en feront un meilleur support pour la communauté française de R et en particulier pour les utilisateurs de RStudio.
 
