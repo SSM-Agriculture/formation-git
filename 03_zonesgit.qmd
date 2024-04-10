@@ -88,17 +88,29 @@ Pour ajouter des changements :
 
 ![](img/icone_rstudio.png){.inlineimage} **Avec RStudio**
 
--   Un seul fichier : **en cochant un fichier dans l'onglet Git**\
-    ![](img/git_add_un_fichier.png)
+-   Un seul fichier : **en cochant un fichier dans l'onglet Git**
+
+![](img/git_add_un_fichier.png){fig-align="center"}
 
 -   Plusieurs fichiers : **en cochant plusieurs fichiers dans l'onglet
-    Git**\
-    ![](img/git_add_plusieurs_fichiers.png)
+    Git**
+    
+![](img/git_add_plusieurs_fichiers.png){fig-align="center"}
 
 ![](img/icone_terminal.png){.inlineimage} **En ligne de commande :**
 
+::: columns
+
+::: {.column width="50%"}
 -   Un seul fichier : `git add <file-name>`
+:::
+
+::: {.column width="50%"}
 -   Tous les fichiers : `git add .`
+:::
+
+::::
+
 
 ## Retirer des changements à l'index
 
@@ -106,6 +118,8 @@ Pour retirer des changements :
 
 ![](img/icone_rstudio.png){.inlineimage} **Avec RStudio**\
 En décochant les fichiers dans l'onglet Git
+
+<br>
 
 ![](img/icone_terminal.png){.inlineimage} **En ligne de commande :**
 
