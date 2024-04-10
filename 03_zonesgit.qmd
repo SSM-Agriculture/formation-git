@@ -192,6 +192,7 @@ RStudio (**même fonctionnement avec le terminal**) :
 | Ajout de fichier     | ![](img/ajouter_avant_staging.png)  | ![](img/ajouter_apres_staging.png)  |
 | Renommage de fichier | ![](img/renommer_avant_staging.png) | ![](img/renommer_apres_staging.png) |
 
+
 ## Comment Git stocke les différentes versions d'un fichier ?
 
 ![](img/Git_stockage_versions.png){fig-align="center"}
@@ -343,6 +344,20 @@ tout en renseignant le message associé**</p>
 La commande `git commit` propose de nombreuses options qui sont disponibles [ici](https://git-scm.com/docs/git-commit/fr).
 :::
 
+## Exercice 1
+
+::: {.callout-tip icon=false}
+## Exercice 1
+
+- Créer un projet R dans votre espace personnel Cerise en l'initialisant avec Git  
+- Créer des scripts R à l'intérieur de votre projet  
+- Ajouter ces scripts à l'index  
+- Faire votre commit
+
+**BONUS : faire l'exercice avec RStudio et pour ceux qui sont en avance avec le terminal :)**
+
+:::
+
 ## Modifier le dernier commit
 
 **Il y a au moins deux raisons de revenir sur un commit :**
@@ -466,3 +481,19 @@ La commande `git log --oneline` affiche les informations concernant l'historique
 - Regrouper les modifications en lots qui "font sens", avec un message pertinent qui résume bien les modifications apportées  
 
 - **Il ne faut committer sur la base du temps passé mais plutôt sur la base des fonctionnalités.**
+
+## Exercice 2
+
+::: {.callout-tip icon=false}
+## Exercice 2
+
+Reprendre [l'exercice 1](#exercice-1)
+
+- Créer un projet R dans votre espace personnel Cerise en l'initialisant avec Git  
+- Créer des scripts R à l'intérieur de votre projet  
+- Ajouter ces scripts à l'index  
+- Faire votre commit
+
+BONUS : faire l'exercice avec RStudio et pour ceux qui sont en avance avec le terminal :)
+
+:::
