@@ -184,7 +184,7 @@ La méthode à utiliser est différente selon les cas :
 Pour vérifier qu'un dépôt local est lié à un dépôt distant, la commande du terminal `git remote -v` est très utile car elle renvoit l'URL du dépôt distant s'il existe.
 :::
 
-## Lier un dépôt local à un dépôt distant avec RStudio (1/4) ![](img/icone_rstudio.png)
+## Lier un dépôt local à un dépôt distant avec RStudio (1/5) ![](img/icone_rstudio.png)
 
 <br>
 
@@ -194,14 +194,14 @@ Créer un nouveau projet, puis choisir "Contrôle de version" :
 
 ![](img/gitlab_rstudio_lier_projet.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant avec RStudio (2/4) ![](img/icone_rstudio.png)
+## Lier un dépôt local à un dépôt distant avec RStudio (2/5) ![](img/icone_rstudio.png)
 
 Puis choisir "Git" :  
 
 
 ![](img/gitlab_rstudio_lier_gitlab_git.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant avec RStudio (3/4) ![](img/icone_rstudio.png)
+## Lier un dépôt local à un dépôt distant avec RStudio (3/5) ![](img/icone_rstudio.png)
 
 
 ::: columns
@@ -222,7 +222,7 @@ Puis renseigner :
 
 ![](img/gitlab_rstudio_lier_projet_URL.png){fig-align="center"}
 
-## Lier un dépôt local à un dépôt distant avec RStudio (4/4) ![](img/icone_rstudio.png)
+## Lier un dépôt local à un dépôt distant avec RStudio (4/5) ![](img/icone_rstudio.png)
 
 [**CAS 2 : un répertoire existe déjà**]{.souligneRouge}
 
@@ -249,8 +249,25 @@ Puis cliquer sur "Ajouter" puis "Annuler" sur l'écran précédent (on ne veut p
 
 ::::
 
+## Lier un dépôt local à un dépôt distant avec RStudio (5/5) ![](img/icone_rstudio.png)
 
-## Lier un dépôt local à un dépôt distant avec terminal (1/2) ![](img/icone_terminal.png)
+Avec la procédure présentée dans le cas 2, les boutons "Git-pull" et "Git-push" apparaîssent en grisé et ne sont pas disponibles pour l'utilisateur :
+
+![](img/gitlab_rstudio_boutons_grises.png){fig-align="center"}
+
+Pour dégriser ces boutons, **le terminal est indispensable** pour taper la commande :  
+`git push -u <alias> <nom-branche>`  
+
+Puis en cliquant sur le bouton de rafraîchissement du l'onglet "Git" ![](img/rstudio_bouton_refresh.png)
+
+::: callout-note
+Pour information, le `-u` de la commande ci-dessus est nécessaire car dans le cas 2, aucune branche n'existe dans le dépôt local. Cette instruction permet simplement de créer une branche locale qui suit la branche distante existante sur le dépôt distant.
+
+![](img/rstudio_nouvelle_branche_synchro.png){fig-align="center"}
+:::
+
+## Lier un dépôt local à un dépôt distant avec terminal (1/2) ![](img/icone_terminal.png)...  
+... les boutons de pull/push deviennent disponibles.
 
 <br>
 
@@ -509,7 +526,9 @@ seront supprimées et les fichiers supprimés seront recréés...).
 
 ## Autres instructions Git
 
-Il y a encore pleins d'instructions Git très utiles que vous découvrirez (ou pas) :
+Il y a encore pleins d'instructions et de concepts Git très utiles que vous découvrirez (ou pas) :
+
+- Le [fork](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/forking-workflow) : travailler avec une copie d'un dépôt existant
 
 - [git cherry-pick](https://git-scm.com/docs/git-cherry-pick/fr) : sélectionner et appliquer un seul commit d'une branche à une autre  
 - [git stash](https://git-scm.com/docs/git-stash/fr) : mettre de côté les modifications d’un répertoire de travail  
