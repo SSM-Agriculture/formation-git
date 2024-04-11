@@ -1,5 +1,5 @@
 ---
-title: "Formation Git"
+title: "Formation Git et Gitlab"
 subtitle: "Apprendre à utiliser le gestionnaire de versions Git et la forge logicielle Gitlab en tant qu'utilisateur de R et RStudio"
 date: today
 date-format: "DD/MM/YYYY"
