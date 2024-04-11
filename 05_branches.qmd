@@ -302,6 +302,14 @@ Avec l'IHM RStudio, on ne peut pas supprimer de branches distantes.
 
 ::::
 
+<br>
+
+**GitLab permet de protéger les branches spécifiques en empêchant les utilisateurs non autorisés de les modifier.**  
+Pour choisir les branches protégées, se rendre dans le bandeau de gauche `>settings` puis `Repository` et dérouler le menu `Branche rules`.  
+Puis sélectionner la ou les branches à protéger (voir [cette page](https://docs.gitlab.com/ee/user/project/protected_branches.html) pour en savoir plus sur ce qu'il est possible de faire avec les branches protégées.)
+
+![](img/gitlab_branche_protegee.png){fig-align="center"}
+
 
 ## Fusionner deux branches 
 
