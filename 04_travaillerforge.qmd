@@ -98,6 +98,25 @@ Ce qu'il faut retenir :
 | Reporter   | Les rapporteurs ont des droits de lecture sur le projet ou le groupe.                                                                                   |
 | Guest      | Les invités ont des droits d'accès limités et sont souvent utilisés <br>pour donner un accès en lecture seule à des personnes extérieures au projet.    |                                                                         |
 
+## Bonnes pratiques avec les forges
+
+Voici ci-dessous **quelques bonnes pratiques** (non exhaustives) à ajouter à un projet R **lorsque celui-ci est amené à être partagé sur une forge** (Gitlab ou Github ou autre).  
+
+::: {.callout-note icon=false}
+## Dans l'idéal votre projet doit contenir :  
+
+- Un fichier `README.md` : un document rédigé en [markdown](https://www.markdownguide.org/) qui inclue notamment des informations sur :
+  - Ce que le projet fait
+  - Son emplacement sous Cerise
+  - Ses pré-requis et son utilisation/installation (par exemple s'il s'agit d'une application Shiny, les instructions de lancement ou s'il s'agit d'un package R, les instructions d'installation...)
+  - Ses principales fonctionnalités
+  - L'identité de l'équipe qui maintient le dépôt
+  
+- Un fichier `.gitignore` (voir [cette diapo](#quest-ce-quon-ne-versionne-pas-12))
+
+- Un fichier `CHANGELOG.md` ou `NEWS.md` : lui aussi rédigé avec markdown, il permet de suivre les principales modifications apportées au projet par les développeurs. Il est très utile en association avec les [tags](#créer-des-tags-avec-gitlab).
+:::
+
 ## Le système de ticketing (issues)
 
 **Une issue est une tâche à effectuer** : il peut s’agir tout autant de correctifs à apporter au projet que de fonctionnalités à ajouter.  
