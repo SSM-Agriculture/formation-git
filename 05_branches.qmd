@@ -541,13 +541,31 @@ Reprendre [l'exercice 4](#exercice-4)
 
 *Source :* exercice issue de [cet article de blog](https://blog.microlinux.fr/formation-git-11-conflits/)
 
-## Exercice 6 collectif 
+## Exercice 6 collectif (1/2)
 
 ::: {.callout-tip icon=false}
 ## Exercice 6 (facultatif)
 
-- Parcourir l’historique de votre dépôt distant avec Gitlab/RStudio/terminal.  
-- Faire apparaître les différences entre deux versions consécutives du projet  
-- Afficher une version passée du projet (par exemple son état au 2ème commit)
+1. Se mettre par groupes de 2/3 personnes (qui appartiennet au même groupe sous Gitlab) :
+  – une personne aura la responsabilité d’être mainteneur
+  – une à deux personnes seront développeurs
+2. Le mainteneur crée un dépôt sur Gitlab ; il/elle donne des droits aux développeurs du projet.
+3. Chaque personne du groupe crée une copie locale (clone) du projet sous Cerise  
+4. Créer un fichier votre_nom-votre_prenom.md, écrire trois phrases de son choix, puis commit et pousse les modifications
 
 :::
+
+## Exercice 6 collectif (2/2)
+
+::: {.callout-tip icon=false}
+## Exercice 6 (facultatif)
+
+**A ce stade, une seule personne (la plus rapide) devrait ne pas avoir rencontré de rejet du push.** C’est normal ! Avant d’accepter une modification, Git vérifie en premier lieu la cohérence de la branche avec le dépôt distant. Le premier ayant fait un push a modifié le dépôt commun ; les autres doivent intégrer ces modifications dans leur version locale (pull) avant d’avoir le droit de proposer un changement.
+
+5. Pour ceux dont le push a été refusé, effectuer un pull des modifications distantes
+6. Dans RStudio, afficher l’historique du projet et regarder la manière dont ont été intégrées les modifications des collaborateurs
+7. Effectuer à nouveau un push de vos modifications locales
+8. Les derniers membres du groupe devront refaire les étapes précédentes, potentiellement plusieurs fois, pour pouvoir push les modifications locales
+:::
+
+*Source :* exercice issue de [ce support de formation](https://inseefrlab.github.io/formation-bonnes-pratiques-git-R/slides/complete.html#/application-4) d'[@Inseefrlab](https://github.com/InseeFrLab)
