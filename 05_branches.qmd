@@ -485,9 +485,10 @@ Le DEMESIS vous propose de suivre la procédure suivante dans ce cas :
 git checkout branche-de-travail
 git pull origin main
 git status
-Arbitrer dans le code : 
-Pour conserver la version distante, j’ai utilisé la commande : git checkout --theirs README.md.
-Pour conserver la version locale, j’ai utilisé la commande : git checkout --ours README.md.
+# Arbitrer dans le code : 
+# Supprimer les marqueurs de conflit à la main soit :
+# Pour conserver la version distante, utiliser la commande : git checkout --theirs nom-du-fichier.
+# Pour conserver la version locale, utiliser la commande : git checkout --ours nom-du-fichier.
 git status
 git add .
 git commit -m "Résolution conflit"
@@ -534,7 +535,7 @@ Reprendre [l'exercice 4](#exercice-4)
 - Se positionner maintenant sur la branche `bugfix-tidyr` et corriger le script `Analyse.R` en modifiant l'unique ligne avec `library(tidyr)`.  
 <br>
 - Pousser la branche `bugfix-tidyr` et la fusionner avec la branche permanente sur Gitlab.  
-- Normalement vous devriez faire face à un joli conflit :)
+- Normalement vous devriez faire face à un joli conflit {{< fa face-laugh >}}
 - Résoudre le conflit
 :::
 
