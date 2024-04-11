@@ -434,7 +434,8 @@ Et si jamais cela ne suffisait pas, on reçoit un mail pour nous dire qu'une fus
 
 Gitlab nous propose 2 façons de résoudre les conflits, soit localement (ce qui correspond à la procédure à suivre avec le terminal) soit directement dans l'interface de Gitlab :  
 
-![](img/gitlab_boutons_resolution_conflits.png){fig-align="center"} 
+
+![](img/gitlab_boutons_resolution_conflits.png){width=500}
 
 - **La résolution locale :**  
 Cela signifie que l'on rapatrie dans son working directory les fichiers tels qu'ils sont en cours lors de la fusion. Après arbitrage de l'équipe projet sur les lignes de code à retenir, il s'agit ensuite de pousser la modification sur le dépôt distant.  
@@ -479,9 +480,10 @@ library(tidyr)
 
 Après une fusion, on peut **supprimer les branches temporaires** qu'elles soient distantes ou locales.  
 
-- Pour **les branches distantes**, elles sont supprimées dès lors que cette case est cochée dans Gitlab (sinon voir [ici](#supprimer-des-branches-distantes) : 
+- Pour **les branches distantes**, elles sont supprimées dès lors que cette case est cochée dans Gitlab (sinon voir [ici](#supprimer-des-branches-distantes)) : 
 
 ![](img/gitlab_case_delete_source_branch.png){fig-align="center"} 
+
 - Pour supprimer les branches locales devenues inutiles, voir [ici]()
 
 parler du git fetch -p origin
