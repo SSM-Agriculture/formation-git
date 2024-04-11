@@ -26,6 +26,7 @@ En anglais :
 Le DEMESIS remercie :
 
 - [@laurentC35](https://github.com/laurentC35/) : l'auteur des fonctions du package `gitssp`
+- [@Inseefrlab](https://github.com/InseeFrLab) et en particulier [@linogaliana](https://github.com/linogaliana), [@oliviermeslin](https://github.com/oliviermeslin) et [@avouacr](https://github.com/avouacr) pour leur support très inspirant sur les bonnes pratiques avec R
 
 - Par avance tous les relecteurs/contributeurs à cette nouvelle formation qui en feront un meilleur support pour la communauté française de R et en particulier pour les utilisateurs de RStudio.
 
