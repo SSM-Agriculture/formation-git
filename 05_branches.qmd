@@ -446,7 +446,7 @@ Gitlab nous propose 2 façons de résoudre les conflits, soit localement (ce qui
 ![](img/gitlab_boutons_resolution_conflits.png){width=500}
 
 - **La résolution sur Gitlab :**  
-Cela signifie que l'on utilise que l'arbitrage par l'équipe projet se fait directement sur l'interface Gitlab. Il s'agira ensuite de récupérer ces modifications sur le dépôt local.  
+Cela signifie que l'arbitrage par l'équipe projet se fait directement sur l'interface Gitlab. Il s'agira ensuite de récupérer ces modifications sur le dépôt local.  
 
 - **La résolution locale :**  
 Cela signifie que l'on rapatrie dans son working directory les fichiers tels qu'ils sont en cours lors de la fusion. Après arbitrage de l'équipe projet sur les lignes de code à retenir, il s'agit ensuite de pousser la modification sur le dépôt distant.  

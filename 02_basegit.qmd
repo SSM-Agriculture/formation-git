@@ -30,7 +30,7 @@ besoin dans une application ou une documentation.
 les pdf, les diaporamas de type powerpoint ou impress, les fichiers
 spécifiques aux projets R...**
 
-Pour se faciliter la tâche, on utiliser un fichier spécifique
+Pour se faciliter la tâche, on utilise un fichier spécifique
 `.gitignore` situé le plus souvent à la racine des projets.
 
 Il s'agit d'un fichier texte, qui liste les fichiers et dossiers (sous
@@ -46,7 +46,7 @@ forme d'expressions régulières) à ne pas versionner.
 
 ## Qu'est-ce qu'on NE versionne PAS ? (2/2)
 
-Si vous utiliser le package R `gitssp` mis à disposition des agents du
+Si vous utilisez le package R `gitssp` mis à disposition des agents du
 MASA, voici ce qui est exclu par défaut avec la fonction
 `gitssp::creer_gitignore()` :
 
@@ -187,7 +187,7 @@ la commande `git init` au risque d'initialiser le mauvais répertoire !
 ## Astuce
 Lors de l'initialisation du dépôt Git, on peut directement choisir le nom de la 
 branche avec la commande `git init --initial-branch=<nom-de-branche>`.  
-=> voir partie 4 de ce support
+=> voir [partie 4](#travailler-avec-une-forge) de ce support
 :::
 
 ## Initialiser un dossier local en dépôt Git avec gitssp ![](img/icone_gitssp.png)
@@ -197,7 +197,7 @@ branche avec la commande `git init --initial-branch=<nom-de-branche>`.
 Le package R `{gitssp}` permet d'initialiser un dossier local avec Git tout en 
 le synchronisant avec une forge.   
 
-Cela sera abordé dans la partie 4 de cette formation.
+Cela sera abordé dans la [partie 4](#travailler-avec-une-forge) de cette formation.
 
 <br>
 <br>
