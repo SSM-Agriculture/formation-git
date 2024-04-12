@@ -40,9 +40,9 @@ Elles sont données en présentiel sur une durée **d'une journée** à partir d
 
 **Ce support ne couvre pas tous les aspects du contrôle de version ni toutes les commandes Git.**  
 
-De même, il est orienté pour être utile aux agents du MASA et se concentre donc sur une utilisation de R via [RStudio](https://posit.co/download/rstudio-desktop/) qui est mise à disposition des agents sur la plateforme interne Cerise basée sur RStudio Server.  
+De même, il est orienté pour être utile aux agents du SSM MASA et se concentre donc sur une utilisation de R via [RStudio](https://posit.co/download/rstudio-desktop/) qui est mise à disposition des agents sur la plateforme interne Cerise basée sur RStudio Workbench.  
 
-[L'utilisation avec d'autre IDE tels que [VS Code](https://code.visualstudio.com/) ou encore [Github Desktop](https://desktop.github.com/) n'est donc incluse.]{.red}  
+[L'utilisation avec d'autres IDE tels que [VS Code](https://code.visualstudio.com/) ou encore [Github Desktop](https://desktop.github.com/) n'est donc incluse.]{.red}  
 
 Enfin, en tant que forge interne du MASA, les fonctionnalités principales de [Gitlab](https://about.gitlab.com/) sont présentées dans ce support. Même si la majorité des concepts de base sont équivalents, [Github](https://github.com/) n'est pas abordé dans ce diaporama de formation.
 :::

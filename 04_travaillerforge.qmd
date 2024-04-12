@@ -249,7 +249,7 @@ Puis renseigner :
 
 [**CAS 2 : un répertoire existe déjà**]{.souligneRouge}
 
-Dans ce cas, l'interface de RStudio est mal pensé et **il est beaucoup plus intuitif d'utiliser le terminal** (voir [ici](#lier-un-dépôt-local-à-un-dépôt-distant-avec-terminal-22))
+Dans ce cas, l'interface de RStudio est mal pensée et **il est beaucoup plus intuitif d'utiliser le terminal** (voir [ici](#lier-un-dépôt-local-à-un-dépôt-distant-avec-terminal-22))
 
 La fonctionnalité d'ajout d'un dépôt distant est accessible en cliquant sur le bouton "Nouvelle branche" :(  
 
@@ -346,7 +346,7 @@ ajouter_git(
 )
 ```
 
-La fonction relance une nouvelle session R et vous l'onglet "Git" est disponible et opérationnel.
+La fonction relance une nouvelle session R et l'onglet "Git" est disponible et opérationnel.
 
 ## Pousser les changements sur la forge avec RStudio ![](img/icone_rstudio.png)
 
@@ -545,7 +545,7 @@ Pour revenir au présent :
 `git checkout nom-de-branche`
 
 ::: callout-note
-Les instructions Git ci-dessus peuvent aussise décliner sur un fichier spécifique.  
+Les instructions Git ci-dessus peuvent aussi se décliner sur un fichier spécifique.  
 Par exemple avec la structure suivante pour un commit et un fichier particulier : `git checkout commitID file-name`
 :::
 

@@ -197,11 +197,11 @@ RStudio (**même fonctionnement avec le terminal**) :
 
 ![](img/Git_stockage_versions.png){fig-align="center"}
 
-*"À chaque fois que vous validez ou enregistrez l'état du projet dans
-Git, il prend un"snapshot" du contenu de votre working directory à ce
+> À chaque fois que vous validez ou enregistrez l'état du projet dans
+Git, il prend un "snapshot" du contenu de votre working directory à ce
 moment et enregistre une référence à ce snapshot. Pour être efficace, si
 les fichiers n'ont pas changé, Git ne stocke pas le fichier à nouveau,
-juste une référence vers le fichier original qu'il a déjà enregistré."*
+juste une référence vers le fichier original qu'il a déjà enregistré.
 
 ## Afficher les différences avec RStudio ![](img/icone_rstudio.png)
 
@@ -445,7 +445,7 @@ RStudio permet facilement de :
 
 - Balayer l'historique du projet en sélectionnant les différents commits.  
 
-- Accèder aux informations correspondants à chaque commit.  
+- Accéder aux informations correspondants à chaque commit.  
 
 - Cliquer sur les fichiers concernés par chaque commit et afficher leur état au moment choisi.
 
