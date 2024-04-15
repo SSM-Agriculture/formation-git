@@ -1,6 +1,6 @@
 # Formation Git
 
-Support pour la formation Git dispensée au [MASA](https://agriculture.gouv.fr/) et [MTECT](https://www.ecologie.gouv.fr/) en quarto markdown (.qmd) et reveal.js.
+Support pour la formation Git dispensée au [MASA](https://agriculture.gouv.fr/) et [MTECT](https://www.ecologie.gouv.fr/).
 
 > Pour un affichage optimisé de la présentation il est conseillé d'utiliser le **navigateur Edge ou Chrome**.
 
