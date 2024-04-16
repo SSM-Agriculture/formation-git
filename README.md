@@ -29,7 +29,7 @@ OU
 Le mode export PDF est activé quand le support passe en navigation verticale (scrollable). Retaper sur "e" pour revenir au mode de navigation normal.  
 
 
-- Dans la barre d'outils de votre navigateur: aller dans Fichier puis Imprimer...
+- Dans la barre d'outils de votre navigateur : aller dans Fichier puis Imprimer...
 - Dans la fenêtre qui s'ouvre :
   - Sélectionner dans le champ destination "Enregistrer au format PDF"
   - Cocher l'option "Imprimer les arrières plans"
