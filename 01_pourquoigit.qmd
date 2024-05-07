@@ -8,7 +8,7 @@ Le versioning consiste à conserver la version d'une entité logicielle quelconq
 de façon à pouvoir la retrouver facilement même après l'apparition et la mise 
 en place de versions plus récentes.
 
-### Sans versioning
+### Sans outil de versioning
 
 Exemple de ce que l'on peut trouver sur un server :  
 
