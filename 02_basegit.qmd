@@ -61,7 +61,7 @@ MASA, voici ce qui est exclu par défaut avec la fonction
 *.xls
 *.xlsx
 *.ods
-*.pdfF
+*.pdf
 *.docx
 *.odt
 *.ppt
