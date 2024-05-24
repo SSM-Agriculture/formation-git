@@ -18,11 +18,11 @@ Exemple de ce que l'on peut trouver sur un server :
 
 **Le versioning permet de :**  
 
-- Travailler collectivement sur les mêmes fichiers **en même temps**  
-- Obtenir de la traçabilité : on sait qui a changé quoi, quand, comment et pourquoi
-- L'expérimentation lors des développements sans risques (à l'aide des branches)
-- Faire de la relecture (revues de codes...)
-- Voyager dans le temps
+- Obtenir de **la traçabilité** : on sait qui a changé quoi, quand, comment et pourquoi  
+- **Travailler collectivement** sur les mêmes programmes **en même temps**  
+- **L'expérimentation** lors des développements sans risques (à l'aide des branches)   
+- Faire de la **relecture** (revues de codes...)    
+- **Revenir en arrière**  
 
 **Avec une forge, il permet en plus de :**  
 
