@@ -557,6 +557,31 @@ seront supprimées et les fichiers supprimés seront recréés...).
 
 ![](img/git_revert.png){fig-align="center"}
 
+## Si vous ne deviez retenir que quelques commandes ! ![](img/a_retenir.png)
+
++------------------------+----------------------------+----------------------------+
+| Action                 |![](img/icone_rstudio.png)  |![](img/icone_terminal.png) |
++:======================:+:==========================:+:==========================:+
+| Vous ajoutez vos       | Cochez les fichiers        | `git add`                  |
+| fichiers à l'index     |                            |                            |
++------------------------+----------------------------+----------------------------+
+| Vous committez vos     | Appuyez sur le bouton      | `git commit -              |
+| changements            | "Commit" et vous           | m "Votre message"`         |
+|                        | renseignez votre           |                            |
+|                        | message de commit          |                            |
++------------------------+----------------------------+----------------------------+
+| Vous envoyez vos       | Appuyez sur le bouton      | `git push origin           |
+| commits en local sur   | "Push"                     |  <nom-de-branche>`         |
+| le serveur distant     |                            |                            |
++------------------------+----------------------------+----------------------------+
+| **Supplément si vous   |                            |                            |
+| travaillez à plusieurs |                            |                            |
+| :**                    |                            |                            |
++------------------------+----------------------------+----------------------------+
+| Récupérer les          | Appuyez sur le bouton      | `git pull origin           |
+| éventuels commits de   | "Pull"                     |  <nom-de-branche>`         |
+| vos collègues          |                            |                            |
++------------------------+----------------------------+----------------------------+
 
 ## Autres instructions Git
 
