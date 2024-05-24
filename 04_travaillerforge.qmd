@@ -290,8 +290,6 @@ Pour information, le `-u` de la commande ci-dessus est nécessaire car dans le c
 :::
 
 ## Lier un dépôt local à un dépôt distant avec terminal (1/2) ![](img/icone_terminal.png)...  
-... les boutons de pull/push deviennent disponibles.
-
 <br>
 
 [**CAS 1 : création d'un nouveau répertoire**]{.souligneRouge}
