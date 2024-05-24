@@ -86,7 +86,7 @@ Aperçu des groupes au MASA/SSP :
 ## Permissions et rôles dans Gitlab ![](img/icone_gitlab.png)
 
 - Les **permissions** se traduisent par plusieurs **rôles** qui sont détaillés dans la 
-documentation de Gitlab(https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions).  
+[documentation de Gitlab](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions).  
 
 Ce qu'il faut retenir :  
 
