@@ -41,7 +41,7 @@ forme d'expressions régulières) à ne pas versionner.
 -- on peut ignorer :\
 • des fichiers (exemple : `donnees.rds`)\
 • des dossiers (exemple : `data/`)\
-• des extensions (exemple : `*.xls`\
+• des extensions (exemple : `*.xls`)\
 • ...
 
 ## Qu'est-ce qu'on NE versionne PAS ? (2/2)
