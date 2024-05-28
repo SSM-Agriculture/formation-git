@@ -197,6 +197,8 @@ branche avec la commande `git init --initial-branch=<nom-de-branche>`.
 Le package R `{gitssp}` permet d'initialiser un dossier local avec Git tout en 
 le synchronisant avec une forge.   
 
+Pour en savoir plus, voir le [mode d'emploi](https://orion.agriculture/confluence/pages/viewpage.action?pageId=1057588175).
+
 Cela sera abordé dans la [partie 4](#travailler-avec-une-forge) de cette formation.
 
 <br>
