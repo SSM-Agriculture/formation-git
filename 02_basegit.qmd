@@ -33,15 +33,15 @@ spécifiques aux projets R...**
 Pour se faciliter la tâche, on utilise un fichier spécifique
 `.gitignore` situé le plus souvent à la racine des projets.
 
-Il s'agit d'un fichier texte, qui liste les fichiers et dossiers (sous
+Il s'agit d'un fichier texte que vous devez éditer, qui liste les fichiers et dossiers (sous
 forme d'expressions régulières) à ne pas versionner.
 
 -- une ligne = une règle ;
 
 -- on peut ignorer :\
-• des fichiers\
-• des dossiers\
-• des extensions\
+• des fichiers (exemple : `donnees.rds`)\
+• des dossiers (exemple : `data/`)\
+• des extensions (exemple : `*.xls`\
 • ...
 
 ## Qu'est-ce qu'on NE versionne PAS ? (2/2)
