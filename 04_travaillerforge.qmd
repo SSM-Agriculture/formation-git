@@ -42,6 +42,8 @@ Une forge peut être **interne** ou **externe** à un ministère.
 
 - URL de la forge interne du MTECT : [https://gitlab-forge.din.developpement-durable.gouv.fr/](https://gitlab-forge.din.developpement-durable.gouv.fr/)  
 
+- URL du SSM Agriculture (SSP) sur Github : [https://github.com/SSM-Agriculture](https://github.com/SSM-Agriculture)  
+
 - URL du MTECT sur Github : [https://github.com/MTES-MCT](https://github.com/MTES-MCT)
 
 ::: callout-note
