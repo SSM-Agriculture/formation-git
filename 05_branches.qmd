@@ -291,6 +291,8 @@ Avec l'IHM RStudio, on ne peut pas supprimer de branches distantes.
 ![](img/icone_terminal.png){fig-align="center"}
 
 `git push origin --delete nom-de-branche`
+OU  
+`git fetch --prune`
 :::
 
 ::: {.column width="33%"}
