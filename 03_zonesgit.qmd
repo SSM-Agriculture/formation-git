@@ -349,7 +349,7 @@ La commande `git commit` propose de nombreuses options qui sont disponibles [ici
 ::: {.callout-tip icon=false}
 ## Exercice 1
 
-- Créer un projet R dans votre espace personnel Cerise en l'initialisant avec Git  
+- Créer un projet R "formation-git" dans votre espace personnel Cerise en l'initialisant avec Git  
 - Vérifier que votre projet est bien versionné avec Git  
 - Ajouter les nouveaux fichiers à l'index et faire un 1er commit  
 <br>

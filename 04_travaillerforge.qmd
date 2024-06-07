@@ -390,7 +390,8 @@ Exemples :
 
 Reprendre [l'exercice 2](#exercice-2-22)
 
-- Créer un dépôt vide dans votre namespace dans la forge Gitlab  
+- Aller sous dans la forge Gitlab dans le groupe « ssp/BAC-A-SABLE » 
+- Créer un dépôt vide dans ce groupe au format "prenom-nom-formation-git" dans la forge Gitlab  
 - Lier votre projet R à ce dépôt distant  
 - Poussez vos commits déjà effectués sur le dépôt distant  
 <br>
@@ -605,7 +606,7 @@ Il y a encore pleins de concepts et d'instruction Git très utiles que vous déc
 
 Reprendre [l'exercice 3](#exercice-3)
 
-- Parcourir l’historique de votre dépôt distant avec Gitlab/RStudio/terminal.  
+- Parcourir l’historique de votre dépôt distant avec Gitlab (les solutions avec RStudio et le terminal ont été abordées lors de l'exercice 2).  
 - Faire apparaître les différences entre deux versions consécutives du projet  
 - Afficher une version passée du projet (par exemple son état au 2ème commit)
 
