@@ -4,6 +4,16 @@ Support pour la formation Git dispensée au [MASA](https://agriculture.gouv.fr/)
 
 > Pour un affichage optimisé de la présentation il est conseillé d'utiliser le **navigateur Edge ou Chrome**.
 
+## Correction des exercices
+
+Les corrections des exercices ainsi que d'autres ressources complémentaires au support de formation sont accessibles en téléchargement directement depuis [le wiki](https://github.com/SSM-Agriculture/formation-git/wiki) du dépôt.  
+
+## Aide/Assistance post-formation
+
+Suite à la formation, s'il vous reste des questions, vous pouvez les poser directement depuis [l'espace discussions](https://github.com/SSM-Agriculture/formation-git/discussions) du dépôt.  
+Pour ce faire, il faut disposer d'un compte sur github. Voir [ici](https://github.com/signup?source=login).  
+Nous serons ravis de répondre à vos interrogations et de vous guider au mieux dans votre découverte de Git.  
+
 ## Contribution
 
 Si vous souhaitez contribuer, n'hésitez pas à nous transmettre des informations. Pour cela, vous pouvez faire [une issue](https://github.com/SSM-Agriculture/formation-git/issues) dans ce dépôt.
