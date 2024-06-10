@@ -2,7 +2,7 @@
 
 Support pour la formation Git dispensée au [MASA](https://agriculture.gouv.fr/) et [MTECT](https://www.ecologie.gouv.fr/).
 
-> Pour un affichage optimisé de la présentation il est conseillé d'utiliser le **navigateur Edge ou Chrome**.
+> Pour un affichage optimisé de la présentation il est conseillé d'utiliser un navigateur basé sur Chromium (par exemple les navigateurs Edge, Chrome, Brave...).
 
 ## Correction des exercices
 
@@ -32,7 +32,7 @@ OU
 
 ## L'export au format Pdf
 
-- **Ouvrez votre diaporama avec Edge ou Chrome.**  
+- **Ouvrez votre diaporama avec votre navigateur basé sur Chromium.**  
 - Passer en mode export pdf  
   - cliquer sur l'icône de menu puis choizir sous-menu "Tools" puis cliquer sur "PDF Export mode" ou taper sur la lettre "e" (raccourci).  
   
