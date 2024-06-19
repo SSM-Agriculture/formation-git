@@ -336,7 +336,7 @@ Plusieurs branches distantes (developpement, recette et production) peuvent êtr
 La fonction `ajouter_git()` comprend 2 arguments :  
   
 - `origin` : URL du dépôt distant (obligatoire)  
-- `dossier` : chemin vers le projet .Rproj que vous avez créé (facultatif car si aucun dossier n'est précisé, les opérations vont se dérouler dans le dossier courant)  
+- `dossier` : chemin vers le projet .Rproj que vous avez créé au préalable
   
 Par exemple :  
 ```r
