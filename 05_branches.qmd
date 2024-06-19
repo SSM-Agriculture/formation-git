@@ -389,7 +389,7 @@ Après avoir effectué la fusion sur gitlab, ne pas oublier de faire un `git pul
 
 ## Stratégies de fusion
 
-Sans rentrer dans le détail, il existe 2 principales stratégeries de merge dans Git :  
+Sans rentrer dans le détail, il existe 2 principales stratégies de merge dans Git :  
 
 - le `fast-forward-merge` ou `merge rapide` : utilisée principalement pour la **correction de petites fonctionnalités**   
 Il a lieu lorsque le chemin entre la pointe de la branche-de-travail et la branche permanente **est linéaire**.
