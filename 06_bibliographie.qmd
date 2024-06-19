@@ -4,7 +4,7 @@
 
 - Consultez [le wiki](https://github.com/SSM-Agriculture/formation-git/wiki) de la formation qui contient :
     - Les corrections des exercices à télécharger et imprimer ;
-    - Des ressources complémentaires (cheatsheet...)
+    - Des ressources complémentaires (cheatsheet, tutoriels de connexion à Gitlab depuis Cerise...)
 
 - Poser vos questions directement sur [l'espace discussions](https://github.com/SSM-Agriculture/formation-git/discussions) de la formation.
 
