@@ -239,7 +239,7 @@ différences, par exemple en comparant 2 commits...]{.full-width
 
 ## Inverser les changements avec RStudio ![](img/icone_rstudio.png)
 
-Dans RStudio cliquez sur le bouton `Plus` de l'onglet Git puis choisir
+Dans RStudio, sélectionner le fichier sur lequel vous souhaitez inverser les changement puis cliquez sur le bouton `Plus` de l'onglet Git puis choisir
 le bouton `Inverser` :
 
 ![](img/git_revert_rstudio.png)
