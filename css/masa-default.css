@@ -2,7 +2,7 @@
 
 /*Sommaire*/
 #TOC {
-  background-image: url(../img/com_interne/PageSommaire_Masa.svg);
+  background-image: url(../img/com_interne/PageSommaire_Masaf.svg);
 }
 
 /*page sommaire*/
@@ -17,12 +17,12 @@
 
 /*page Titre*/
 div.backgroundTitre{
-  background-image: url(../img/com_interne/PagePartie_Masa.svg);
+  background-image: url(../img/com_interne/PagePartie_Masaf.svg);
 }
 
 /*Page standard*/
 div.backgroundStandard {
-  background-image: url(../img/com_interne/PageStandard_Masa.svg);
+  background-image: url(../img/com_interne/PageStandard_Masaf.svg);
 }
 
 /*CSS de l'impression pdf du navigateur (ctrl+p) Il s'appuie en partie sur le mode export (ex : background)*/

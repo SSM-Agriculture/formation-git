@@ -7,10 +7,10 @@ contributes:
       filters: [bg.lua]
       css: [css/masa-default.css]
       title-slide-attributes:
-        data-background-image: img/com_interne/PageStandard_Masa.svg
+        data-background-image: img/com_interne/PageStandard_Masaf.svg
         data-background-size: contain
         data-background-opacity: "1"
       email-obfuscation: javascript
       format-resources:
-        - img/com_interne/PageStandard_Masa.svg
+        - img/com_interne/PageStandard_Masaf.svg
        
