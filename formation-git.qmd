@@ -5,7 +5,7 @@ date: today
 date-format: "DD/MM/YYYY"
 author: "SSP/DEMESIS"
 description: |
-  Support de formation de Git pour les utilisateurs de R au MASA
+  Support de formation de Git pour les utilisateurs de R au MASAF
 
 slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
@@ -30,7 +30,7 @@ editor:
 
 <br>
 
-Ce diaporama de formation a été rédigé dans le but d'être le support visuel des formations dispensées au [MASA](https://agreste.agriculture.gouv.fr/).  
+Ce diaporama de formation a été rédigé dans le but d'être le support visuel des formations dispensées au [MASAF](https://agreste.agriculture.gouv.fr/).  
 
 Ces formations s'adressent à des agents **qui découvrent le contrôle de version**.  
 Elles sont données en présentiel sur une durée **d'une journée** à partir de juin 2024.  
@@ -40,11 +40,11 @@ Elles sont données en présentiel sur une durée **d'une journée** à partir d
 
 **Ce support ne couvre pas tous les aspects du contrôle de version ni toutes les commandes Git.**  
 
-De même, il est orienté pour être utile aux agents du SSM MASA et se concentre donc sur une utilisation de R via [RStudio](https://posit.co/download/rstudio-desktop/) qui est mise à disposition des agents sur la plateforme interne Cerise basée sur RStudio Workbench.  
+De même, il est orienté pour être utile aux agents du SSM MASAF et se concentre donc sur une utilisation de R via [RStudio](https://posit.co/download/rstudio-desktop/) qui est mise à disposition des agents sur la plateforme interne Cerise basée sur RStudio Workbench.  
 
 [L'utilisation avec d'autres IDE tels que [VS Code](https://code.visualstudio.com/) ou encore [Github Desktop](https://desktop.github.com/) n'est donc incluse.]{.red}  
 
-Enfin, en tant que forge interne du MASA, les fonctionnalités principales de [Gitlab](https://about.gitlab.com/) sont présentées dans ce support. Même si la majorité des concepts de base sont équivalents, [Github](https://github.com/) n'est pas abordé dans ce diaporama de formation.
+Enfin, en tant que forge interne du MASAF, les fonctionnalités principales de [Gitlab](https://about.gitlab.com/) sont présentées dans ce support. Même si la majorité des concepts de base sont équivalents, [Github](https://github.com/) n'est pas abordé dans ce diaporama de formation.
 :::
 
 {{< include 01_pourquoigit.qmd >}}

@@ -38,7 +38,7 @@ Les plus connues : [Gitlab](https://gitlab.com), [Github](https://github.com), [
 
 Une forge peut être **interne** ou **externe** à un ministère.
 
-- URL de la forge interne du MASA : [https://forge.agriculture.rie.gouv.fr/gitlab/](https://forge.agriculture.rie.gouv.fr/gitlab/)  
+- URL de la forge interne du MASAF : [https://forge.agriculture.rie.gouv.fr/gitlab/](https://forge.agriculture.rie.gouv.fr/gitlab/)  
 
 - URL de la forge interne du MTECT : [https://gitlab-forge.din.developpement-durable.gouv.fr/](https://gitlab-forge.din.developpement-durable.gouv.fr/)  
 
@@ -62,7 +62,7 @@ Pour travailler avec Gitlab, il faut mettre en place un mode d'authentification.
 - `SSH`  
 - `HTTPS`  
 
-Au MASA, [une procédure de configuration existe et a été validée en mars 2024](https://orion.agriculture/confluence/pages/viewpage.action?pageId=1068303025) 
+Au MASAF, [une procédure de configuration existe et a été validée en mars 2024](https://orion.agriculture/confluence/pages/viewpage.action?pageId=1068303025) 
 pour établir la connexion entre Cerise et la forge gitlab interne. 
 Celle-ci est basée sur le mode `HTTPS` et utilise le credential helper de Git qui 
 évite d'avoir à re-saisir son mot de passe (ou token) à chaque action.
@@ -76,7 +76,7 @@ de permissions** sur les projets du groupe et sur le groupe lui-même.
 
 ::: columns
 ::: {.column width="30%"}
-Aperçu des groupes au MASA/SSP :
+Aperçu des groupes au MASAF/SSP :
 :::
 
 ::: {.column width="70%"}
@@ -133,9 +133,9 @@ alors sur le tableau de bord.
 – **Définir une échéance, classer une issue avec un label** : le tableau de
 bord permet alors d’avoir une vision complète des issues en cours.  
 
-## Activer les issues sur la forge interne du MASA ![](img/icone_gitlab.png)
+## Activer les issues sur la forge interne du MASAF ![](img/icone_gitlab.png)
 
-Par défaut, les issues ne sont pas activées à la création d'un dépôt sur la forge Gitlab du MASA.  
+Par défaut, les issues ne sont pas activées à la création d'un dépôt sur la forge Gitlab du MASAF.  
 
 Pour les activer, il faut :  
 

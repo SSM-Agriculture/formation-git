@@ -90,7 +90,7 @@ MASA, voici ce qui est exclu par défaut avec la fonction
 (il vous faudra simplement régler votre configuration pour faire en sorte de dialoguer 
 avec la forge interne Gitlab => voir [ici](#dialoguer-avec-gitlab))
 
-- **Si vous travaillez en local**, consultez [cette procédure interne au MASA](https://orion.agriculture/confluence/display/CER/GIT+-+Installation+en+local)
+- **Si vous travaillez en local**, consultez [cette procédure interne au MASAF](https://orion.agriculture/confluence/display/CER/GIT+-+Installation+en+local)
 
 
 ## Git avec RStudio ![](img/icone_rstudio.png)
@@ -143,7 +143,7 @@ git...]{.red}
 Un package à installer et chargé comme d'habitude.
 
 Pour l'instant, les sources ne sont présentes que sur la forge interne
-du MASA :
+du MASAF :
 
 ``` r
 remotes::install_git("https://forge.agriculture.rie.gouv.fr/gitlab/ssp/bmis/gitssp",

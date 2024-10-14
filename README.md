@@ -1,6 +1,6 @@
 # Formation Git
 
-Support pour la formation Git dispensée au [MASA](https://agriculture.gouv.fr/) et [MTECT](https://www.ecologie.gouv.fr/).
+Support pour la formation Git dispensée au [MASAF](https://agriculture.gouv.fr/) et [MTECT](https://www.ecologie.gouv.fr/).
 
 > Pour un affichage optimisé de la présentation il est conseillé d'utiliser un navigateur basé sur Chromium (par exemple les navigateurs Edge, Chrome, Brave...).
 
