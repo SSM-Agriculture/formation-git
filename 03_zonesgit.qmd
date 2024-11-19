@@ -292,7 +292,7 @@ Il informe les utilisateurs :
 
 D'après [Conventional
 Commits](https://www.conventionalcommits.org/en/v1.0.0/), l'écriture des
-messages de commits devrait suivre la la structure minimale suivante :
+messages de commits devrait suivre la structure minimale suivante :
 
 ```         
 <type>: <description>
