@@ -1,3 +1,7 @@
+<!-- badges: start -->
+[![render](https://github.com/SSM-Agriculture/formation-git/actions/workflows/publish.yaml/badge.svg)](https://github.com/SSM-Agriculture/formation-git/actions)
+<!-- badges: end -->
+
 # Formation Git
 
 Support pour la formation Git dispensée au [MASAF](https://agriculture.gouv.fr/) et [MTECT](https://www.ecologie.gouv.fr/).
