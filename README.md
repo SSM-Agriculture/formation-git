@@ -11,7 +11,7 @@ Les corrections des exercices ainsi que d'autres ressources complémentaires au 
 ## Aide/Assistance post-formation
 
 Suite à la formation, s'il vous reste des questions, vous pouvez les poser directement depuis [l'espace discussions](https://github.com/SSM-Agriculture/formation-git/discussions) du dépôt.  
-Pour ce faire, il faut disposer d'un compte sur github. Voir [ici](https://github.com/signup?source=login).  
+Pour ce faire, il faut disposer d'un compte sur github (voir [ici](https://github.com/signup?source=login)).  
 Nous serons ravis de répondre à vos interrogations et de vous guider au mieux dans votre découverte de Git.  
 
 ## Contribution
