@@ -1,0 +1,67 @@
+name: Diaporama-deploiement-html-pdf
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  pull-requests: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploiement et creation pdf
+    environment:
+      name: github-pages
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: pre-release
+          tinytex: false
+          
+      - name: Render Quarto Project
+        shell: bash
+        run: quarto render index.qmd --output-dir _site
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          branch: gh-pages  # Spécifie la branche où déployer
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+
+      - name: Convert Reveal.js to PDF
+        shell: bash
+        run: npx -y decktape reveal --chrome-arg=--no-sandbox --size "1920x1080" _site/index.html _site/Diaporama_git.pdf
+
+      - name: Move pdf
+        shell: bash
+        run: mv _site/Diaporama_git.pdf diaporama_pdf/Diaporama_git.pdf
+  
+      - name: Commit and push PDF
+        shell: bash
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add diaporama_pdf/Diaporama_git.pdf
+          git commit -m "MAJ de la version pdf"
+          git push origin main
