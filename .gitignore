@@ -15,10 +15,7 @@ _output/
 *.html
 !docs/*.html
 *.tex
-*.pdf
 *.log
 *.sty
 *.docx
 *.odt
-PageStandard_Masaf.svg
-!img/com_interne/PageStandard_Masaf.svg
