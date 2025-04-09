@@ -38,7 +38,7 @@ Les plus connues : [Gitlab](https://gitlab.com), [Github](https://github.com), [
 
 Une forge peut être **interne** ou **externe** à un ministère.
 
-- URL de la forge interne du MASAF : [https://gitlab.forge.agriculture.rie.gouv.fr/gitlab/](https://forge.agriculture.rie.gouv.fr/gitlab/)  
+- URL de la forge interne du MASAF : [https://gitlab.forge.agriculture.rie.gouv.fr/](https://gitlab.forge.agriculture.rie.gouv.fr/)  
 
 - URL de la forge interne du MTECT : [https://gitlab-forge.din.developpement-durable.gouv.fr/](https://gitlab-forge.din.developpement-durable.gouv.fr/)  
 
@@ -300,7 +300,7 @@ Pour information, le `-u` de la commande ci-dessus est nécessaire car dans le c
 - Taper la commande `git clone <URL-depot-distant>`  
   
 Par exemple :  
-`git clone https://gitlab.forge.agriculture.rie.gouv.fr/gitlab/damien.dotta/test.git`  
+`git clone https://gitlab.forge.agriculture.rie.gouv.fr/ssp/bac-a-sable/test-formation-git`  
 
 - Ouvrir le nouveau répertoire et commencer à y travailler comme d'habitude en y créant un projet, des scripts...  
 
@@ -314,7 +314,7 @@ Par exemple :
 - Taper la commande `git remote add origin <URL-depot-distant>`  
   
 Par exemple :  
-`git remote add origin https://gitlab.forge.agriculture.rie.gouv.fr/gitlab/damien.dotta/test.git`
+`git remote add origin https://gitlab.forge.agriculture.rie.gouv.fr/ssp/bac-a-sable/test-formation-git`
 
 
 ## Lier un dépôt local à un dépôt distant avec gitssp (1/2) ![](img/icone_gitssp.png)
@@ -341,7 +341,7 @@ La fonction `ajouter_git()` comprend 2 arguments :
 Par exemple :  
 ```r
 ajouter_git(
-  origin = "https://gitlab.forge.agriculture.rie.gouv.fr/gitlab/damien.dotta/test.git",
+  origin = "https://gitlab.forge.agriculture.rie.gouv.fr/ssp/bac-a-sable/test-formation-git",
   dossier = "~/test/"
 )
 ```
