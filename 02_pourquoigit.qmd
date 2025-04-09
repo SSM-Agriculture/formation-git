@@ -1,3 +1,0 @@
-# Pourquoi Git ? {.backgroundTitre}
-
-## A venir
