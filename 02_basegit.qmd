@@ -146,7 +146,7 @@ Pour l'instant, les sources ne sont présentes que sur la forge interne
 du MASAF :
 
 ``` r
-remotes::install_git("https://forge.agriculture.rie.gouv.fr/gitlab/ssp/bmis/gitssp",
+remotes::install_git("https://gitlab.forge.agriculture.rie.gouv.fr/gitlab/ssp/bmis/gitssp",
                      dependencies = T,
                      git = "external")
 ```
