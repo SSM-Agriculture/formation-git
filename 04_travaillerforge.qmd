@@ -38,7 +38,7 @@ Les plus connues : [Gitlab](https://gitlab.com), [Github](https://github.com), [
 
 Une forge peut être **interne** ou **externe** à un ministère.
 
-- URL de la forge interne du MASAF : [https://gitlab.forge.agriculture.rie.gouv.fr/](https://gitlab.forge.agriculture.rie.gouv.fr/)  
+- URL de la forge interne du MASAA : [https://gitlab.forge.agriculture.rie.gouv.fr/](https://gitlab.forge.agriculture.rie.gouv.fr/)  
 
 - URL de la forge interne du MTECT : [https://gitlab-forge.din.developpement-durable.gouv.fr/](https://gitlab-forge.din.developpement-durable.gouv.fr/)  
 
@@ -62,7 +62,7 @@ Pour travailler avec Gitlab, il faut mettre en place un mode d'authentification.
 - `SSH`  
 - `HTTPS`  
 
-Au MASAF, [une procédure de configuration existe et a été validée en mars 2024](https://orion.agriculture/confluence/pages/viewpage.action?pageId=1068303025) 
+Au MASAA, [une procédure de configuration existe et a été validée en mars 2024](https://orion.agriculture/confluence/pages/viewpage.action?pageId=1068303025) 
 pour établir la connexion entre Cerise et la forge gitlab interne. 
 Celle-ci est basée sur le mode `HTTPS` et utilise le credential helper de Git qui 
 évite d'avoir à re-saisir son mot de passe (ou token) à chaque action.
@@ -76,7 +76,7 @@ de permissions** sur les projets du groupe et sur le groupe lui-même.
 
 ::: columns
 ::: {.column width="30%"}
-Aperçu des groupes au MASAF/SSP :
+Aperçu des groupes au MASAA/SSP :
 :::
 
 ::: {.column width="70%"}
@@ -133,9 +133,9 @@ alors sur le tableau de bord.
 – **Définir une échéance, classer une issue avec un label** : le tableau de
 bord permet alors d’avoir une vision complète des issues en cours.  
 
-## Activer les issues sur la forge interne du MASAF ![](img/icone_gitlab.png)
+## Activer les issues sur la forge interne du MASAA ![](img/icone_gitlab.png)
 
-Par défaut, les issues ne sont pas activées à la création d'un dépôt sur la forge Gitlab du MASAF.  
+Par défaut, les issues ne sont pas activées à la création d'un dépôt sur la forge Gitlab du MASAA.  
 
 Pour les activer, il faut :  
 
@@ -317,37 +317,6 @@ Par exemple :
 `git remote add origin https://gitlab.forge.agriculture.rie.gouv.fr/ssp/bac-a-sable/test-formation-git`
 
 
-## Lier un dépôt local à un dépôt distant avec gitssp (1/2) ![](img/icone_gitssp.png)
-
-<br>
-
-Le package `gitssp` peut également être utilisé pour effectuer la liaison.  
-  
-Plusieurs branches distantes (developpement, recette et production) peuvent être créées en une seule instruction R.  
-
-**Procédure :**  
-
-- Créer un projet .Rproj dans votre working directory (sans choisir "Contrôle de version")
-- Charger le package avec `library(gitssp)`
-- Lancer la fonction R `ajouter_git()`
-
-## Lier un dépôt local à un dépôt distant avec gitssp (2/2) ![](img/icone_gitssp.png)
-
-La fonction `ajouter_git()` comprend 2 arguments :  
-  
-- `origin` : URL du dépôt distant (obligatoire)  
-- `dossier` : chemin vers le projet .Rproj que vous avez créé au préalable
-  
-Par exemple :  
-```r
-ajouter_git(
-  origin = "https://gitlab.forge.agriculture.rie.gouv.fr/ssp/bac-a-sable/test-formation-git",
-  dossier = "~/test/"
-)
-```
-
-La fonction relance une nouvelle session R et l'onglet "Git" est disponible et opérationnel.
-
 ## Pousser les changements sur la forge avec RStudio ![](img/icone_rstudio.png)
 
 Après avoir ajouté vos changements à l'index et fait vos commits, vous pouvez **"pousser"** ces modifications sur la forge avec RStudio.  
@@ -429,7 +398,7 @@ Git vous empêchera de pousser vos modifications sur le dépôt distant si vous 
 
 ## Supprimer un dépôt dans Gitlab ![](img/icone_gitlab.png)
 
-<br> 
+- Si vous êtes owner du projet :  
 
 ::: columns
 ::: {.column width="25%"}
@@ -443,6 +412,8 @@ Descendre en bas de la page puis :
 :::
 
 ::::
+
+- Sinon, contacter le assistance.si-stat.sg@agriculture.gouv.fr.
 
 ## Créer des tags avec le terminal ![](img/icone_terminal.png)
 

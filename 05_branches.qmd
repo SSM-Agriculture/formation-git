@@ -69,7 +69,7 @@ Close #31, en lien avec #29
 ## Savoir sur quelle branche on se situe
 
 ::: columns
-::: {.column width="33%"}
+::: {.column width="50%"}
 ![](img/icone_rstudio.png){fig-align="center"}  
 
 RStudio indique la branche sur laquelle on se situe en haut à droite de l'onglet "Git" :  
@@ -77,7 +77,7 @@ RStudio indique la branche sur laquelle on se situe en haut à droite de l'ongle
 ![](img/git_rstudio_get_active_branche.png){fig-align="center"}  
 :::
 
-::: {.column width="33%"}
+::: {.column width="50%"}
 ![](img/icone_terminal.png){fig-align="center"}  
 
 `git status` est la commande la plus simple
@@ -86,19 +86,12 @@ RStudio indique la branche sur laquelle on se situe en haut à droite de l'ongle
 
 :::
 
-::: {.column width="33%"}
-![](img/icone_gitssp.png){fig-align="center"}  
-
-[`gitssp$get_current_branch()`]{.tiny}
-
-:::
-
 ::::
 
 ## Lister les branches
 
 ::: columns
-::: {.column width="33%"}
+::: {.column width="50%"}
 
 ![](img/icone_rstudio.png){fig-align="center"}
 
@@ -107,7 +100,7 @@ Cliquer sur la petite flèche située à côté du nom de la branche courante :
 ![](img/git_rstudio_liste_branches.png){fig-align="center"}
 :::
 
-::: {.column width="33%"}
+::: {.column width="50%"}
 
 ![](img/icone_terminal.png){fig-align="center"}
 
@@ -118,21 +111,6 @@ Cliquer sur la petite flèche située à côté du nom de la branche courante :
 - Pour afficher les branches locales et distantes
 
 `git branch -a`
-
-:::
-
-::: {.column width="33%"}
-
-![](img/icone_gitssp.png){fig-align="center"}
-
-
-- Pour afficher uniquement les branches locales
-
-`gitssp$list_branch_local()`
-
-- Pour afficher les branches locales et distantes
-
-`gitssp$list_branch_all()`
 
 :::
 
@@ -198,44 +176,23 @@ Synchroniser la nouvelle branche locale "bugfix" avec la branche distante :
 `git push -u origin bugfix`
 
 
-## Créer une nouvelle branche avec gitssp ![](img/icone_gitssp.png)
-
-
-**Créer une nouvelle branche**
-
-`gitssp$create_branch_local("nom-de-branche")`
-
-**Pousser la branche locale sur le dépôt distant**
-
-`gitssp$push_branch_gitlab("nom-de-branche")`
-
-
 ## Changer de branche
 
 ::: columns
 
-::: {.column width="33%"}
+::: {.column width="50%"}
 ![](img/icone_rstudio.png){fig-align="center"}
 
 ![](img/git_rstudio_changement_branche.png){fig-align="center"}
 
 :::
 
-::: {.column width="33%"}
+::: {.column width="50%"}
 ![](img/icone_terminal.png){fig-align="center"}
 
 Avec la commande dans le terminal :  
 
 `git checkout nom-de-branche`
-:::
-
-::: {.column width="33%"}
-![](img/icone_gitssp.png){fig-align="center"}
-
-Avec l'instruction R :  
-
-`gitssp$switch_branch_local("nom-de-branche")`
-
 :::
 
 ::::
@@ -245,27 +202,18 @@ Avec l'instruction R :
 
 ::: columns
 
-::: {.column width="33%"}
+::: {.column width="50%"}
 ![](img/icone_rstudio.png){fig-align="center"}
 
 Avec l'IHM RStudio, on ne peut pas supprimer de branches locales.  
 :::
 
-::: {.column width="33%"}
+::: {.column width="50%"}
 ![](img/icone_terminal.png){fig-align="center"}
 
 Avec la commande dans le terminal :  
 
 `git branch -d nom-de-branche`
-:::
-
-::: {.column width="33%"}
-![](img/icone_gitssp.png){fig-align="center"}
-
-Avec l'instruction R :  
-
-`gitssp$delete_branch_local("nom-de-branche")`
-
 :::
 
 ::::
@@ -281,25 +229,18 @@ Dans ce cas, il faut au préalable changer de branche avec `git checkout nom-de-
 
 ::: columns
 
-::: {.column width="33%"}
+::: {.column width="50%"}
 ![](img/icone_rstudio.png){fig-align="center"}
 
 Avec l'IHM RStudio, on ne peut pas supprimer de branches distantes.  
 :::
 
-::: {.column width="33%"}
+::: {.column width="50%"}
 ![](img/icone_terminal.png){fig-align="center"}
 
 `git push origin --delete nom-de-branche`
 OU  
 `git fetch --prune`
-:::
-
-::: {.column width="33%"}
-![](img/icone_gitssp.png){fig-align="center"}
-
-`gitssp$delete_branch_gitlab("nom-de-branche")`
-
 :::
 
 ::::

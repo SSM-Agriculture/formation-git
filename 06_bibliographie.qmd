@@ -10,13 +10,6 @@
 
 ![](img/discussions.png){fig-align="center"}
 
-## Packages R pour utiliser Git
-
-- [usethis](https://usethis.r-lib.org/reference/index.html#git-and-github) - Un package R 
-qui contient plusieurs fonctions très utiles pour les opérations courantes avec Git (par Posit).  
-- [gert](https://docs.ropensci.org/gert/) qui est un client Git pour R très efficace 
-(par rOpenSci).  
-
 ## Bibliographie à consulter
 
 En français :  
@@ -33,10 +26,5 @@ En anglais :
 
 ## Remerciements
 
-Le DEMESIS remercie :
-
-- [@laurentC35](https://github.com/laurentC35/) : l'auteur des fonctions du package `gitssp`
-- [@Inseefrlab](https://github.com/InseeFrLab) et en particulier [@linogaliana](https://github.com/linogaliana), [@oliviermeslin](https://github.com/oliviermeslin) et [@avouacr](https://github.com/avouacr) pour leur support très inspirant sur les bonnes pratiques avec R
-
-- Par avance tous les relecteurs/contributeurs à cette nouvelle formation qui en feront un meilleur support pour la communauté française de R et en particulier pour les utilisateurs de RStudio.
+Le DEMESIS remercie par avance tous les relecteurs/contributeurs à cette formation qui en feront un meilleur support pour la communauté française de R et en particulier pour les utilisateurs de RStudio.
 

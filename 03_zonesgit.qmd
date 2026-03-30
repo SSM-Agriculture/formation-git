@@ -265,7 +265,7 @@ Un message de confirmation vous demande si vous êtes sûr de votre action
 
 ## Le commit
 
-<p style="text-align: center;">[Action de figer l'état du dépôt sous forme de `snapshot`]{.content-box-green}</p>
+<p style="text-align: center;">[Action de figer l'état d'un dépôt]{.content-box-green}</p>
 
 **Un bon commit :**
 
@@ -312,7 +312,7 @@ Le tableau suivant reprend les types les plus couramment utilisés :
 ## Comment committer avec RStudio ? ![](img/icone_rstudio.png)
 
 Après avoir ajouté les fichiers modifiés à l'index, il est temps de "committer" 
-les changements c'est-à-dire de prendre une photo / un snapshot de ces fichiers modifiés.  
+les changements c'est-à-dire de figer l'état de ces fichiers modifiés.  
 
 Dans RStudio, il faut cliquer sur le bouton "Commit" de l'onglet "Git"   
 
