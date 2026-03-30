@@ -46,9 +46,7 @@ forme d'expressions régulières) à ne pas versionner.
 
 ## Qu'est-ce qu'on NE versionne PAS ? (2/2)
 
-Si vous utilisez le package R `gitssp` mis à disposition des agents du
-MASA, voici ce qui est exclu par défaut avec la fonction
-`gitssp::creer_gitignore()` :
+Voici un exemple de fichier `.gitignore` qui peut servir de base pour une ré-utilisation :  
 
 ```         
 .Rproj.user
