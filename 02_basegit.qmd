@@ -70,7 +70,7 @@ MASA, voici ce qui est exclu par défaut avec la fonction
 
 ## Comment utiliser Git ?
 
-3 façons seront présentées dans ce support :
+2 façons seront présentées dans ce support :
 
 -   ![](img/icone_rstudio.png){.inlineimage} Via l'interface visuelle de
     l'IDE RStudio\
