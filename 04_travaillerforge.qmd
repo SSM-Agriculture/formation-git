@@ -413,7 +413,7 @@ Descendre en bas de la page puis :
 
 ::::
 
-- Sinon, contacter le assistance.si-stat.sg@agriculture.gouv.fr.
+- Sinon, contacter la BAL : assistance.si-stat.sg@agriculture.gouv.fr.
 
 ## Créer des tags avec le terminal ![](img/icone_terminal.png)
 
