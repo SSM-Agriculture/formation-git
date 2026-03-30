@@ -54,7 +54,7 @@ Créé en 2005 par [Linus Torvalds](https://fr.wikipedia.org/wiki/Linus_Torvalds
 
 - Codé en C  
 
-- Plus de 1 200 000 commits en mars 2024 !
+- Plus de 1 400 000 commits en mars 2026 !
 
 :::
 
