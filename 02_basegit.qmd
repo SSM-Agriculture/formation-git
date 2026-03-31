@@ -85,7 +85,7 @@ Voici un exemple de fichier `.gitignore` qui peut servir de base pour une ré-ut
 (il vous faudra simplement régler votre configuration pour faire en sorte de dialoguer 
 avec la forge interne Gitlab => voir [ici](#dialoguer-avec-gitlab))
 
-- **Si vous travaillez en local**, consultez [cette procédure interne au MASAA](https://orion.agriculture/confluence/display/CER/GIT+-+Installation+en+local)
+- **Si vous travaillez en local**, consultez [cette procédure interne au MAASA](https://orion.agriculture/confluence/display/CER/GIT+-+Installation+en+local)
 
 
 ## Git avec RStudio ![](img/icone_rstudio.png)
