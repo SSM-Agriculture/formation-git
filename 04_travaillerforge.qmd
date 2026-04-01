@@ -92,13 +92,15 @@ Aperçu des groupes au MAASA/SSP :
 
 Ce qu'il faut retenir :  
 
-| Rôle       | Permissions                                                                                                                                             |
-|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Owner      | Les propriétaires ont un contrôle total sur le projet ou le groupe.                                                                                     |
-| Maintainer | Les mainteneurs ont généralement des droits similaires aux propriétaires, <br>mais ils n'ont pas accès à l'intégralité des paramètres du projet/groupe. |
-| Developer  | Les développeurs ont des droits d'écriture sur le projet ou le groupe.                                                                                  |
-| Reporter   | Les rapporteurs ont des droits de lecture sur le projet ou le groupe.                                                                                   |
-| Guest      | Les invités ont des droits d'accès limités et sont souvent utilisés <br>pour donner un accès en lecture seule à des personnes extérieures au projet.    |                                                                         |
+| Rôle | Permissions |
+| :--- | :--- |
+| **Owner** | Les propriétaires ont un contrôle total sur le projet ou le groupe, y compris la gestion des membres et la suppression. |
+| **Maintainer** | Les mainteneurs ont des droits similaires aux propriétaires, mais n'ont pas accès à l'intégralité des paramètres sensibles du projet/groupe. |
+| **Developer** | Les développeurs ont des droits d'écriture sur le code, peuvent créer des branches et fusionner des Merge Requests. |
+| **Planner** | Les planificateurs se concentrent sur la gestion : ils peuvent gérer les tickets (issues), les tableaux de bord et les jalons, mais n'ont pas accès au code source. |
+| **Reporter** | Les rapporteurs ont des droits de lecture sur le projet. Ils peuvent voir le code et créer des tickets, mais ne peuvent pas modifier le dépôt. |
+| **Guest** | Les invités ont des droits très limités (lecture seule sur les tickets) et n'ont généralement pas accès au contenu du code source. |
+
 
 ## Bonnes pratiques avec les forges
 
